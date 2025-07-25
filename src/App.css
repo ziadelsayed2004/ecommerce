@@ -76,15 +76,31 @@ body {
 }
 
 .locationModel .MuiPaper-elevation {
-  width: 30%;
   padding: 25px;
   border-radius: 10px;
 }
 
-@media (max-width: 767px){
-  .locationModel .MuiPaper-elevation {
-  width: 80%;
+.locationModel .countryList {
+  margin-bottom: 0px;
+  margin-top: 10px;
+  max-height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
+
+.locationModel .countryList li {
+  width: 95%;
+  margin-right: 5%;
+  list-style: none;
+}
+
+.locationModel .countryList li button {
+  width: 100%;
+  text-transform: capitalize !important;
+  color: var(--main-color);
+  justify-content: flex-start;
+   border-radius: 10px;
+  margin-bottom: 5px;
 }
 
 .locationModel .MuiPaper-elevation .headerSearch {

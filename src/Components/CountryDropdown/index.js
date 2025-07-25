@@ -6,7 +6,7 @@ import { FaAngleDown } from "react-icons/fa6";
 import { IoSearch } from "react-icons/io5";
 
 const CountryDropdown = ()=>{
-    
+
     const [open, setOpen] = React.useState(false);
 
       const handleClickOpen = () => {
@@ -34,6 +34,11 @@ const CountryDropdown = ()=>{
                     <input type='text' placeholder='Search Your Area...' />
                     <Button><IoSearch /></Button>
                 </div>
+                <ul className='countryList'>
+                    <li><Button>Egypt</Button></li>
+                    <li><Button>Sudia Arabia</Button></li>
+                    <li><Button>Qatar</Button></li>
+                </ul>
             </Dialog>
         </>
     )
