@@ -248,7 +248,7 @@ nav .navPart1, nav .navPart2 {
 
 nav .allCatTab {
   padding: 10px 15px !important;
-  border-radius: 20px;
+  border-radius: 16px;
   background-color: var(--main-color);
   transition: ease-in-out all 0.3s;
 }
@@ -275,28 +275,31 @@ nav .allCatTab .icon2 svg {
 
 nav .navPart2 ul {
   width: 100%;
-  padding: 0px 10px;
+  padding: 0px 5px;
   margin-bottom: 0px;
 }
 
-nav .navPart2 li a {
-  font-size: 16px;
-  font-weight: 600;
+nav .navPart2 li a{
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.8);
+}
+
+nav .navPart2 li a button{
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.75);
   display: flex;
   align-items: center;
-  padding: 10px 15px;
-  border-radius: 20px;
+  padding: 10px;
+  border-radius: 16px;
   transition: ease-in-out all 0.3s;
 }
 
-nav .navPart2 li a svg {
-  font-size: 18px;
+nav .navPart2 li a button svg {
+  font-size: 16px;
 }
 
-nav .navPart2 li a:hover,
-nav .navPart2 .active a {
+nav .navPart2 li a button:hover,
+nav .navPart2 .active a button {
   background-color: #f0faff;
   color: var(--main-color);
 }
