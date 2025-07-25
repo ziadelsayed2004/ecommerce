@@ -275,12 +275,13 @@ nav .allCatTab .icon2 svg {
 
 nav .navPart2 ul {
   width: 100%;
-  padding: 5px;
+  padding: 0 5px;
   margin-bottom: 0px;
 }
 
 nav .navPart2 li a{
   text-decoration: none;
+  margin: 5px 0px;
 }
 
 nav .navPart2 li a button{
