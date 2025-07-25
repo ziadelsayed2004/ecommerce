@@ -281,7 +281,6 @@ nav .navPart2 ul {
 
 nav .navPart2 li a{
   text-decoration: none;
-  padding: 5px 0px;
 }
 
 nav .navPart2 li a button{
@@ -291,6 +290,7 @@ nav .navPart2 li a button{
   display: flex;
   align-items: center;
   padding: 10px;
+  margin: 5px 0px;
   border-radius: 16px;
   transition: ease-in-out all 0.3s;
 }
