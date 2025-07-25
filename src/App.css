@@ -42,6 +42,7 @@ body {
 .logoWrapper img {
   user-select: none;
   width: 90%;
+  max-width: 170px;
   margin-right: 10%;
 }
 
