@@ -79,10 +79,18 @@ body {
   padding: 25px;
   border-radius: 10px;
 }
+
+@media (max-width: 767px){
+  .locationModel .MuiPaper-elevation {
+  width: 80%;
+}
+}
+
 .locationModel .MuiPaper-elevation .headerSearch {
   width: 100% !important;
   margin: 0px !important;
 }
+
 header .headerSearch,
 .locationModel .MuiPaper-elevation .headerSearch {
   width: 60%;
