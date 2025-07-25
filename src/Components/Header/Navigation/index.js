@@ -16,7 +16,7 @@ const Navigation = ()=>{
             <nav>
                 <div className='container'>
                     <div className='row'>
-                        <div className='col-sm-4 navPart1'>
+                        <div className='col-sm-3 navPart1'>
                             <Button className='allCatTab align-items-center'>
                                 <span className='icon1 mr-2'><IoIosMenu/></span>
                                 <span className='text'>All Categories</span>
@@ -24,13 +24,14 @@ const Navigation = ()=>{
                             </Button>
                         </div>
 
-                        <div className='col-sm-8 navPart2 d-flex align-items-center'>
+                        <div className='col-sm-9 navPart2 d-flex align-items-center'>
                             <ul className='list list-inline ml-auto'>
                                 <li className='list-inline-item active'><Link to='/'><FiHome />&nbsp; Home</Link></li>
                                 <li className='list-inline-item'><Link to='/'><HiOutlineBuildingStorefront />&nbsp; Shop</Link></li>
                                 <li className='list-inline-item'><Link to='/'><BiCategoryAlt />&nbsp; Category 1</Link></li>
                                 <li className='list-inline-item'><Link to='/'><BiCategoryAlt />&nbsp; Category 2</Link></li>
                                 <li className='list-inline-item'><Link to='/'><BiCategoryAlt />&nbsp; Category 3</Link></li>
+                                <li className='list-inline-item'><Link to='/'><BiCategoryAlt />&nbsp; Category 4</Link></li>
                                 <li className='list-inline-item'><Link to='/'><RiBloggerLine />&nbsp; Blog</Link></li>
                                 <li className='list-inline-item'><Link to='/'><FaRegPaperPlane />&nbsp; Contact</Link></li>
                             </ul>

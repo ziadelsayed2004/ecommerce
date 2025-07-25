@@ -74,7 +74,17 @@ body {
   opacity: 0.7;
 }
 
-header .headerSearch {
+.locationModel .MuiPaper-elevation {
+  width: 30%;
+  padding: 25px;
+  border-radius: 10px;
+}
+.locationModel .MuiPaper-elevation .headerSearch {
+  width: 100% !important;
+  margin: 0px !important;
+}
+header .headerSearch,
+.locationModel .MuiPaper-elevation .headerSearch {
   width: 60%;
   height: 50px;
   background-color: #f3f4f7;
@@ -84,7 +94,8 @@ header .headerSearch {
   position: relative;
 }
 
-header .headerSearch input {
+header .headerSearch input,
+.locationModel .MuiPaper-elevation .headerSearch input {
   background: transparent !important;
   outline: none !important;
   font-size: 14px;
@@ -95,7 +106,8 @@ header .headerSearch input {
   border: 0px !important;
 }
 
-header .headerSearch button {
+header .headerSearch button,
+.locationModel .MuiPaper-elevation .headerSearch button {
   position: absolute;
   top: 4.5px;
   right: 5px;
@@ -107,7 +119,8 @@ header .headerSearch button {
   color: var(--main-color);
 }
 
-header .headerSearch button svg {
+header .headerSearch button svg,
+.locationModel .MuiPaper-elevation .headerSearch button svg {
   font-size: 30px;
 }
 
@@ -163,6 +176,10 @@ header .part3 .cartTab .count {
   color: #fff;
   width: 17.5px;
   height: 17.5px;
+}
+
+nav .navPart1, nav .navPart2 {
+  padding: 10px;
 }
 
 nav .allCatTab {
