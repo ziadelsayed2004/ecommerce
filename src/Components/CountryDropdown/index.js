@@ -1,10 +1,15 @@
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import React from 'react';
+import Slide from '@mui/material/Slide';
 
 import { FaAngleDown } from "react-icons/fa6";
 import { IoSearch } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
+
+const Transition = React.forwardRef(function Transition(props, ref){
+    return <Slide direction="up" ref={ref} {...props} />;
+});
 
 const CountryDropdown = ()=>{
     
@@ -20,7 +25,7 @@ const CountryDropdown = ()=>{
                 <span className='ml-auto'><FaAngleDown /></span>
             </Button>
 
-            <Dialog className='locationModel' onClose={()=>setIsOpenModel(false)} open={isOpenModel}>
+            <Dialog className='locationModel' TransitionComponent={Transition} onClose={()=>setIsOpenModel(false)} open={isOpenModel}>
                 <h4>Choose Your Location</h4>
                 <p>Enter Your Location To Get Your Offers</p>
                 <Button className='close_' onClick={()=>setIsOpenModel(false)}><IoClose /></Button>
@@ -29,18 +34,15 @@ const CountryDropdown = ()=>{
                     <Button><IoSearch /></Button>
                 </div>
                 <ul className='countryList mt-3'>
-                    <li><Button>Egypt</Button></li>
-                    <li><Button>Sudia Arabia</Button></li>
-                    <li><Button>Qatar</Button></li>
-                    <li><Button>Egypt</Button></li>
-                    <li><Button>Sudia Arabia</Button></li>
-                    <li><Button>Qatar</Button></li>
-                    <li><Button>Egypt</Button></li>
-                    <li><Button>Sudia Arabia</Button></li>
-                    <li><Button>Qatar</Button></li>
-                    <li><Button>Egypt</Button></li>
-                    <li><Button>Sudia Arabia</Button></li>
-                    <li><Button>Qatar</Button></li>
+                    <li><Button onClick={()=>setIsOpenModel(false)}>Egypt</Button></li>
+                    <li><Button onClick={()=>setIsOpenModel(false)}>Sudia Arabia</Button></li>
+                    <li><Button onClick={()=>setIsOpenModel(false)}>Qatar</Button></li>
+                    <li><Button onClick={()=>setIsOpenModel(false)}>Egypt</Button></li>
+                    <li><Button onClick={()=>setIsOpenModel(false)}>Sudia Arabia</Button></li>
+                    <li><Button onClick={()=>setIsOpenModel(false)}>Qatar</Button></li>
+                    <li><Button onClick={()=>setIsOpenModel(false)}>Egypt</Button></li>
+                    <li><Button onClick={()=>setIsOpenModel(false)}>Sudia Arabia</Button></li>
+                    <li><Button onClick={()=>setIsOpenModel(false)}>Qatar</Button></li>
                 </ul>
             </Dialog>
         </>
