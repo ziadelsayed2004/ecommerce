@@ -95,6 +95,28 @@ body {
 .locationModel .MuiPaper-elevation {
   padding: 25px;
   border-radius: 10px;
+  position: relative;
+}
+
+.locationModel .close_ {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  min-width: 30px !important;
+  width: 30px !important;
+  height: 30px !important;
+  padding: 2.5px;
+  border-radius: 50% !important;
+  color: rgba(234, 44, 15, 1);
+  transition: all ease-in-out 0.3s;
+}
+
+.locationModel .close_:hover {
+  background-color: rgba(234, 44, 15, 0.1);
+}
+
+.locationModel .close_ svg{
+  font-size: 22px !important;
 }
 
 .locationModel .countryList {
