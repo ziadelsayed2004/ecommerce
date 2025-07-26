@@ -37,8 +37,14 @@ body {
     max-width: 1200px;
   }
 }
+
 .container {
   max-width: 90% !important;
+}
+
+.headerWrapper {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 15px;
 }
 
 .headerWrapper .top-strip {

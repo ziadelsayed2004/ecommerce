@@ -12,14 +12,16 @@ import citiesData from './utils/egyptCities.json';
 const MyContext = createContext();
 
 function App() {
+  
   const [egyptCities, setEgyptCities] = React.useState([]);
-
+  const [selectedCity, setSelectedCity] = React.useState('');
   useEffect(() => {
     setEgyptCities(citiesData);
   }, []);
-
   const values = {
-    egyptCities
+    egyptCities,
+    selectedCity,
+    setSelectedCity
   };
 
   return (

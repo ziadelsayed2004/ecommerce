@@ -8,19 +8,19 @@ import { IoSearch } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 import { MyContext } from '../../App';
 
-const Transition = React.forwardRef(function Transition(props, ref){
-    return <Slide direction="up" ref={ref} {...props} />;
-});
-
 const CountryDropdown = ()=>{
     
+    const Transition = React.forwardRef(function Transition(props, ref){
+    return <Slide direction="up" ref={ref} {...props} />;
+    });
     const [isOpenModel, setIsOpenModel] = React.useState(false);
     const [selectedTab, setSelectedTab] = React.useState(null);
     const [egyptCities, setEgyptCities] = React.useState([]);
     const context = useContext(MyContext);
-    const selectCity = (index) => {
+    const selectCity = (index,city) => {
         setSelectedTab(index);
         setIsOpenModel(false);
+        context.setSelectedCity(city);
     }
     useEffect(() => {
         setEgyptCities(context.egyptCities);
@@ -42,7 +42,7 @@ const CountryDropdown = ()=>{
             <Button className='countryDrop'  onClick={()=>setIsOpenModel(true)}>
                 <div className='info d-flex flex-column'>
                     <span className='label'>Your Location</span>
-                    <span className='name'>{selectedTab !== null ? context.egyptCities[selectedTab]?.city : "Egypt"}</span>
+                    <span className='name'>{context.selectedCity!=="" ? context.selectedCity.length > 10 ? context.selectedCity?.substr(0,10) + '..' : context.selectedCity : "Select A City"}</span>
                 </div>
                 <span className='ml-auto'><FaAngleDown /></span>
             </Button>
@@ -60,7 +60,7 @@ const CountryDropdown = ()=>{
                         egyptCities?.length !== 0 && egyptCities?.map((item, index) => {
                             return (
                                 <li key={index}>
-                                    <Button onClick={() => selectCity(index)} className={`${selectedTab === index ? 'active' : ''}`} >
+                                    <Button onClick={() => selectCity(index,item.city)} className={`${selectedTab === index ? 'active' : ''}`} >
                                         <span className='cityName'>{item.city}</span>
                                         <span className='shippingPrice'>{item.shippingPrice} EGP</span>
                                     </Button>
