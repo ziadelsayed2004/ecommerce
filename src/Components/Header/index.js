@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
 
-import Logo from '../../assets/images/logo.png';
+import Logo from '../../Assets/images/logo.png';
 import CountryDropdown from '../CountryDropdown';
 import SearchBox from './SearchBox';
 
