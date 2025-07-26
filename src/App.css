@@ -336,6 +336,7 @@ nav .navPart1 .catWrapper .sideBarNav.open {
   height: auto;
   opacity: 1;
   visibility: inherit;
+  z-index: 100;
 }
 
 nav .navPart1 .catWrapper .sideBarNav .catListSided {
