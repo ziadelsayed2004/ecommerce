@@ -8,19 +8,19 @@ import { IoSearch } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 import { MyContext } from '../../App';
 
-const CountryDropdown = ()=>{
-    
-    const Transition = React.forwardRef(function Transition(props, ref){
+const Transition = React.forwardRef(function Transition(props, ref){
     return <Slide direction="up" ref={ref} {...props} />;
-    });
+});
+
+const CountryDropdown = ()=>{
     const [isOpenModel, setIsOpenModel] = React.useState(false);
     const [selectedTab, setSelectedTab] = React.useState(null);
     const [egyptCities, setEgyptCities] = React.useState([]);
     const context = useContext(MyContext);
     const selectCity = (index,city) => {
         setSelectedTab(index);
-        setIsOpenModel(false);
         context.setSelectedCity(city);
+        setIsOpenModel(false);
     }
     useEffect(() => {
         setEgyptCities(context.egyptCities);
