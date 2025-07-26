@@ -275,7 +275,7 @@ nav .allCatTab .icon2 svg {
 
 nav .navPart2 ul {
   width: 100%;
-  padding: 0px 5px;
+  padding: 0 5px;
   margin-bottom: 0px;
 }
 
@@ -290,6 +290,7 @@ nav .navPart2 li a button{
   display: flex;
   align-items: center;
   padding: 10px;
+  margin: 5px 0px;
   border-radius: 16px;
   transition: ease-in-out all 0.3s;
 }
