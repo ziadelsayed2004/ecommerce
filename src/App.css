@@ -122,6 +122,8 @@ body {
 .locationModel .countryList {
   margin-bottom: 0px;
   max-height: 400px;
+  width: 75vw;
+  max-width: 400px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -134,12 +136,21 @@ body {
 
 .locationModel .countryList li button {
   width: 100%;
-  text-transform: capitalize !important;
   color: var(--main-color);
-  justify-content: flex-start;
+  justify-content: space-between;
   border-radius: 10px;
   margin-bottom: 5px;
   padding: 10px 15px;
+}
+
+.locationModel .countryList li button .cityName {
+  text-transform: capitalize !important;
+  font-size: 16px;
+}
+
+.locationModel .countryList li button .shippingPrice {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
 }
 
 .locationModel .MuiPaper-elevation .headerSearch {

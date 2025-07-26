@@ -2,15 +2,20 @@ import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
 
 import Logo from '../../Assets/images/logo.png';
+import Navigation from './Navigation';
+import { useContext } from 'react';
+import { MyContext } from '../../App';
 import CountryDropdown from '../CountryDropdown';
 import SearchBox from './SearchBox';
 
 import { FaRegUser } from "react-icons/fa";
 import { IoBagOutline } from "react-icons/io5";
-import Navigation from './Navigation';
 
 
 const Header = ()=>{
+    
+    const context = useContext(MyContext);
+
     return(
         <>
             <div className="headerWrapper">
@@ -28,7 +33,7 @@ const Header = ()=>{
                             </div>
                             
                             <div className='d-flex align-items-center col-sm-10 part2'>
-                                <CountryDropdown />
+                                { context.egyptCities.length !== 0 && <CountryDropdown /> }
                                 <SearchBox />
                                 <div className='part3 d-flex align-items-center ml-auto'>
                                     <Button className='circle mr-3'><FaRegUser /></Button>

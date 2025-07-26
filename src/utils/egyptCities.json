@@ -1,0 +1,12 @@
+[
+  { "city": "Cairo", "shippingPrice": 30 },
+  { "city": "Alexandria", "shippingPrice": 35 },
+  { "city": "Giza", "shippingPrice": 28 },
+  { "city": "Tanta", "shippingPrice": 40 },
+  { "city": "Suez", "shippingPrice": 38 },
+  { "city": "Ismailia", "shippingPrice": 36 },
+  { "city": "Minya", "shippingPrice": 42 },
+  { "city": "Zagazig", "shippingPrice": 37 },
+  { "city": "Banha", "shippingPrice": 33 },
+  { "city": "Luxor", "shippingPrice": 50 }
+]
