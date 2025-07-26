@@ -296,6 +296,92 @@ nav .allCatTab .icon2 svg {
   font-size: 15px !important;
 }
 
+nav .allCatTab .icon-transition {
+  display: inline-block;
+  position: relative;
+}
+
+nav .allCatTab .icon-fade {
+  opacity: 0;
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+nav .navPart1 .catWrapper {
+  position: relative;
+}
+
+nav .navPart1 .catWrapper .sideBarNav {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: unset;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #fff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 16px;
+  transition: all ease-in-out 0.3s;
+}
+
+nav .navPart1 .catWrapper .sideBarNav.open {
+  height: auto;
+  opacity: 1;
+  visibility: inherit;
+}
+
+nav .navPart1 .catWrapper .sideBarNav .catListSided {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 50vh;
+  padding: 0px !important;
+  margin: 0px !important;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+nav .navPart1 .catWrapper .sideBarNav .catListSided li {
+  width: 95%;
+}
+
+nav .navPart1 .catWrapper .sideBarNav .catListSided li a {
+  text-decoration: none;
+}
+
+nav .navPart1 .catWrapper .sideBarNav .catListSided li button {
+  width: 100%;
+  justify-content: flex-start;
+  font-size: 14px;
+  text-transform: capitalize !important;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0px;
+  border-radius: 16px;
+  transition: ease-in-out all 0.3s;
+}
+
+nav .navPart1 .catWrapper .sideBarNav .catListSided li button:hover,
+nav .navPart1 .catWrapper .sideBarNav .catListSided .active button {
+  background-color: #f0faff;
+  color: var(--main-color);
+}
+
+nav .navPart1 .catWrapper .sideBarNav .catListSided li button svg {
+  font-size: 18px;
+}
+
 nav .navPart2 ul {
   width: 100%;
   padding: 0 5px;
@@ -327,3 +413,4 @@ nav .navPart2 .active a button {
   background-color: #f0faff;
   color: var(--main-color);
 }
+
