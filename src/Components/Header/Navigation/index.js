@@ -26,7 +26,6 @@ const Navigation = ()=>{
                                     <span className='icon1 mr-2'><IoIosMenu/></span>
                                     <span className='text'>All Categories</span>
                                     <span className='icon2 ml-2 icon-transition'>{isOpenSideBarNav ? <FaAngleUp key="up" className="icon-fade" /> : <FaAngleDown key="down" className="icon-fade" />}</span>
-                                    {/* <span className={`icon2 ml-2 ${isOpenSideBarNav}`}>{isOpenSideBarNav ? <FaAngleUp /> : <FaAngleDown />}</span>                                 */}
                                 </Button>
                                 <div className={`sideBarNav ${isOpenSideBarNav === true ? 'open' : ''}`}>
                                     <ul className='catListSided'>
