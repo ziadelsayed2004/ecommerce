@@ -11,7 +11,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
 }
 ::-webkit-scrollbar-track {
   background: linear-gradient(180deg, rgba(211, 214, 241, 0.5), rgba(191, 194, 236, 0.5));
@@ -19,13 +19,16 @@
 }
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(180deg, rgba(44, 44, 138,0.5), rgba(26, 26, 92, 0.5));
-  border-radius: 6px;
+  border-radius: 0px 6px 6px 0px;
   transition: background 0.3s ease-in-out;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, rgba(64, 64, 176, 0.8), rgba(37, 37, 122, 0.8));
 }
 
+body ::-webkit-scrollbar-thumb {
+border-radius: 6px;
+}
 
 body {
   font-family: Dosis, sans-serif !important;
@@ -421,8 +424,7 @@ nav .navPart2 .active a button {
 
 .homeBannerSection {
   width: 100%;
-  margin: 0 auto;
-  padding: 20px;
+  margin: 20px auto;
   position: relative;
   overflow: hidden;
 }
@@ -432,7 +434,7 @@ nav .navPart2 .active a button {
 }
 
 .slick-prev, .slick-next {
-  z-index: 100;
+  z-index: 50;
   width: 40px;
   height: 40px;
   border-radius: 50%;
