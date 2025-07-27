@@ -1,15 +1,16 @@
-import React from "react";
 import Slider from "react-slick";
 import BannerImg from "../../assets/images/HomeBanner.png"
 
 const HomeBanner = () => {
+
     var settings = {
         dots: false,
+        arrows:true,
         infinite: true,
+        autoplay: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows:true
+        slidesToScroll: 1
     };
   
     return(
