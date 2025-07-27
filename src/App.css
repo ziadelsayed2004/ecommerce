@@ -1,6 +1,9 @@
 *{margin: 0px; padding: 0px;}
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css');
+
 
 :root{
   --main-color: rgb(40, 40, 130);
@@ -328,6 +331,7 @@ nav .navPart1 .catWrapper .sideBarNav {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
   margin-top: 10px;
   padding: 10px;
+  z-index: 100;
   border-radius: 16px;
   transition: all ease-in-out 0.3s;
 }
@@ -413,4 +417,44 @@ nav .navPart2 li a button:hover,
 nav .navPart2 .active a button {
   background-color: #f0faff;
   color: var(--main-color);
+}
+
+
+.homeBannerSection {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.homeBannerSection img {
+  user-select: none;
+}
+
+.slick-prev, .slick-next {
+  z-index: 100;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-prev::before, .slick-next::before {
+  color: var(--main-color) !important;
+  font-size: 30px;
+  transition: all ease-in-out 0.3s;
+}
+
+.slick-prev::before:hover, .slick-next::before:hover {
+  color: var(--main-color-hover);
+}
+
+.slick-prev {
+  left: -5vw !important;
+}
+.slick-next {
+  right: -5vw !important;
 }
