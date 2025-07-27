@@ -28,7 +28,7 @@ const Navigation = ()=>{
                                     <span className='icon2 ml-2 icon-transition'>{isOpenSideBarNav ? <FaAngleUp key="up" className="icon-fade" /> : <FaAngleDown key="down" className="icon-fade" />}</span>
                                 </Button>
                                 <div className={`sideBarNav ${isOpenSideBarNav === true ? 'open' : ''}`}>
-                                    <ul className='catListSided'>
+                                    <ul className='catListSided list-inline'>
                                         <li className='list-inline-item'><Link to='/'><Button><BiCategoryAlt />&nbsp; Category 1</Button></Link></li>
                                         <li className='list-inline-item'><Link to='/'><Button><BiCategoryAlt />&nbsp; Category 2</Button></Link></li>
                                         <li className='list-inline-item'><Link to='/'><Button><BiCategoryAlt />&nbsp; Category 3</Button></Link></li>
