@@ -38,6 +38,10 @@ body {
   background-color: #c1e1ff !important;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 @media (min-width: 1300px){
   .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1200px;
@@ -466,4 +470,55 @@ nav .navPart2 .active a button {
 }
 .slick-next {
   right: -5vw !important;
+}
+
+.homeProducts {
+  padding: 25px 0px;
+  width: 100%;
+}
+
+
+.homeProducts .banner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.homeProducts .banner img{
+  width: 100% !important;
+}
+
+.homeProducts .BestProducts {
+  padding: 25px;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+}
+
+.homeProducts .ProductRow .BestProducts .info h3 {
+  color: var(--main-color);
+  margin-bottom: 0px;
+}
+
+.homeProducts .ProductRow .BestProducts .info p {
+  color: #5d5d5d;
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+
+.homeProducts .ProductRow .BestProducts .ViewAllBtn {
+  padding: 8px 15px !important;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  transition: all ease-in-out 0.3s;
+}
+
+.homeProducts .ProductRow .BestProducts .ViewAllBtn:hover {
+  background-color: #f0faff;
+  color: var(--main-color);
+}
+
+.homeProducts .ProductRow .BestProducts .ViewAllBtn svg{
+  margin-left: 5px;
+  font-size: 14px;
 }
