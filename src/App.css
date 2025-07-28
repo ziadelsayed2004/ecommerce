@@ -465,10 +465,10 @@ nav .navPart2 .active a button {
   color: var(--main-color-hover);
 }
 
-.slick-prev {
+.homeBannerSection .slick-prev {
   left: -5vw !important;
 }
-.slick-next {
+.homeBannerSection .slick-next {
   right: -5vw !important;
 }
 
@@ -476,7 +476,6 @@ nav .navPart2 .active a button {
   padding: 25px 0px;
   width: 100%;
 }
-
 
 .homeProducts .banner {
   width: 100%;
@@ -487,10 +486,10 @@ nav .navPart2 .active a button {
   width: 100% !important;
 }
 
-.homeProducts .BestProducts {
-  padding: 25px;
+.homeProducts .ProductRow {
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 25px;
+  padding: 25px;
 }
 
 .homeProducts .ProductRow .BestProducts .info h3 {
@@ -523,3 +522,58 @@ nav .navPart2 .active a button {
   margin-left: 5px;
   font-size: 14px;
 }
+
+.homeProducts .ProductRow .slick-prev {
+  left: -5px !important;
+}
+
+.homeProducts .ProductRow .slick-next {
+  right: -5px !important;
+}
+
+.homeProducts .ProductRow .slick-slide {
+  padding: 0 15px;
+}
+
+.homeProducts .ProductRow .productItem {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  margin: 30px 0px;
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.homeProducts .ProductRow .productItem img {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  border-radius: 16px;
+}
+
+.homeProducts .ProductRow .productItem h4 {
+  margin: 5px 0px 0px 0px;
+  font-size: 18px;
+}
+
+.homeProducts .ProductRow .productItem span {
+  font-size: 12px;
+  margin: 0px;
+}
+
+.homeProducts .ProductRow .productItem .oldPrice{
+  text-decoration: line-through;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.homeProducts .ProductRow .productItem .netPrice{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+
+
+
