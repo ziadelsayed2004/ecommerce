@@ -51,7 +51,25 @@ const Home = () =>{
                                     <ProductItem />
                                 </Slider>
                             </div>
-                        
+
+                            <div className="d-flex align-items-center BestProducts pt-5 mt-5">
+                                <div className="info w-60">
+                                    <h3>New Products</h3>
+                                    <p>Do not miss the new items we published !</p>
+                                </div>
+                                <Button className='ViewAllBtn ml-auto'>View All<FaArrowRightLong /></Button>
+                            </div>
+
+                            <div className="prduct_row w-100">
+                                <Slider className="productSlider" {...ProductSliderOptions}>
+                                    <ProductItem />
+                                    <ProductItem />
+                                    <ProductItem />
+                                    <ProductItem />
+                                    <ProductItem />
+                                    <ProductItem />
+                                </Slider>
+                            </div>
                         </div>
                     </div>
                 </div>
