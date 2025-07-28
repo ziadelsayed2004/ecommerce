@@ -577,7 +577,7 @@ nav .navPart2 .active a button {
   visibility: hidden;
   opacity: 0;
   top: 2.5%;
-  right: 2.5%;
+  right: 0%;
   gap: 0.5vh;
   flex-direction: column;
   transition: all ease-in-out 0.3s;
@@ -586,6 +586,7 @@ nav .navPart2 .active a button {
 .homeProducts .ProductRow .productItem:hover .imgWrapper .actions {
   visibility: visible;
   opacity: 1;
+  right: 2.5%;
 }
 
 .homeProducts .ProductRow .productItem .imgWrapper .actions button {
