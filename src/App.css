@@ -551,6 +551,11 @@ nav .navPart2 .active a button {
   margin: 30px 0px;
   border: 1px solid rgba(0, 0, 0, 0.075);
   border-radius: 16px;
+  transition: all ease-in-out 0.3s;
+}
+
+.homeProducts .ProductRow .productItem:hover{
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
 }
 
 .homeProducts .ProductRow .productItem .imgWrapper{
@@ -611,13 +616,19 @@ nav .navPart2 .active a button {
 }
 
 .homeProducts .ProductRow .productItem img {
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.075);
   padding: 10px;
   border-radius: 16px;
+  transition: all ease-in-out 0.3s;
+}
+
+.homeProducts .ProductRow .productItem:hover .imgWrapper img{
+  transform: scale(1.025);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
 }
 
 .homeProducts .ProductRow .productItem h4 {
-  margin: 5px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
   font-size: 18px;
 }
 
@@ -637,4 +648,3 @@ nav .navPart2 .active a button {
   font-size: 18px;
   font-weight: 600;
 }
-
