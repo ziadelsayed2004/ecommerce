@@ -8,7 +8,7 @@ const HomeBanner = () => {
         arrows:true,
         infinite: true,
         autoplay: true,
-        speed: 500,
+        speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
         swipe: true,
@@ -20,19 +20,19 @@ const HomeBanner = () => {
         <>
             <div className="homeBannerSection">
                 <div className="container">
-                <Slider {...settings}>
-                    <div className="item">
-                    <img className="w-100" src={BannerImg} alt="Banner" />
-                    </div>
-                    <div className="item">
-                    <img className="w-100" src={BannerImg} alt="Banner" />
-                    </div>
-                    <div className="item">
-                    <img className="w-100" src={BannerImg} alt="Banner" />
-                    </div>
-                </Slider>
+                    <Slider {...settings}>
+                        <div className="item">
+                            <img className="w-100" src={BannerImg} alt="Banner" />
+                        </div>
+                        <div className="item">
+                            <img className="w-100" src={BannerImg} alt="Banner" />
+                        </div>
+                        <div className="item">
+                            <img className="w-100" src={BannerImg} alt="Banner" />
+                        </div>
+                    </Slider>
                 </div>
-                </div>
+            </div>
 
         </>
     )

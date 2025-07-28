@@ -1,11 +1,10 @@
 import Slider from "react-slick";
 import Button from '@mui/material/Button';
-import Rating from '@mui/material/Rating';
 import HomeBanner from "../../Components/HomeBanner";
 
-import Logo from "../../assets/images/logo.png";
 import ProductImg from "../../assets/images/ProductBanner.png";
 import { FaArrowRightLong } from "react-icons/fa6";
+import ProductItem from "../../Components/ProductItem";
 
 const Home = () =>{
 
@@ -14,8 +13,8 @@ const Home = () =>{
         arrows: true,
         infinite: false,
         speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 2,
+        slidesToShow:3,
+        slidesToScroll: 1,
         swipe: true,
         touchMove: true,
         draggable: true,
@@ -44,78 +43,12 @@ const Home = () =>{
 
                             <div className="prduct_row w-100">
                                 <Slider className="productSlider" {...ProductSliderOptions}>
-                                    <div className="item productItem">
-                                        <div className="imgWrapper">
-                                            <img className="w-100" src={Logo} alt="ProductImg"></img>
-                                        </div>
-                                        <h4>Product Name</h4>
-                                        <span className="text-success d-block">In Stock</span>
-                                        <Rating name="read-only" value={4.5} precision={0.5} readOnly />
-                                        <div className="d-flex align-items-center">
-                                            <span className="oldPrice">$20.00</span>
-                                            <span className="netPrice text-danger ml-2">$12.50</span>
-                                        </div>
-                                    </div>
-                                    <div className="item productItem">
-                                        <div className="imgWrapper">
-                                            <img className="w-100" src={Logo} alt="ProductImg"></img>
-                                        </div>
-                                        <h4>Product Name</h4>
-                                        <span className="text-success d-block">In Stock</span>
-                                        <Rating name="read-only" value={4.5} precision={0.5} readOnly />
-                                        <div className="d-flex align-items-center">
-                                            <span className="oldPrice">$20.00</span>
-                                            <span className="netPrice text-danger ml-2">$12.50</span>
-                                        </div>
-                                    </div>
-                                    <div className="item productItem">
-                                        <div className="imgWrapper">
-                                            <img className="w-100" src={Logo} alt="ProductImg"></img>
-                                        </div>
-                                        <h4>Product Name</h4>
-                                        <span className="text-success d-block">In Stock</span>
-                                        <Rating name="read-only" value={4.5} precision={0.5} readOnly />
-                                        <div className="d-flex align-items-center">
-                                            <span className="oldPrice">$20.00</span>
-                                            <span className="netPrice text-danger ml-2">$12.50</span>
-                                        </div>
-                                    </div>
-                                    <div className="item productItem">
-                                        <div className="imgWrapper">
-                                            <img className="w-100" src={Logo} alt="ProductImg"></img>
-                                        </div>
-                                        <h4>Product Name</h4>
-                                        <span className="text-success d-block">In Stock</span>
-                                        <Rating name="read-only" value={4.5} precision={0.5} readOnly />
-                                        <div className="d-flex align-items-center">
-                                            <span className="oldPrice">$20.00</span>
-                                            <span className="netPrice text-danger ml-2">$12.50</span>
-                                        </div>
-                                    </div>
-                                    <div className="item productItem">
-                                        <div className="imgWrapper">
-                                            <img className="w-100" src={Logo} alt="ProductImg"></img>
-                                        </div>
-                                        <h4>Product Name</h4>
-                                        <span className="text-success d-block">In Stock</span>
-                                        <Rating name="read-only" value={4.5} precision={0.5} readOnly />
-                                        <div className="d-flex align-items-center">
-                                            <span className="oldPrice">$20.00</span>
-                                            <span className="netPrice text-danger ml-2">$12.50</span>
-                                        </div>
-                                    </div>
-                                    <div className="item productItem">
-                                        <div className="imgWrapper">
-                                            <img className="w-100" src={Logo} alt="ProductImg"></img>
-                                        </div>
-                                        <h4>Product Name</h4>
-                                        <span className="text-success d-block">In Stock</span>
-                                        <Rating name="read-only" value={4.5} precision={0.5} readOnly />
-                                        <div className="d-flex align-items-center">
-                                            <span className="oldPrice">$20.00</span>
-                                            <span className="netPrice text-danger ml-2">$12.50</span>
-                                        </div>
-                                    </div>
+                                    <ProductItem />
+                                    <ProductItem />
+                                    <ProductItem />
+                                    <ProductItem />
+                                    <ProductItem />
+                                    <ProductItem />
                                 </Slider>
                             </div>
                         

@@ -42,6 +42,10 @@ body {
   cursor: pointer;
 }
 
+.slick-slider *:focus {
+  outline: none !important;
+}
+
 @media (min-width: 1300px){
   .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1200px;
@@ -436,13 +440,16 @@ nav .navPart2 .active a button {
 
 .homeBannerSection {
   width: 100%;
-  margin: 10px auto;
   position: relative;
   overflow: hidden;
 }
 
 .homeBannerSection img {
+  padding: 0 7.5% 15px 7.5%;
   user-select: none;
+  user-select: none;
+  outline: none;
+  border: 0px transparent;
 }
 
 .slick-prev, .slick-next {
@@ -517,6 +524,7 @@ nav .navPart2 .active a button {
 .homeProducts .ProductRow .BestProducts .ViewAllBtn:hover {
   background-color: #f0faff;
   color: var(--main-color);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px;
 }
 
 .homeProducts .ProductRow .BestProducts .ViewAllBtn svg{
@@ -543,7 +551,62 @@ nav .navPart2 .active a button {
   margin: 30px 0px;
   border: 1px solid rgba(0, 0, 0, 0.075);
   border-radius: 16px;
-  cursor: pointer;
+}
+
+.homeProducts .ProductRow .productItem .imgWrapper{
+  position: relative;
+}
+
+.homeProducts .ProductRow .productItem .imgWrapper .badge-primary {
+  position: absolute;
+  top: -4%;
+  left: -4%;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 10px;
+  align-content: center;
+  color: var(--main-color);
+  font-weight: 800;
+  background-color: #f0faff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px;
+}
+
+.homeProducts .ProductRow .productItem .imgWrapper .actions {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  top: 2.5%;
+  right: 2.5%;
+  gap: 0.5vh;
+  flex-direction: column;
+  transition: all ease-in-out 0.3s;
+}
+
+.homeProducts .ProductRow .productItem:hover .imgWrapper .actions {
+  visibility: visible;
+  opacity: 1;
+}
+
+.homeProducts .ProductRow .productItem .imgWrapper .actions button {
+  min-width: 32.5px !important;
+  height: 32.5px !important;
+  width: 32.5px !important;
+  border-radius: 50% !important;
+  color: rgba(0, 0, 0, 0.75);
+  background-color: #f0faff;
+  transition: all ease-in-out 0.3s;
+}
+
+.homeProducts .ProductRow .productItem .imgWrapper .actions button:hover {
+  color: var(--main-color);
+  background-color: #c1e1ff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+}
+
+.homeProducts .ProductRow .productItem .imgWrapper .actions button svg{
+  font-size: 16.25px;
+  font-weight: 600;
 }
 
 .homeProducts .ProductRow .productItem img {
@@ -573,8 +636,4 @@ nav .navPart2 .active a button {
   font-size: 18px;
   font-weight: 600;
 }
-
-
-
-
 
