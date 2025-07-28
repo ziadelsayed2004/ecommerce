@@ -19,7 +19,7 @@ const Home = () =>{
                         </div>
                         <div className="col-md-9 ProductRow">
                             <div className="d-flex align-items-center BestProducts">
-                                <div className="info w-75">
+                                <div className="info w-60">
                                     <h3>Best Seller</h3>
                                     <p>Do not miss the current offers and sales !</p>
                                 </div>
