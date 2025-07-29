@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import HomeBanner from "../../Components/HomeBanner";
 
 import ProductImg from "../../assets/images/ProductBanner.png";
+import NewProductImg from "../../assets/images/NewProductBanner.png";
 import { FaArrowRightLong } from "react-icons/fa6";
 import ProductItem from "../../Components/ProductItem";
 
@@ -29,10 +30,15 @@ const Home = () =>{
                     <div className="row">
                         <div className="col-md-3">
                             <div className="banner">
-                                <img src={ProductImg} className="cursor-pointer" alt="ProductBanner" />
+                                <img src={ProductImg} alt="ProductBanner" />
+                                <Button className='ExploreNowBtn'>Explore Now</Button>
+                            </div>
+                            <div className="banner">
+                                <img src={NewProductImg} className="pt-5" alt="NewProductBanner" />
+                                <Button className='ExploreNewBtn'>Explore Now</Button>
                             </div>
                         </div>
-                        <div className="col-md-9 ProductRow">
+                        <div className="col-md-9 ProductRow pt-5 mt-5">
                             <div className="d-flex align-items-center BestProducts">
                                 <div className="info w-60">
                                     <h3>Best Sellers</h3>

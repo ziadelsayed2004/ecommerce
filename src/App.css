@@ -487,6 +487,41 @@ nav .navPart2 .active a button {
 .homeProducts .banner {
   width: 100%;
   overflow: hidden;
+  position: relative;
+}
+
+.homeProducts .banner .ExploreNowBtn {
+  position: absolute;
+  bottom: 7.5%;
+  left: 35%;
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 3px 15px;
+  transition: all ease-in-out 0.3s;
+}
+
+.homeProducts .banner .ExploreNowBtn:hover {
+  background-color: var(--main-color-hover);
+}
+
+.homeProducts .banner .ExploreNewBtn {
+  position: absolute;
+  bottom: 2.5%;
+  left: 25%;
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 3px 15px;
+  transition: all ease-in-out 0.3s;
+}
+
+.homeProducts .banner .ExploreNewBtn:hover {
+  background-color: var(--main-color-hover);
 }
 
 .homeProducts .banner img{
