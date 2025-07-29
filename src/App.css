@@ -493,7 +493,7 @@ nav .navPart2 .active a button {
 .homeProducts .banner .ExploreNowBtn {
   position: absolute;
   bottom: 7.5%;
-  left: 35%;
+  left: 40%;
   background-color: var(--main-color);
   color: #fff;
   border-radius: 16px;
