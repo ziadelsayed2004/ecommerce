@@ -1,6 +1,7 @@
 import Slider from "react-slick";
 import Button from '@mui/material/Button';
 import HomeBanner from "../../Components/HomeBanner";
+import HomeCat from "../../Components/HomeCat";
 
 import ProductImg from "../../assets/images/ProductBanner.png";
 import NewProductImg from "../../assets/images/NewProductBanner.png";
@@ -23,8 +24,9 @@ const Home = () =>{
 
     return(
         <>
-            <HomeBanner />
-
+            <HomeBanner />                        
+            <HomeCat />
+            
             <section className="homeProducts">
                 <div className="container">
                     <div className="row">

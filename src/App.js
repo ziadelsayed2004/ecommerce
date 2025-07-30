@@ -2,10 +2,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import React, { useEffect } from 'react';
 import { createContext } from 'react';
 
-
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Pages/Home';
+import About from './Pages/About';
 import Header from './Components/Header';
 import citiesData from './utils/egyptCities.json';
 
@@ -30,6 +30,7 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' exact={true} element={<Home />} />
+          <Route path='/About' exact={true} element={<About />} />
         </Routes>
       </MyContext.Provider>
     </BrowserRouter>

@@ -46,13 +46,13 @@ body {
   outline: none !important;
 }
 
-@media (min-width: 1300px){
+@media (min-width: 1300px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1200px;
   }
 }
 
-@media (max-width: 787px){
+@media (max-width: 787px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
     padding-left: 0px !important;
     padding-right: 0px !important;
@@ -142,7 +142,7 @@ body {
   background-color: rgba(234, 44, 15, 0.1);
 }
 
-.locationModel .close_ svg{
+.locationModel .close_ svg {
   font-size: 22px !important;
 }
 
@@ -334,7 +334,6 @@ nav .allCatTab .icon-fade {
   }
 }
 
-
 nav .navPart1 .catWrapper {
   position: relative;
 }
@@ -412,11 +411,11 @@ nav .navPart2 ul {
   margin-bottom: 0px;
 }
 
-nav .navPart2 li a{
+nav .navPart2 li a {
   text-decoration: none;
 }
 
-nav .navPart2 li a button{
+nav .navPart2 li a button {
   font-size: 14px;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.75);
@@ -479,6 +478,54 @@ nav .navPart2 .active a button {
   right: -5vw !important;
 }
 
+.CatSlider {
+  padding: 20px 30px;
+}
+
+.CatSlider .slick-slide {
+  padding: 25px;
+}
+
+.CatSlider .slick-slide div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CatSlider .item {
+  width: 50% !important;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #f0faff;
+  flex-direction: column;
+  align-items: center;
+  transition: all ease-in-out 0.3s;
+}
+
+.CatSlider .item:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.CatSlider .item img {
+  width: 75%;
+  transition: all ease-in-out 0.3s;
+}
+
+.CatSlider .item:hover img {
+  scale: 1.1;
+}
+
+.CatSlider .item h6 {
+  color: rgba(0, 0, 0, 0.75);
+  transition: all ease-in-out 0.3s;
+}
+
+.CatSlider .item:hover h6 {
+  color: var(--main-color);
+}
+
 .homeProducts {
   padding: 25px 0px;
   width: 100%;
@@ -504,6 +551,7 @@ nav .navPart2 .active a button {
 }
 
 .homeProducts .banner .ExploreNowBtn:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
   background-color: var(--main-color-hover);
 }
 
@@ -521,10 +569,11 @@ nav .navPart2 .active a button {
 }
 
 .homeProducts .banner .ExploreNewBtn:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
   background-color: var(--main-color-hover);
 }
 
-.homeProducts .banner img{
+.homeProducts .banner img {
   width: 100% !important;
 }
 
@@ -560,9 +609,10 @@ nav .navPart2 .active a button {
   background-color: #f0faff;
   color: var(--main-color);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px;
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 
-.homeProducts .ProductRow .BestProducts .ViewAllBtn svg{
+.homeProducts .ProductRow .BestProducts .ViewAllBtn svg {
   margin-left: 5px;
   font-size: 14px;
 }
@@ -589,11 +639,12 @@ nav .navPart2 .active a button {
   transition: all ease-in-out 0.3s;
 }
 
-.homeProducts .ProductRow .productItem:hover{
+.homeProducts .ProductRow .productItem:hover {
+  border: 1px solid rgba(0, 0, 0, 0);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
 }
 
-.homeProducts .ProductRow .productItem .imgWrapper{
+.homeProducts .ProductRow .productItem .imgWrapper {
   position: relative;
 }
 
@@ -645,7 +696,7 @@ nav .navPart2 .active a button {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
 }
 
-.homeProducts .ProductRow .productItem .imgWrapper .actions button svg{
+.homeProducts .ProductRow .productItem .imgWrapper .actions button svg {
   font-size: 16.25px;
   font-weight: 600;
 }
@@ -657,7 +708,7 @@ nav .navPart2 .active a button {
   transition: all ease-in-out 0.3s;
 }
 
-.homeProducts .ProductRow .productItem:hover .imgWrapper img{
+.homeProducts .ProductRow .productItem:hover .imgWrapper img {
   transform: scale(1.025);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
 }
@@ -672,14 +723,14 @@ nav .navPart2 .active a button {
   margin: 0px;
 }
 
-.homeProducts .ProductRow .productItem .oldPrice{
+.homeProducts .ProductRow .productItem .oldPrice {
   text-decoration: line-through;
   font-size: 16px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.3);
 }
 
-.homeProducts .ProductRow .productItem .netPrice{
+.homeProducts .ProductRow .productItem .netPrice {
   font-size: 18px;
   font-weight: 600;
 }
