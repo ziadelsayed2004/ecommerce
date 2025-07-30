@@ -11,15 +11,31 @@ import ProductItem from "../../Components/ProductItem";
 const Home = () =>{
 
     var ProductSliderOptions = {
-        dots: false,
-        arrows: true,
-        infinite: false,
-        speed: 500,
-        slidesToShow:3,
-        slidesToScroll: 1,
-        swipe: true,
-        touchMove: true,
-        draggable: true,
+    dots: false,
+    arrows: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    swipe: true,
+    touchMove: true,
+    draggable: true,
+    responsive: [
+        {
+        breakpoint: 1200,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+        },
+        },
+        {
+        breakpoint: 768,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        },
+        },
+    ],
     };
 
     return(
@@ -40,7 +56,7 @@ const Home = () =>{
                                 <Button className='ExploreNewBtn'>Explore Now</Button>
                             </div>
                         </div>
-                        <div className="col-md-9 ProductRow pt-5 mt-5">
+                        <div className="col-md-9 ProductRow pt-5">
                             <div className="d-flex align-items-center BestProducts">
                                 <div className="info w-60">
                                     <h3>Best Sellers</h3>
@@ -60,7 +76,7 @@ const Home = () =>{
                                 </Slider>
                             </div>
 
-                            <div className="d-flex align-items-center BestProducts pt-5 mt-5">
+                            <div className="d-flex align-items-center BestProducts pt-5">
                                 <div className="info w-60">
                                     <h3>New Products</h3>
                                     <p>Do not miss the new items we published !</p>
@@ -82,6 +98,8 @@ const Home = () =>{
                     </div>
                 </div>
             </section>
+
+            
         </>
     )
 }
