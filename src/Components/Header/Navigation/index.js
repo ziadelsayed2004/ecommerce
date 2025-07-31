@@ -11,7 +11,6 @@ import { BiCategoryAlt } from "react-icons/bi";
 import { RiBloggerLine } from "react-icons/ri";
 import { FaRegPaperPlane } from "react-icons/fa";
 
-
 const Navigation = ()=>{
     const [isOpenSideBarNav, setIsOpenSideBarNav] = React.useState(false);
 

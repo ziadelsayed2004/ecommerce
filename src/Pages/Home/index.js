@@ -2,13 +2,14 @@ import Slider from "react-slick";
 import Button from '@mui/material/Button';
 import HomeBanner from "../../Components/HomeBanner";
 import HomeCat from "../../Components/HomeCat";
-
+import ProductItem from "../../Components/ProductItem";
+import Footer from "../../Components/Footer";
 import ProductImg from "../../assets/images/ProductBanner.png";
 import NewProductImg from "../../assets/images/NewProductBanner.png";
 import newsLetter from "../../assets/images/newsLetter.png";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
-import ProductItem from "../../Components/ProductItem";
+
 
 const Home = () =>{
 
@@ -122,6 +123,7 @@ const Home = () =>{
                 </div>
             </section>
 
+            <Footer />
         </>
     )
 }

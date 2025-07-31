@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
-
-import Logo from '../../assets/images/logo.png';
-import Navigation from './Navigation';
 import { useContext } from 'react';
+
 import { MyContext } from '../../App';
+import Navigation from './Navigation';
 import CountryDropdown from '../CountryDropdown';
 import SearchBox from './SearchBox';
 
+import Logo from '../../assets/images/logo.png';
 import { FaRegUser } from "react-icons/fa";
 import { IoBagOutline } from "react-icons/io5";
 

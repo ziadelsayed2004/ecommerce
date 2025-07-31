@@ -3,6 +3,7 @@ import Rating from '@mui/material/Rating';
 import Logo from "../../assets/images/logo.png";
 import { SlSizeFullscreen } from "react-icons/sl";
 import { GrFavorite } from "react-icons/gr";
+
 const ProductItem = () => {
     return(
         <>
