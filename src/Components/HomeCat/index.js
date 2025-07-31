@@ -43,6 +43,8 @@ const HomeCat = () => {
         <>
             <section className="homeCat">
                 <div className="container">
+                    <h3>Categories</h3>
+                    <p>Chech Our Featured Categories</p>
                     <Slider className="CatSlider w-100" {...CatSlider}>
                         <div className="item d-flex justify-content-center cursor-pointer">
                             <img src={CatImg} alt="CatImg" />

@@ -11,7 +11,6 @@ import SearchBox from './SearchBox';
 import { FaRegUser } from "react-icons/fa";
 import { IoBagOutline } from "react-icons/io5";
 
-
 const Header = ()=>{
     
     const context = useContext(MyContext);

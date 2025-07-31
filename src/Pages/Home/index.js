@@ -5,7 +5,9 @@ import HomeCat from "../../Components/HomeCat";
 
 import ProductImg from "../../assets/images/ProductBanner.png";
 import NewProductImg from "../../assets/images/NewProductBanner.png";
+import newsLetter from "../../assets/images/newsLetter.png";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { MdOutlineMailOutline } from "react-icons/md";
 import ProductItem from "../../Components/ProductItem";
 
 const Home = () =>{
@@ -99,7 +101,27 @@ const Home = () =>{
                 </div>
             </section>
 
-            
+            <section className="newsLetterSection mt-3 mb-3">
+                <div className="container d-flex align-items-center w-100">
+                    <div className="row w-100 align-items-center">
+                        <div className="col-md-6">
+                            <p className="text-white mb-0">$20 discount for your first order</p>
+                            <h3 className="text-white">Join our news letter and get...</h3>
+                            <p className="text-gray">Join our email subscription now to get updateson <br/>promotions and coupons.</p>
+                            <form>
+                                <MdOutlineMailOutline />
+                                <input type="text" placeholder="Your Email Address" />
+                                <Button>Subscripe</Button>
+                            </form>
+                        </div>
+
+                        <div className="col-md-6">
+                            <img className="w-100" src={newsLetter} alt="newsLetter"></img>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </>
     )
 }
