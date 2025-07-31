@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Header from './Components/Header';
+import Footer from "./Components/Footer";
 import citiesData from './utils/egyptCities.json';
 
 const MyContext = createContext();
@@ -32,6 +33,7 @@ function App() {
           <Route path='/' exact={true} element={<Home />} />
           <Route path='/About' exact={true} element={<About />} />
         </Routes>
+        <Footer />
       </MyContext.Provider>
     </BrowserRouter>
   );

@@ -3,7 +3,6 @@ import Button from '@mui/material/Button';
 import HomeBanner from "../../Components/HomeBanner";
 import HomeCat from "../../Components/HomeCat";
 import ProductItem from "../../Components/ProductItem";
-import Footer from "../../Components/Footer";
 import ProductImg from "../../assets/images/ProductBanner.png";
 import NewProductImg from "../../assets/images/NewProductBanner.png";
 import newsLetter from "../../assets/images/newsLetter.png";
@@ -122,8 +121,6 @@ const Home = () =>{
                     </div>
                 </div>
             </section>
-
-            <Footer />
         </>
     )
 }
