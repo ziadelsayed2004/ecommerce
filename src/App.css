@@ -780,6 +780,10 @@ nav .navPart2 .active a button {
   background: linear-gradient(180deg, rgba(40, 40, 130, 0.85),  rgba(193, 225, 255, 0.85));
 }
 
+.newsLetterSection .container .row {
+  margin: 0px !important;
+}
+
 .newsLetterSection .container p {
   font-weight: 500;
   font-size: 16px;
@@ -850,5 +854,4 @@ nav .navPart2 .active a button {
   position: relative;
   bottom: 0px;
   right: 0px;
-  max-width: calc(50vw - 20px);
 }
