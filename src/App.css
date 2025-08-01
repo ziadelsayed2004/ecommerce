@@ -89,7 +89,8 @@ body {
 
 .logoWrapper img {
   user-select: none;
-  width: 90%;
+  outline: none;
+  border: 0px transparent;  width: 90%;
   max-width: 170px;
   margin-right: 10%;
 }
@@ -449,7 +450,6 @@ nav .navPart2 .active a button {
 
 .homeBannerSection img {
   padding: 0 7.5% 15px 7.5%;
-  user-select: none;
   user-select: none;
   outline: none;
   border: 0px transparent;
@@ -941,3 +941,11 @@ footer .container .topInfo .topInfoItem:hover span {
   color: var(--main-color-hover);
 }
 
+@media (max-width: 576px){
+  footer .container .topInfo .topInfoItem {
+    width: calc(100% - 15px);
+    margin: 10px 15px;
+    flex-basis: auto !important;
+    flex-grow: 3 !important;
+  }
+}
