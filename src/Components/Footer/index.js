@@ -38,7 +38,7 @@ const Footer = () => {
                                 <Link target="_blank" to="https://wa.me/201020572730"><FaWhatsappSquare /></Link>
                             </li>
                         </ul>
-                        <p className="col-12"><Link target="_blank" to="mailto:ziadelsayed2004@gmail.com">Copyright 2025 © Ziad Elsayed<br/>All Right Reserved <span>-</span> Powered By Ziad Elsayed<br/>E-Commerce App Using &#123; Node & Express & React &#125;</Link></p>
+                        <p className="col-12"><Link target="_blank" to="mailto:ziadelsayed2004@gmail.com">Copyright 2025 © Ziad Elsayed<br/>All Right Reserved <span>~</span> Powered By Ziad Elsayed</Link></p>
                     </div>
                 </div>
             </footer>

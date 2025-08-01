@@ -860,6 +860,7 @@ footer {
   width: 100%;
   height: auto;
   background-color: #fff;
+  border-radius: 16px;
   padding: 0px;
 }
 
@@ -971,6 +972,10 @@ footer .container .copyright ul li a {
   transition: all ease-in-out 0.3s;
 }
 
+footer .container .copyright ul li a:hover {
+  box-shadow: 0px 0px 10px rgba(40, 40, 130, 0.25);
+}
+
 footer .container .copyright ul li a::before {
   content: "";
   position: absolute;
@@ -1025,6 +1030,12 @@ footer .container .copyright p {
 footer .container .copyright p a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.6);
+  transition: all ease-in-out 0.3s;
+}
+
+footer .container .copyright p:hover a {
+  color: var(--main-color);
+  opacity: 0.6;
 }
 
 footer .container .copyright p span {
@@ -1032,6 +1043,12 @@ footer .container .copyright p span {
   opacity: 0.6;
   font-size: larger;
   font-weight: bolder;
+  transition: all ease-in-out 0.3s;
+}
+
+footer .container .copyright p:hover span {
+  color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
 }
 
 @media (max-width: 576px){
