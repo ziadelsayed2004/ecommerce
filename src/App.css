@@ -918,7 +918,7 @@ footer .container .topInfo .topInfoItem * {
 }
 
 footer .container .topInfo .topInfoItem svg {
-  font-size: 30px;
+  font-size: clamp(12px, 5vw, 24px);
   font-weight: 600;
   color: var(--main-color);
   transition: all ease-in-out 0.3s;
@@ -930,7 +930,7 @@ footer .container .topInfo .topInfoItem:hover svg {
 }
 
 footer .container .topInfo .topInfoItem span {
-  font-size: 20px;
+  font-size: clamp(10px, 2vw, 24px);
   font-weight: 600;
   color: var(--main-color);
   transition: all ease-in-out 0.3s;
