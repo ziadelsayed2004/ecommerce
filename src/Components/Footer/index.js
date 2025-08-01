@@ -21,7 +21,9 @@ const Footer = () => {
                             <span>Safe Payments</span>
                         </div>
                     </div>
-
+                    <div className="row mt-4">
+                        
+                    </div>
                 </div>
             </footer>
         </>
