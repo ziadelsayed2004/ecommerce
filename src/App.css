@@ -858,9 +858,9 @@ nav .navPart2 .active a button {
 
 footer {
   width: 100%;
-  height: 400px;
+  height: auto;
   background-color: #fff;
-  padding: 30px 0px;
+  padding: 0px;
 }
 
 footer .container .topInfo {
@@ -930,7 +930,7 @@ footer .container .topInfo .topInfoItem:hover svg {
 }
 
 footer .container .topInfo .topInfoItem span {
-  font-size: clamp(10px, 2vw, 24px);
+  font-size: clamp(10px, 4vw, 20px);
   font-weight: 600;
   color: var(--main-color);
   transition: all ease-in-out 0.3s;
@@ -939,6 +939,98 @@ footer .container .topInfo .topInfoItem span {
 footer .container .topInfo .topInfoItem:hover span {
   font-weight: bolder;
   color: var(--main-color-hover);
+}
+
+footer .container .copyright {
+  flex-direction: column;
+}
+
+footer .container .copyright ul {
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+}
+
+footer .container .copyright ul li {
+  width: 10%;
+}
+
+footer .container .copyright ul li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: none;
+  background-color: transparent;
+  box-shadow: 0px 0px 10px rgba(40, 40, 130, 0.125);
+  transition: all ease-in-out 0.3s;
+}
+
+footer .container .copyright ul li a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background: linear-gradient(45deg, rgba(240, 250, 255, 0.5), rgba(193, 225, 255, 0.5));
+  transition: all 0.3s ease-in-out;
+  z-index: 0;
+  opacity: 1;
+}
+
+footer .container .copyright ul li a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background: linear-gradient(45deg, rgba(193, 225, 255, 0.5), rgba(240, 250, 255, 0.5));
+  transition: all 0.3s ease-in-out;
+  z-index: 0;
+  opacity: 0;
+}
+
+footer .container .copyright ul li a:hover::before {
+  opacity: 0;
+}
+
+footer .container .copyright ul li a:hover::after {
+  opacity: 1;
+}
+
+footer .container .copyright ul li a * {
+  position: relative;
+  z-index: 1;
+}
+
+footer .container .copyright ul li a svg {
+  font-size: clamp(14px, 7vw, 28px);
+  color: var(--main-color);
+  transition: all ease-in-out 0.3s;
+}
+
+footer .container .copyright ul li a:hover svg {
+  color: var(--main-color-hover);
+  font-weight: bolder;
+}
+
+footer .container .copyright p {
+  text-align: center;
+  font-weight: 600;
+}
+
+footer .container .copyright p a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+footer .container .copyright p span {
+  color: var(--main-color);
+  opacity: 0.6;
+  font-size: larger;
+  font-weight: bolder;
 }
 
 @media (max-width: 576px){
