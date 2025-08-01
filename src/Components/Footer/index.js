@@ -22,7 +22,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="row mt-4">
-
+                        
                     </div>
                 </div>
             </footer>
