@@ -953,6 +953,7 @@ footer .container .copyright ul {
 
 footer .container .copyright ul li {
   width: 10%;
+  min-width: 75px;
 }
 
 footer .container .copyright ul li a {
