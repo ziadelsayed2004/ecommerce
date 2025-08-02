@@ -768,6 +768,38 @@ nav .navPart2 .active a button {
   font-weight: 600;
 }
 
+.ItemModel .MuiPaper-elevation {
+  padding: 25px;
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.ItemModel .close_ {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  min-width: 30px !important;
+  width: 30px !important;
+  height: 30px !important;
+  padding: 2.5px;
+  border-radius: 50% !important;
+  color: rgba(234, 44, 15, 1);
+  transition: all ease-in-out 0.3s;
+}
+
+.ItemModel .close_:hover {
+  background-color: rgba(234, 44, 15, 0.1);
+}
+
+.ItemModel .close_ svg {
+  font-size: 22px !important;
+}
+
+.ItemModel h4 {
+  font-size: 22px;
+}
+
 .newsLetterSection {
   height: auto;
   width: 100%;

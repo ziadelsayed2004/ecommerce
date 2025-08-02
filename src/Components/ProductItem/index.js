@@ -1,18 +1,29 @@
 import Button from '@mui/material/Button';
 import Rating from '@mui/material/Rating';
+import React from 'react';
 import Logo from "../../assets/images/logo.png";
 import { SlSizeFullscreen } from "react-icons/sl";
 import { GrFavorite } from "react-icons/gr";
+import ProductModel from '../ProductModel';
 
 const ProductItem = () => {
+    const [isOpenProductModel, setIsOpenProductModel] = React.useState(false);
+    const viewProductDetailes = (id) => {
+        setIsOpenProductModel(true);
+    }
+    const closeProductModel = () => {
+        setIsOpenProductModel(false);
+    }
+    
     return(
         <>
+            <ProductModel closeProductModel= {closeProductModel} isOpenProductModel= {isOpenProductModel} />
             <div className="item productItem cursor-pointer">
                 <div className="imgWrapper">
                     <img className="w-100" src={Logo} alt="ProductImg"></img>
                     <span className="badge badge-primary">30%</span>
                     <div className="actions d-flex">
-                        <Button><SlSizeFullscreen /></Button>
+                        <Button onClick={()=>viewProductDetailes(1)}><SlSizeFullscreen /></Button>
                         <Button><GrFavorite /></Button>
                     </div>
                 </div>
