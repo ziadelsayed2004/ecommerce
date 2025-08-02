@@ -19,9 +19,12 @@ const ProductModel = (props) => {
                 <div className='d-flex align-items-center'>
                     <div className='d-flex align-items-center mr-4'>
                         <span>Brands:</span>
-                        <span className='ml-2'>Brand Name</span>
+                        <span className='ml-2 brandSpan'><b>Brand Name</b></span>
                     </div>
-                    <Rating name="read-only" size='small' value={4.5} precision={0.5} readOnly />
+                    <div className='d-flex align-items-center mr-4'>
+                        <span>Rating:</span>
+                        <Rating className='ml-2 Rating' name="read-only" size='small' value={4.5} precision={0.5} readOnly />
+                    </div>
                 </div>
             </Dialog>            
         </>
