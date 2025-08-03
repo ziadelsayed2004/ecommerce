@@ -810,7 +810,7 @@ nav .navPart2 .active a button {
   border-right: 1px solid rgba(0, 0, 0, 0.25);
 }
 
-.productZoom {
+.ItemModel .productZoom {
   width: 80%;
   height: auto;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -819,25 +819,25 @@ nav .navPart2 .active a button {
   border-radius: 16px;
 }
 
-.zoomSliderBig {
+.ItemModel .zoomSliderBig {
   width: 100% !important;
   padding: 5px;
 }
 
-.zoomSlider {
+.ItemModel .zoomSlider {
   width: 80%;
   padding-top: 10px;
 }
 
-.zoomSlider .slick-slide {
+.ItemModel .zoomSlider .slick-slide {
   padding-right: 5px !important;
 }
 
-.zoomSlider * {
+.ItemModel .zoomSlider * {
   outline: none !important;
 }
 
-.zoomSlider .item {
+.ItemModel .zoomSlider .item {
   border: 2px solid transparent !important;
   padding: 5px;
   overflow: hidden;
@@ -845,21 +845,55 @@ nav .navPart2 .active a button {
   cursor: pointer;
 }
 
-.zoomSlider .slick-current .item {
+.ItemModel .zoomSlider .slick-current .item {
   border: 2px solid var(--main-color) !important;
 }
 
-.zoomSlider .slick-arrow {
+.ItemModel .zoomSlider .slick-arrow {
   top: 55% !important;
   zoom: 80% !important;
 }
 
-.zoomSlider .slick-arrow.slick-next {
+.ItemModel .zoomSlider .slick-arrow.slick-next {
   right: -2% !important;
 }
 
-.zoomSlider .slick-arrow.slick-prev {
+.ItemModel .zoomSlider .slick-arrow.slick-prev {
   left: -5% !important;
+}
+
+.ItemModel .oldPrice {
+  text-decoration: line-through;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.ItemModel .netPrice {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.ItemModel .ProductDetailsModel div .InStockSpan {
+  background-color: rgba(0, 128, 0, 0.125);
+  width: max-content;
+  padding: 2.5px 15px;
+  border-radius: 16px;
+}
+
+.ItemModel .ProductDetailsModel .addToCartBtn {
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 16px;
+  font-size: clamp(8px, 4vw, 16px);
+  font-weight: 500;
+  padding: 3px 15px;
+  transition: all ease-in-out 0.3s;
+}
+
+.ItemModel .ProductDetailsModel .addToCartBtn:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+  background-color: var(--main-color-hover);
 }
 
 @media (max-width:576px) {

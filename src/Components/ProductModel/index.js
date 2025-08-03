@@ -100,7 +100,20 @@ const ProductModel = (props) => {
 
                     </div>
                     <div className='col-md-7'>
-
+                        <div className='d-flex align-items-center'>
+                            <span className="oldPrice">$20.00</span>
+                            <span className="netPrice text-danger ml-2">$12.50</span>
+                        </div>
+                        <span className="text-success InStockSpan d-block mt-2">In Stock</span>
+                        <p className='mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis totam, quod sequi ducimus, inventore voluptatem sed placeat, reiciendis accusamus quasi quia iusto non explicabo! Iusto neque illum officiis numquam molestiae!</p>
+                        <div className='d-flex align-items-center'>
+                            <div className='quantityDrop d-flex align-items-center mr-2'>
+                                <Button className='mr-2'>+</Button>
+                                    <span>10</span>
+                                <Button className='ml-2'>-</Button>
+                            </div>
+                            <Button className='addToCartBtn'>Add To Cart</Button>
+                        </div>
                     </div>
                 </div>
 
