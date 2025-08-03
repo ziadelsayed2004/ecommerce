@@ -50,79 +50,81 @@ const ProductModel = (props) => {
         <>
             <Dialog className='ItemModel' TransitionComponent={Transition} open={props.isOpenProductModel} onClose={()=> props.closeProductModel()}>
                 <Button className='close_' onClick={()=> props.closeProductModel()}><IoClose /></Button>
-                <h4 className='mb-2 font-weight-bold'>Product Name</h4>
-                <div className='d-flex align-items-center'>
-                    <div className='d-flex align-items-center mr-4'>
-                        <span>Brands:</span>
-                        <span className='ml-2 brandSpan'><b>Brand Name</b></span>
+                <div className='container m-0'>
+                    <h4 className='mb-2 font-weight-bold'>Product Name</h4>
+                    <div className='d-flex align-items-center'>
+                        <div className='d-flex align-items-center mr-4'>
+                            <span>Brands:</span>
+                            <span className='ml-2 brandSpan'><b>Brand Name</b></span>
+                        </div>
+                        <div className='d-flex align-items-center mr-4'>
+                            <span>Rating:</span>
+                            <Rating className='ml-2 Rating' name="read-only" size='small' value={4.5} precision={0.5} readOnly />
+                        </div>
+                        <div className='d-flex align-items-center mr-4'>
+                            <span>Category:</span>
+                            <span className='ml-2 CategorySpan'><b>Category Name</b></span>
+                        </div>
                     </div>
-                    <div className='d-flex align-items-center mr-4'>
-                        <span>Rating:</span>
-                        <Rating className='ml-2 Rating' name="read-only" size='small' value={4.5} precision={0.5} readOnly />
-                    </div>
-                    <div className='d-flex align-items-center mr-4'>
-                        <span>Category:</span>
-                        <span className='ml-2 CategorySpan'><b>Category Name</b></span>
-                    </div>
-                </div>
-                <hr/>
-                <div className='row mt-2 ProductDetailsModel'>
-                    <div className='col-md-5'>
+                    <hr/>
+                    <div className='row mt-2 ProductDetailsModel'>
+                        <div className='col-md-5'>
+                            <div className='productZoom'>
+                                <Slider {...settings} className='zoomSliderBig' ref={zoomSliderBig}>
+                                    <div className='item'>
+                                        <InnerImageZoom zoomType='hover' zoomScale={0.4} src={Logo} />
+                                    </div>
+                                    <div className='item'>
+                                        <InnerImageZoom zoomType='hover' zoomScale={0.4} src={Logo} />
+                                    </div>
+                                    <div className='item'>
+                                        <InnerImageZoom zoomType='hover' zoomScale={0.4} src={Logo} />
+                                    </div>
+                                    <div className='item'>
+                                        <InnerImageZoom zoomType='hover' zoomScale={0.4} src={Logo} />
+                                    </div>
+                                </Slider>
+                            </div>
 
-                        <div className='productZoom'>
-                            <Slider {...settings} className='zoomSliderBig' ref={zoomSliderBig}>
+                            <Slider {...IndexSettings} className='zoomSlider' ref={zoomSlider}>
                                 <div className='item'>
-                                    <InnerImageZoom zoomType='hover' zoomScale={0.4} src={Logo} />
+                                    <img src={Logo} className='w-100' alt='item' onClick={() => goto(0)} />
                                 </div>
                                 <div className='item'>
-                                    <InnerImageZoom zoomType='hover' zoomScale={0.4} src={Logo} />
+                                    <img src={Logo} className='w-100' alt='item' onClick={() => goto(1)} />
                                 </div>
                                 <div className='item'>
-                                    <InnerImageZoom zoomType='hover' zoomScale={0.4} src={Logo} />
+                                    <img src={Logo} className='w-100' alt='item' onClick={() => goto(2)} />
                                 </div>
                                 <div className='item'>
-                                    <InnerImageZoom zoomType='hover' zoomScale={0.4} src={Logo} />
+                                    <img src={Logo} className='w-100' alt='item' onClick={() => goto(3)} />
                                 </div>
                             </Slider>
-                        </div>
 
-                        <Slider {...IndexSettings} className='zoomSlider' ref={zoomSlider}>
-                            <div className='item'>
-                                <img src={Logo} className='w-100' alt='item' onClick={() => goto(0)} />
-                            </div>
-                            <div className='item'>
-                                <img src={Logo} className='w-100' alt='item' onClick={() => goto(1)} />
-                            </div>
-                            <div className='item'>
-                                <img src={Logo} className='w-100' alt='item' onClick={() => goto(2)} />
-                            </div>
-                            <div className='item'>
-                                <img src={Logo} className='w-100' alt='item' onClick={() => goto(3)} />
-                            </div>
-                        </Slider>
-
-                    </div>
-                    <div className='col-md-7'>
-                        <div className='d-flex align-items-center'>
-                            <span className="oldPrice">$20.00</span>
-                            <span className="netPrice text-danger ml-2">$12.50</span>
                         </div>
-                        
-                        <span className="text-success InStockSpan d-block mt-2">In Stock</span>
-                        
-                        <p className='mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis totam, quod sequi ducimus, inventore voluptatem sed placeat, reiciendis accusamus quasi quia iusto non explicabo! Iusto neque illum officiis numquam molestiae!</p>
-                        
-                        <div className='d-flex align-items-center'>
-                            <QuantityBox />
-                            <Button className='addToCartBtn'>Add To Cart</Button>
-                        </div>
-
-                        <div className='d-flex align-items-center mt-3'>
-                            <Button variant='outline' className='addToWishBtn'>Add To Wishlist<GrFavorite className='ml-1' /></Button>
+                        <div className='col-md-7'>
+                            <div className='d-flex align-items-center'>
+                                <span className="oldPrice">$20.00</span>
+                                <span className="netPrice text-danger ml-2">$12.50</span>
+                            </div>
                             
+                            <span className="text-success InStockSpan d-block mt-2">In Stock</span>
+                            
+                            <p className='mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis totam, quod sequi ducimus, inventore voluptatem sed placeat, reiciendis accusamus quasi quia iusto non explicabo! Iusto neque illum officiis numquam molestiae!</p>
+                            
+                            <div className='d-flex align-items-center'>
+                                <QuantityBox className='mt-2' />
+                                <Button className='addToCartBtn mt-2'>Add To Cart</Button>
+                            </div>
+
+                            <div className='d-flex align-items-center mt-3'>
+                                <Button variant='outline' className='addToWishBtn'>Add To Wishlist<GrFavorite className='ml-1' /></Button>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
+                
 
             </Dialog>            
         </>
