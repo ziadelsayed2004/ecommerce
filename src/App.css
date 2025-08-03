@@ -881,6 +881,43 @@ nav .navPart2 .active a button {
   border-radius: 16px;
 }
 
+.ItemModel .ProductDetailsModel .quantityDrop button {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  margin: 0px 5px;
+  border-radius: 50%;
+  background-color: #f0faff;
+  font-size: 22px;
+  font-weight: bold;
+  transition: all ease-in-out 0.3s;
+}
+
+.ItemModel .ProductDetailsModel .quantityDrop button:hover {
+  background-color: #c1e1ff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px;
+}
+
+.ItemModel .ProductDetailsModel .quantityDrop .quantity {
+  background-color: rgba(240, 250, 255, 0.125);
+  box-shadow: rgba(0, 0, 0, 0.125) 0px 0px 5px;
+  width: 80px;
+  height: 50px;
+  padding: 5px;
+  border: 0px;
+  border-radius: 12.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 22px;
+}
+
+.ItemModel .ProductDetailsModel .quantityDrop .quantity:focus {
+  border: 0px;
+  outline: none;
+}
+
 .ItemModel .ProductDetailsModel .addToCartBtn {
   background-color: var(--main-color);
   color: #fff;
@@ -894,6 +931,24 @@ nav .navPart2 .active a button {
 .ItemModel .ProductDetailsModel .addToCartBtn:hover {
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
   background-color: var(--main-color-hover);
+}
+
+.ItemModel .ProductDetailsModel .addToWishBtn {
+  background-color: transparent;
+  color: var(--main-color);
+  border-radius: 16px;
+  border: 1px solid rgba(40, 40, 130, 1);
+  font-size: clamp(8px, 4vw, 16px);
+  font-weight: 500;
+  padding: 3px 15px;
+  transition: all ease-in-out 0.3s;
+}
+
+.ItemModel .ProductDetailsModel .addToWishBtn:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+  border: 1px solid rgba(40, 40, 130, 1);
+  background-color: var(--main-color);
+  color: #fff;
 }
 
 @media (max-width:576px) {

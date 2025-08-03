@@ -1,14 +1,17 @@
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import Slide from '@mui/material/Slide';
+import Rating from '@mui/material/Rating';
+import Slider from 'react-slick';
+import React from 'react';
 import InnerImageZoom from 'react-inner-image-zoom';
 import 'react-inner-image-zoom/lib/styles.min.css';
-import Rating from '@mui/material/Rating';
-import React from 'react';
+import QuantityBox from '../QuantityBox';
 
 import Logo from "../../assets/images/logo.png";
 import { IoClose } from "react-icons/io5";
-import Slider from 'react-slick';
+import { GrFavorite } from "react-icons/gr";
+
 
 const Transition = React.forwardRef(function Transition(props, ref){
     return <Slide direction="up" ref={ref} {...props} />;
@@ -104,15 +107,19 @@ const ProductModel = (props) => {
                             <span className="oldPrice">$20.00</span>
                             <span className="netPrice text-danger ml-2">$12.50</span>
                         </div>
+                        
                         <span className="text-success InStockSpan d-block mt-2">In Stock</span>
+                        
                         <p className='mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis totam, quod sequi ducimus, inventore voluptatem sed placeat, reiciendis accusamus quasi quia iusto non explicabo! Iusto neque illum officiis numquam molestiae!</p>
+                        
                         <div className='d-flex align-items-center'>
-                            <div className='quantityDrop d-flex align-items-center mr-2'>
-                                <Button className='mr-2'>+</Button>
-                                    <span>10</span>
-                                <Button className='ml-2'>-</Button>
-                            </div>
+                            <QuantityBox />
                             <Button className='addToCartBtn'>Add To Cart</Button>
+                        </div>
+
+                        <div className='d-flex align-items-center mt-3'>
+                            <Button variant='outline' className='addToWishBtn'>Add To Wishlist<GrFavorite className='ml-1' /></Button>
+                            
                         </div>
                     </div>
                 </div>
