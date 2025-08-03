@@ -772,7 +772,7 @@ nav .navPart2 .active a button {
   padding: 25px;
   border-radius: 10px;
   position: relative;
-  width: 100%;
+  min-width: 75%;
 }
 
 .ItemModel .close_ {
@@ -810,6 +810,58 @@ nav .navPart2 .active a button {
   border-right: 1px solid rgba(0, 0, 0, 0.25);
 }
 
+.productZoom {
+  width: 80%;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.zoomSliderBig {
+  width: 100% !important;
+  padding: 5px;
+}
+
+.zoomSlider {
+  width: 80%;
+  padding-top: 10px;
+}
+
+.zoomSlider .slick-slide {
+  padding-right: 5px !important;
+}
+
+.zoomSlider * {
+  outline: none !important;
+}
+
+.zoomSlider .item {
+  border: 2px solid transparent !important;
+  padding: 5px;
+  overflow: hidden;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.zoomSlider .slick-current .item {
+  border: 2px solid var(--main-color) !important;
+}
+
+.zoomSlider .slick-arrow {
+  top: 55% !important;
+  zoom: 80% !important;
+}
+
+.zoomSlider .slick-arrow.slick-next {
+  right: -2% !important;
+}
+
+.zoomSlider .slick-arrow.slick-prev {
+  left: -5% !important;
+}
+
 @media (max-width:576px) {
   .ItemModel div{
     flex-wrap: wrap;
@@ -829,7 +881,6 @@ nav .navPart2 .active a button {
     border: 0;
     padding-right: 0px;
   }
-
 }
 
 .newsLetterSection {
