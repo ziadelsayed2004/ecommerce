@@ -42,7 +42,7 @@ const Header = () => {
               </div>
             </div>
 
-            <div className="row d-flex d-md-none bottomHeader align-items-center mt-2">
+            <div className="row d-flex d-md-none bottomHeader align-items-center">
                 <div className="col-auto">
                     <NavCategories />
                 </div>

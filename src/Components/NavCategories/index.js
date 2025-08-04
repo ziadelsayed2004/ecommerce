@@ -24,11 +24,6 @@ const NavCategories = () => {
                         <li className='list-inline-item'><Link to='/'><Button><BiCategoryAlt />&nbsp; Category 3</Button></Link></li>
                         <li className='list-inline-item'><Link to='/'><Button><BiCategoryAlt />&nbsp; Category 4</Button></Link></li>
                         <li className='list-inline-item'><Link to='/'><Button><BiCategoryAlt />&nbsp; Category 5</Button></Link></li>
-                        <li className='list-inline-item'><Link to='/'><Button><BiCategoryAlt />&nbsp; Category 6</Button></Link></li>
-                        <li className='list-inline-item'><Link to='/'><Button><BiCategoryAlt />&nbsp; Category 7</Button></Link></li>
-                        <li className='list-inline-item'><Link to='/'><Button><BiCategoryAlt />&nbsp; Category 8</Button></Link></li>
-                        <li className='list-inline-item'><Link to='/'><Button><BiCategoryAlt />&nbsp; Category 9</Button></Link></li>
-                        <li className='list-inline-item'><Link to='/'><Button><BiCategoryAlt />&nbsp; Category 10</Button></Link></li>
                     </ul>
                 </div>
             </div>

@@ -65,26 +65,6 @@ const HomeCat = () => {
                             <img src={CatImg} alt="CatImg" />
                             <h6>Category 5</h6>
                         </div>
-                        <div className="item d-flex justify-content-center cursor-pointer">
-                            <img src={CatImg} alt="CatImg" />
-                            <h6>Category 6</h6>
-                        </div>
-                        <div className="item d-flex justify-content-center cursor-pointer">
-                            <img src={CatImg} alt="CatImg" />
-                            <h6>Category 7</h6>
-                        </div>
-                        <div className="item d-flex justify-content-center cursor-pointer">
-                            <img src={CatImg} alt="CatImg" />
-                            <h6>Category 8</h6>
-                        </div>
-                        <div className="item d-flex justify-content-center cursor-pointer">
-                            <img src={CatImg} alt="CatImg" />
-                            <h6>Category 9</h6>
-                        </div>
-                        <div className="item d-flex justify-content-center cursor-pointer">
-                            <img src={CatImg} alt="CatImg" />
-                            <h6>Category 10</h6>
-                        </div>
                     </Slider>
                 </div>
             </section>
