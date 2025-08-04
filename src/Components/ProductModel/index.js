@@ -18,7 +18,7 @@ const Transition = React.forwardRef(function Transition(props, ref){
     return <Slide direction="up" ref={ref} {...props} />;
 });
 
-const ProductModel = (props) => {
+const ProductModel = () => {
     const zoomSlider = React.useRef();
     const zoomSliderBig = React.useRef();
 
@@ -70,59 +70,61 @@ const ProductModel = (props) => {
                         </div>
                     </div>
                     <hr/>
-                    <div className='row mt-2 ProductDetailsModel'>
-                        <div className='col-md-5'>
-                            <div className='productZoom'>
-                                <span className="badge badge-primary ml-2 mt-2">30%</span>
-                                <Slider {...settings} className='zoomSliderBig' ref={zoomSliderBig}>
+                    <div className='productContanierScrollableModel'>
+                        <div className='row mt-2 ProductDetailsModel'>
+                            <div className='col-md-5'>
+                                <div className='productZoom'>
+                                    <span className="badge badge-primary ml-2 mt-2">30%</span>
+                                    <Slider {...settings} className='zoomSliderBig' ref={zoomSliderBig}>
+                                        <div className='item'>
+                                            <InnerImageZoom zoomType='hover' zoomScale={0.25} src={Logo} />
+                                        </div>
+                                        <div className='item'>
+                                            <InnerImageZoom zoomType='hover' zoomScale={0.25} src={Logo} />
+                                        </div>
+                                        <div className='item'>
+                                            <InnerImageZoom zoomType='hover' zoomScale={0.25} src={Logo} />
+                                        </div>
+                                        <div className='item'>
+                                            <InnerImageZoom zoomType='hover' zoomScale={0.25} src={Logo} />
+                                        </div>
+                                    </Slider>
+                                </div>
+
+                                <Slider {...IndexSettings} className='zoomSlider' ref={zoomSlider}>
                                     <div className='item'>
-                                        <InnerImageZoom zoomType='hover' zoomScale={0.25} src={Logo} />
+                                        <img src={Logo} className='w-100' alt='item' onClick={() => goto(0)} />
                                     </div>
                                     <div className='item'>
-                                        <InnerImageZoom zoomType='hover' zoomScale={0.25} src={Logo} />
+                                        <img src={Logo} className='w-100' alt='item' onClick={() => goto(1)} />
                                     </div>
                                     <div className='item'>
-                                        <InnerImageZoom zoomType='hover' zoomScale={0.25} src={Logo} />
+                                        <img src={Logo} className='w-100' alt='item' onClick={() => goto(2)} />
                                     </div>
                                     <div className='item'>
-                                        <InnerImageZoom zoomType='hover' zoomScale={0.25} src={Logo} />
+                                        <img src={Logo} className='w-100' alt='item' onClick={() => goto(3)} />
                                     </div>
                                 </Slider>
                             </div>
+                            <div className='col-md-7'>
+                                <div className='d-flex align-items-center'>
+                                    <span className="oldPrice">$20.00</span>
+                                    <span className="netPrice text-danger ml-2">$12.50</span>
+                                </div>
+                                
+                                <span className="text-success InStockSpan d-block mt-2">In Stock</span>
+                                
+                                <p className='mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis totam, quod sequi ducimus, inventore voluptatem sed placeat, reiciendis accusamus quasi quia iusto non explicabo! Iusto neque illum officiis numquam molestiae!</p>
+                                
+                                <div className='d-flex align-items-center'>
+                                    <QuantityBox className='mt-2' />
+                                    <Button className='addToCartBtn mt-2'>Add To Cart</Button>
+                                </div>
 
-                            <Slider {...IndexSettings} className='zoomSlider' ref={zoomSlider}>
-                                <div className='item'>
-                                    <img src={Logo} className='w-100' alt='item' onClick={() => goto(0)} />
+                                <div className='d-flex align-items-center mt-3 actions'>
+                                    <Button variant='outline' className='addToWishBtn mr-2 mt-2'>Add To Wishlist<GrFavorite className='ml-1' /></Button>
+                                    <Button variant='outline' className='compareProducts mt-2'>Compare<IoIosGitCompare className='ml-1' /></Button>                                
                                 </div>
-                                <div className='item'>
-                                    <img src={Logo} className='w-100' alt='item' onClick={() => goto(1)} />
-                                </div>
-                                <div className='item'>
-                                    <img src={Logo} className='w-100' alt='item' onClick={() => goto(2)} />
-                                </div>
-                                <div className='item'>
-                                    <img src={Logo} className='w-100' alt='item' onClick={() => goto(3)} />
-                                </div>
-                            </Slider>
-                        </div>
-                        <div className='col-md-7'>
-                            <div className='d-flex align-items-center'>
-                                <span className="oldPrice">$20.00</span>
-                                <span className="netPrice text-danger ml-2">$12.50</span>
-                            </div>
-                            
-                            <span className="text-success InStockSpan d-block mt-2">In Stock</span>
-                            
-                            <p className='mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis totam, quod sequi ducimus, inventore voluptatem sed placeat, reiciendis accusamus quasi quia iusto non explicabo! Iusto neque illum officiis numquam molestiae!</p>
-                            
-                            <div className='d-flex align-items-center'>
-                                <QuantityBox className='mt-2' />
-                                <Button className='addToCartBtn mt-2'>Add To Cart</Button>
-                            </div>
-
-                            <div className='d-flex align-items-center mt-3 actions'>
-                                <Button variant='outline' className='addToWishBtn mr-2 mt-2'>Add To Wishlist<GrFavorite className='ml-1' /></Button>
-                                <Button variant='outline' className='compareProducts mt-2'>Compare<IoIosGitCompare className='ml-1' /></Button>                                
                             </div>
                         </div>
                     </div>
