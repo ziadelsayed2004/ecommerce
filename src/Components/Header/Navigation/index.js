@@ -2,10 +2,11 @@ import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 import { FiHome } from "react-icons/fi";
 import { HiOutlineBuildingStorefront } from "react-icons/hi2";
-import { RiBloggerLine } from "react-icons/ri";
-import { FaRegPaperPlane } from "react-icons/fa";
 import { IoBagOutline } from "react-icons/io5";
 import { FaRegUser } from "react-icons/fa";
+import { TiInfoLargeOutline } from "react-icons/ti";
+import { RiBloggerLine } from "react-icons/ri";
+import { FaRegPaperPlane } from "react-icons/fa";
 import NavCategories from '../../NavCategories';
 
 const Navigation = ()=>{
@@ -23,6 +24,7 @@ const Navigation = ()=>{
                                 <li className='list-inline-item'><Link to='/'><Button><HiOutlineBuildingStorefront />&nbsp; Shop</Button></Link></li>
                                 <li className='list-inline-item'><Link to='/'><Button><IoBagOutline />&nbsp; Your Cart</Button></Link></li>
                                 <li className='list-inline-item'><Link to='/'><Button><FaRegUser />&nbsp; Account</Button></Link></li>
+                                <li className='list-inline-item'><Link to='/'><Button><TiInfoLargeOutline />&nbsp; About</Button></Link></li>
                                 <li className='list-inline-item'><Link to='/'><Button><RiBloggerLine />&nbsp; Blog</Button></Link></li>
                                 <li className='list-inline-item'><Link to='/'><Button><FaRegPaperPlane />&nbsp; Contact</Button></Link></li>
                             </ul>

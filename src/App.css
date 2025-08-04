@@ -120,11 +120,11 @@ body {
   }
 
   .allCatTab {
-    padding: 10px !important;
+    height: 50px;
+    border-radius: 10px !important;
   }
 
   .allCatTab *{
-    height: 30px;
     font-size: 10px;
     justify-content: center;
   }
@@ -148,7 +148,6 @@ body {
 
   .countryDrop {
     max-width: fit-content;
-    border-radius: 16px !important;
     padding: 8px !important;
   }
 
@@ -208,7 +207,7 @@ body {
   height: 50px;
   min-width: 130px;
   border: 1px solid rgba(0, 0, 0, 0.5) !important;
-  border-radius: 10px;
+  border-radius: 10px !important;
   padding: 10px;
   color: #000 !important;
   text-align: left;
@@ -403,16 +402,24 @@ nav .navPart1, nav .navPart2 {
   padding: 10px;
 }
 
+@media(min-width: 768px){
+  .allCatTab {
+    padding: 10px 15px !important;
+    border-radius: 16px !important;
+    justify-content: flex-start !important;
+  }
+
+}
+
 .allCatTab {
   padding: 10px 15px;
-  border-radius: 16px !important;
   background-color: var(--main-color) !important;
   flex-wrap: wrap;
   transition: ease-in-out all 0.3s;
 }
 
 .allCatTab:hover {
-  background-color: var(--main-color-hover);
+  background-color: var(--main-color-hover) !important;
 }
 
 .allCatTab *{
@@ -758,7 +765,7 @@ nav .navPart2 .active a button {
 }
 
 .homeProducts .ProductRow .BestProducts .ViewAllBtn {
-  padding: 8px 15px !important;
+  padding: 5px 10px !important;
   background-color: #fff;
   color: rgba(0, 0, 0, 0.75);
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -775,7 +782,7 @@ nav .navPart2 .active a button {
 
 .homeProducts .ProductRow .BestProducts .ViewAllBtn svg {
   margin-left: 5px;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .homeProducts .ProductRow .slick-prev {
