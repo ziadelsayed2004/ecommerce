@@ -933,7 +933,8 @@ nav .navPart2 .active a button {
   background-color: var(--main-color-hover);
 }
 
-.ItemModel .ProductDetailsModel .addToWishBtn {
+.ItemModel .ProductDetailsModel .addToWishBtn,
+.ItemModel .ProductDetailsModel .compareProducts {
   background-color: transparent;
   color: var(--main-color);
   border-radius: 16px;
@@ -944,7 +945,8 @@ nav .navPart2 .active a button {
   transition: all ease-in-out 0.3s;
 }
 
-.ItemModel .ProductDetailsModel .addToWishBtn:hover {
+.ItemModel .ProductDetailsModel .addToWishBtn:hover,
+.ItemModel .ProductDetailsModel .compareProducts:hover {
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
   border: 1px solid rgba(40, 40, 130, 1);
   background-color: var(--main-color);

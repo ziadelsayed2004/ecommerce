@@ -11,7 +11,7 @@ import QuantityBox from '../QuantityBox';
 import Logo from "../../assets/images/logo.png";
 import { IoClose } from "react-icons/io5";
 import { GrFavorite } from "react-icons/gr";
-
+import { IoIosGitCompare } from "react-icons/io";
 
 const Transition = React.forwardRef(function Transition(props, ref){
     return <Slide direction="up" ref={ref} {...props} />;
@@ -72,16 +72,16 @@ const ProductModel = (props) => {
                             <div className='productZoom'>
                                 <Slider {...settings} className='zoomSliderBig' ref={zoomSliderBig}>
                                     <div className='item'>
-                                        <InnerImageZoom zoomType='hover' zoomScale={0.4} src={Logo} />
+                                        <InnerImageZoom zoomType='hover' zoomScale={0.25} src={Logo} />
                                     </div>
                                     <div className='item'>
-                                        <InnerImageZoom zoomType='hover' zoomScale={0.4} src={Logo} />
+                                        <InnerImageZoom zoomType='hover' zoomScale={0.25} src={Logo} />
                                     </div>
                                     <div className='item'>
-                                        <InnerImageZoom zoomType='hover' zoomScale={0.4} src={Logo} />
+                                        <InnerImageZoom zoomType='hover' zoomScale={0.25} src={Logo} />
                                     </div>
                                     <div className='item'>
-                                        <InnerImageZoom zoomType='hover' zoomScale={0.4} src={Logo} />
+                                        <InnerImageZoom zoomType='hover' zoomScale={0.25} src={Logo} />
                                     </div>
                                 </Slider>
                             </div>
@@ -100,7 +100,6 @@ const ProductModel = (props) => {
                                     <img src={Logo} className='w-100' alt='item' onClick={() => goto(3)} />
                                 </div>
                             </Slider>
-
                         </div>
                         <div className='col-md-7'>
                             <div className='d-flex align-items-center'>
@@ -117,9 +116,9 @@ const ProductModel = (props) => {
                                 <Button className='addToCartBtn mt-2'>Add To Cart</Button>
                             </div>
 
-                            <div className='d-flex align-items-center mt-3'>
-                                <Button variant='outline' className='addToWishBtn'>Add To Wishlist<GrFavorite className='ml-1' /></Button>
-                                
+                            <div className='d-flex align-items-center mt-5 actions'>
+                                <Button variant='outline' className='addToWishBtn mr-2'>Add To Wishlist<GrFavorite className='ml-1' /></Button>
+                                <Button variant='outline' className='compareProducts'>Compare<IoIosGitCompare className='ml-1' /></Button>                                
                             </div>
                         </div>
                     </div>
