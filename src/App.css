@@ -112,9 +112,52 @@ body {
   }
 
   .bottomHeader .categoryBtn,
-  .bottomHeader .cityDropdown,
-  .bottomHeader .hamburgerBtn {
+  .bottomHeader .cityDropdown {
+    display: flex;
+    justify-content: center;
     flex: 1;
+  }
+
+  .allCatTab *{
+    height: 30px;
+    font-size: 12px;
+    justify-content: center;
+  }
+
+  .allCatTab .text {
+    display: contents;
+  }
+
+  .allCatTab .icon1 svg {
+    font-size: 20px !important;
+  }
+
+  .allCatTab .icon2 svg {
+    font-size: 10px !important;
+  }
+
+  .catWrapper .sideBarNav {
+    width: 90vw !important;
+    z-index: 1000 !important;
+  }
+
+  .countryDrop {
+    max-width: fit-content;
+    border-radius: 16px !important;
+    padding: 12px !important;
+  }
+
+  .countryDrop .label {
+    font-size: 9px !important;
+  }
+
+  .countryDrop .name {
+    font-size: 11px !important;
+  }
+
+  .countryDrop span.ml-auto svg {
+    font-size: 11px;
+    margin-left: 0.75rem;
   }
 
   .headerSearchContainer {
@@ -160,24 +203,24 @@ body {
   height: 50px;
   min-width: 130px;
   border: 1px solid rgba(0, 0, 0, 0.5) !important;
-  border-radius: 10px !important;
-  padding: 10px !important;
+  border-radius: 10px;
+  padding: 10px;
   color: #000 !important;
   text-align: left;
   justify-content: flex-start !important;
 }
 
 .countryDrop .label {
-  font-size: 10px !important;
+  font-size: 10px;
   text-transform: capitalize !important;
   color: rgba(0, 0, 0, 0.4) !important;
 }
 
 .countryDrop .name {
-  font-size: 12px !important;
+  font-size: 12px;
   text-transform: capitalize !important;
   color: var(--main-color) !important;
-  font-weight: 700 !important;
+  font-weight: 700;
 }
 
 .countryDrop span.ml-auto svg {
@@ -376,11 +419,11 @@ nav .navPart1, nav .navPart2 {
 } 
 
 .allCatTab .icon1 svg {
-  font-size: 30px !important;
+  font-size: 30px;
 }
 
 .allCatTab .icon2 svg {
-  font-size: 15px !important;
+  font-size: 15px;
 }
 
 .allCatTab .icon-transition {
