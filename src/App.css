@@ -489,7 +489,7 @@ nav .navPart1, nav .navPart2 {
   max-height: 50vh;
   padding: 0px !important;
   margin: 0px !important;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 
