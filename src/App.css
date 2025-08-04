@@ -1268,8 +1268,7 @@ footer .container .copyright p a {
 }
 
 footer .container .copyright p:hover a {
-  color: var(--main-color);
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 footer .container .copyright p span {
@@ -1281,8 +1280,8 @@ footer .container .copyright p span {
 }
 
 footer .container .copyright p:hover span {
-  color: rgba(0, 0, 0, 0.6);
-  opacity: 1;
+  color: var(--main-color);
+  opacity: 0.8;
 }
 
 @media (max-width: 576px){
