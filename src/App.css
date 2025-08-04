@@ -108,14 +108,18 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    padding: 10px 0;
+    padding: 10px 0px;
   }
 
   .bottomHeader .categoryBtn,
   .bottomHeader .cityDropdown {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex: 1;
+  }
+
+  .bottomHeader .cityDropdown {
+    justify-content: end;
   }
 
   .allCatTab *{
