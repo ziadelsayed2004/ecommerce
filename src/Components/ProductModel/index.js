@@ -70,6 +70,7 @@ const ProductModel = (props) => {
                     <div className='row mt-2 ProductDetailsModel'>
                         <div className='col-md-5'>
                             <div className='productZoom'>
+                                <span className="badge badge-primary ml-2 mt-2">30%</span>
                                 <Slider {...settings} className='zoomSliderBig' ref={zoomSliderBig}>
                                     <div className='item'>
                                         <InnerImageZoom zoomType='hover' zoomScale={0.25} src={Logo} />
@@ -116,9 +117,9 @@ const ProductModel = (props) => {
                                 <Button className='addToCartBtn mt-2'>Add To Cart</Button>
                             </div>
 
-                            <div className='d-flex align-items-center mt-5 actions'>
-                                <Button variant='outline' className='addToWishBtn mr-2'>Add To Wishlist<GrFavorite className='ml-1' /></Button>
-                                <Button variant='outline' className='compareProducts'>Compare<IoIosGitCompare className='ml-1' /></Button>                                
+                            <div className='d-flex align-items-center mt-3 actions'>
+                                <Button variant='outline' className='addToWishBtn mr-2 mt-2'>Add To Wishlist<GrFavorite className='ml-1' /></Button>
+                                <Button variant='outline' className='compareProducts mt-2'>Compare<IoIosGitCompare className='ml-1' /></Button>                                
                             </div>
                         </div>
                     </div>

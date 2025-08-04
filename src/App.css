@@ -570,6 +570,14 @@ nav .navPart2 .active a button {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .homeProducts .container .row .col-md-3 .banner {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0% !important;
+  }
+}
+
 .homeProducts .banner .ExploreNowBtn {
   position: absolute;
   bottom: 7.5%;
@@ -817,6 +825,26 @@ nav .navPart2 .active a button {
   padding: 0px;
   overflow: hidden;
   border-radius: 16px;
+}
+
+.ItemModel .iiz__btn {
+  bottom: 0 !important;
+  right: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.ItemModel .badge-primary {
+  position: absolute;
+  align-content: center;
+  background-color: #c1e1ff;
+  color: var(--main-color);
+  width: 35px;
+  height: 35px;
+  padding: 2.5px;
+  border-radius: 50%;
 }
 
 .ItemModel .zoomSliderBig {
