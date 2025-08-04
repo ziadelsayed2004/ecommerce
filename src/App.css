@@ -466,8 +466,8 @@ nav .navPart2 .active a button {
 
 @media(max-width: 576px){
   .homeBannerSection img {
-    scale: 1.1;
-    padding-bottom: 30px;
+    scale: 1.2;
+    padding-bottom: 15px;
   }
 }
 
