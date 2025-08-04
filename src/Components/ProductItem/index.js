@@ -1,23 +1,19 @@
 import Button from '@mui/material/Button';
 import Rating from '@mui/material/Rating';
-import React from 'react';
+import React, { useContext } from 'react';
 import Logo from "../../assets/images/logo.png";
 import { SlSizeFullscreen } from "react-icons/sl";
 import { GrFavorite } from "react-icons/gr";
-import ProductModel from '../ProductModel';
+import { MyContext } from '../../App';
 
 const ProductItem = () => {
-    const [isOpenProductModel, setIsOpenProductModel] = React.useState(false);
+    const context = useContext(MyContext);
     const viewProductDetailes = (id) => {
-        setIsOpenProductModel(true);
-    }
-    const closeProductModel = () => {
-        setIsOpenProductModel(false);
+        context.setIsOpenProductModel(true);
     }
     
     return(
         <>
-            <ProductModel closeProductModel= {closeProductModel} isOpenProductModel= {isOpenProductModel} />
             <div className="item productItem cursor-pointer">
                 <div className="imgWrapper">
                     <img className="w-100" src={Logo} alt="ProductImg"></img>

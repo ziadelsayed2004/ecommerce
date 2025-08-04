@@ -3,7 +3,7 @@ import Dialog from '@mui/material/Dialog';
 import Slide from '@mui/material/Slide';
 import Rating from '@mui/material/Rating';
 import Slider from 'react-slick';
-import React from 'react';
+import React, { useContext } from 'react';
 import InnerImageZoom from 'react-inner-image-zoom';
 import 'react-inner-image-zoom/lib/styles.min.css';
 import QuantityBox from '../QuantityBox';
@@ -12,6 +12,7 @@ import Logo from "../../assets/images/logo.png";
 import { IoClose } from "react-icons/io5";
 import { GrFavorite } from "react-icons/gr";
 import { IoIosGitCompare } from "react-icons/io";
+import { MyContext } from '../../App';
 
 const Transition = React.forwardRef(function Transition(props, ref){
     return <Slide direction="up" ref={ref} {...props} />;
@@ -46,10 +47,12 @@ const ProductModel = (props) => {
         arrows: false,
     };
 
-    return(
+    const context = useContext(MyContext);
+
+    return(    
         <>
-            <Dialog className='ItemModel' TransitionComponent={Transition} open={props.isOpenProductModel} onClose={()=> props.closeProductModel()}>
-                <Button className='close_' onClick={()=> props.closeProductModel()}><IoClose /></Button>
+            <Dialog className='ItemModel' TransitionComponent={Transition} open={context.isOpenProductModel} onClose={()=> context.setIsOpenProductModel(false)}>
+                <Button className='close_' onClick={()=> context.setIsOpenProductModel(false)}><IoClose /></Button>
                 <div className='container m-0'>
                     <h4 className='mb-2 font-weight-bold'>Product Name</h4>
                     <div className='d-flex align-items-center'>
@@ -124,8 +127,6 @@ const ProductModel = (props) => {
                         </div>
                     </div>
                 </div>
-                
-
             </Dialog>            
         </>
     )

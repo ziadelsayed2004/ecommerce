@@ -8,6 +8,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Header from './Components/Header';
 import Footer from "./Components/Footer";
+import ProductModel from './Components/ProductModel';
 import citiesData from './utils/egyptCities.json';
 
 const MyContext = createContext();
@@ -16,13 +17,18 @@ function App() {
   
   const [egyptCities, setEgyptCities] = React.useState([]);
   const [selectedCity, setSelectedCity] = React.useState('');
+  const [isOpenProductModel, setIsOpenProductModel] = React.useState(false);
+
   useEffect(() => {
     setEgyptCities(citiesData);
   }, []);
+  
   const values = {
     egyptCities,
     selectedCity,
-    setSelectedCity
+    setSelectedCity,
+    isOpenProductModel,
+    setIsOpenProductModel
   };
 
   return (
@@ -34,6 +40,7 @@ function App() {
           <Route path='/About' exact={true} element={<About />} />
         </Routes>
         <Footer />
+        <ProductModel closeProductModel={() => setIsOpenProductModel(false)} isOpenProductModel={isOpenProductModel}/>
       </MyContext.Provider>
     </BrowserRouter>
   );
