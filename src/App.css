@@ -486,6 +486,7 @@ nav .navPart1, nav .navPart2 {
   flex-direction: column;
   overflow-y: auto;
   height: fit-content;
+  max-height: 50vh;
   padding: 0px !important;
   margin: 0px !important;
   overflow-y: scroll;
