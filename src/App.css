@@ -76,6 +76,57 @@ body {
   max-width: 90% !important;
 }
 
+@media (max-width: 767px) {
+  .header .row {
+    flex-direction: row;
+  }
+
+  .topHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .topHeader .logoWrapper {
+    order: 1;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .topHeader .part3 {
+    order: 2;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .bottomHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 10px 0;
+  }
+
+  .bottomHeader .categoryBtn,
+  .bottomHeader .cityDropdown,
+  .bottomHeader .hamburgerBtn {
+    flex: 1;
+  }
+
+  .headerSearchContainer {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .headerSearchContainer .headerSearch {
+    width: 100% !important;
+  }
+}
+
 .headerWrapper {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 15px;
@@ -104,7 +155,7 @@ body {
   margin-right: 10%;
 }
 
-.headerWrapper .header .part2 .countryDrop {
+.countryDrop {
   width: 130px;
   height: 50px;
   min-width: 130px;
@@ -116,20 +167,20 @@ body {
   justify-content: flex-start !important;
 }
 
-.headerWrapper .header .part2 .countryDrop .label {
+.countryDrop .label {
   font-size: 10px !important;
   text-transform: capitalize !important;
   color: rgba(0, 0, 0, 0.4) !important;
 }
 
-.headerWrapper .header .part2 .countryDrop .name {
+.countryDrop .name {
   font-size: 12px !important;
   text-transform: capitalize !important;
   color: var(--main-color) !important;
   font-weight: 700 !important;
 }
 
-.headerWrapper .header .part2 .countryDrop span.ml-auto svg {
+.countryDrop span.ml-auto svg {
   opacity: 0.7;
 }
 
@@ -304,40 +355,40 @@ nav .navPart1, nav .navPart2 {
   padding: 10px;
 }
 
-nav .allCatTab {
+.allCatTab {
   padding: 10px 15px !important;
-  border-radius: 16px;
-  background-color: var(--main-color);
+  border-radius: 16px !important;
+  background-color: var(--main-color) !important;
   flex-wrap: wrap;
   transition: ease-in-out all 0.3s;
 }
 
-nav .allCatTab:hover {
+.allCatTab:hover {
   background-color: var(--main-color-hover);
 }
 
-nav .allCatTab *{
+.allCatTab *{
   color: #fff;
 }
 
-nav .allCatTab .text {
+.allCatTab .text {
   font-weight: 400 !important;
 } 
 
-nav .allCatTab .icon1 svg {
+.allCatTab .icon1 svg {
   font-size: 30px !important;
 }
 
-nav .allCatTab .icon2 svg {
+.allCatTab .icon2 svg {
   font-size: 15px !important;
 }
 
-nav .allCatTab .icon-transition {
+.allCatTab .icon-transition {
   display: inline-block;
   position: relative;
 }
 
-nav .allCatTab .icon-fade {
+.allCatTab .icon-fade {
   opacity: 0;
   animation: fadeIn 0.3s ease-in-out forwards;
 }
@@ -348,11 +399,11 @@ nav .allCatTab .icon-fade {
   }
 }
 
-nav .navPart1 .catWrapper {
+.catWrapper {
   position: relative;
 }
 
-nav .navPart1 .catWrapper .sideBarNav {
+.catWrapper .sideBarNav {
   position: absolute;
   width: 100%;
   overflow: hidden;
@@ -368,14 +419,14 @@ nav .navPart1 .catWrapper .sideBarNav {
   transition: all ease-in-out 0.3s;
 }
 
-nav .navPart1 .catWrapper .sideBarNav.open {
+.catWrapper .sideBarNav.open {
   height: auto;
   opacity: 1;
   visibility: inherit;
   z-index: 100;
 }
 
-nav .navPart1 .catWrapper .sideBarNav .catListSided {
+.catWrapper .sideBarNav .catListSided {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
@@ -386,15 +437,15 @@ nav .navPart1 .catWrapper .sideBarNav .catListSided {
   overflow-x: hidden;
 }
 
-nav .navPart1 .catWrapper .sideBarNav .catListSided li {
+.catWrapper .sideBarNav .catListSided li {
   width: 95%;
 }
 
-nav .navPart1 .catWrapper .sideBarNav .catListSided li a {
+.catWrapper .sideBarNav .catListSided li a {
   text-decoration: none;
 }
 
-nav .navPart1 .catWrapper .sideBarNav .catListSided li button {
+.catWrapper .sideBarNav .catListSided li button {
   width: 100%;
   justify-content: flex-start;
   font-size: 14px;
@@ -409,13 +460,13 @@ nav .navPart1 .catWrapper .sideBarNav .catListSided li button {
   transition: ease-in-out all 0.3s;
 }
 
-nav .navPart1 .catWrapper .sideBarNav .catListSided li button:hover,
-nav .navPart1 .catWrapper .sideBarNav .catListSided .active button {
+.catWrapper .sideBarNav .catListSided li button:hover,
+.catWrapper .sideBarNav .catListSided .active button {
   background-color: #f0faff;
   color: var(--main-color);
 }
 
-nav .navPart1 .catWrapper .sideBarNav .catListSided li button svg {
+.catWrapper .sideBarNav .catListSided li button svg {
   font-size: 18px;
 }
 
