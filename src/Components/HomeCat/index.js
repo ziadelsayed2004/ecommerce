@@ -40,7 +40,7 @@ const HomeCat = () => {
  
     return(
         <>
-            <section className="homeCat">
+            <section className="homeCat d-none">
                 <div className="container">
                     <h3>Categories</h3>
                     <p>Chech Our Featured Categories</p>
