@@ -106,6 +106,7 @@ body {
   .bottomHeader {
     display: flex;
     justify-content: space-between;
+    gap: 0 !important;
     align-items: center;
     flex-wrap: nowrap;
     padding: 10px 0px;
@@ -114,17 +115,17 @@ body {
   .bottomHeader .categoryBtn,
   .bottomHeader .cityDropdown {
     display: flex;
-    justify-content: space-around;
     flex: 1;
+    justify-content: center;
   }
 
-  .bottomHeader .cityDropdown {
-    justify-content: end;
+  .allCatTab {
+    padding: 10px !important;
   }
 
   .allCatTab *{
     height: 30px;
-    font-size: 12px;
+    font-size: 10px;
     justify-content: center;
   }
 
@@ -133,11 +134,11 @@ body {
   }
 
   .allCatTab .icon1 svg {
-    font-size: 20px !important;
+    font-size: 16px !important;
   }
 
   .allCatTab .icon2 svg {
-    font-size: 10px !important;
+    font-size: 8px !important;
   }
 
   .catWrapper .sideBarNav {
@@ -148,20 +149,20 @@ body {
   .countryDrop {
     max-width: fit-content;
     border-radius: 16px !important;
-    padding: 12px !important;
+    padding: 8px !important;
   }
 
   .countryDrop .label {
-    font-size: 9px !important;
+    font-size: 8px !important;
   }
 
   .countryDrop .name {
-    font-size: 11px !important;
+    font-size: 10px !important;
   }
 
   .countryDrop span.ml-auto svg {
-    font-size: 11px;
-    margin-left: 0.75rem;
+    font-size: 10px;
+    margin-left: 0.5rem;
   }
 
   .headerSearchContainer {
@@ -343,50 +344,50 @@ header .headerSearch button svg,
   font-size: 30px;
 }
 
-header .part3 .circle {
-  align-items: center;
-  justify-content: center;
+.circle {
+  align-items: center !important;
+  justify-content: center !important;
   min-width: 40px !important;
   height: 40px !important;
   width: 40px !important;
   border-radius: 50% !important;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  color: var(--main-color);
+  border: 1px solid rgba(0, 0, 0, 0.5) !important;
+  color: var(--main-color) !important;
 }
 
-header .part3 .circle svg {
-  font-size: 20px;
+.circle svg {
+  font-size: 20px !important;
 }
 
-header .part3 .cartTab .price {
+.cartTab .price {
   font-size: 18px;
   color: rgba(0, 0, 0, 0.8);
   font-weight: 700;
 }
 
-header .part3 .cartTab button {
+.cartTab button {
   background-color: #fff1ee;
 }
 
-header .part3 .cartTab button:hover {
+.cartTab button:hover {
   background-color: #ffeae6;
 }
 
-header .part3 .cartTab button .MuiTouchRipple-child {
+.cartTab button .MuiTouchRipple-child {
   background-color: rgba(255, 120, 90, 0.8) !important;
 }
 
-header .part3 .cartTab button .MuiTouchRipple-root {
+.cartTab button .MuiTouchRipple-root {
   z-index: 1;
 }
 
-header .part3 .cartTab button svg {
+.cartTab button svg {
   font-size: 20px;
   color: #ea2b0f;
   z-index: 2;
 }
 
-header .part3 .cartTab .count {
+.cartTab .count {
   user-select: none;
   position: absolute;
   top: -2.5px;
@@ -403,7 +404,7 @@ nav .navPart1, nav .navPart2 {
 }
 
 .allCatTab {
-  padding: 10px 15px !important;
+  padding: 10px 15px;
   border-radius: 16px !important;
   background-color: var(--main-color) !important;
   flex-wrap: wrap;

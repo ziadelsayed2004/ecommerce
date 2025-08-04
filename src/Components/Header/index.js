@@ -34,13 +34,7 @@ const Header = () => {
                 <Link to="/"><img src={Logo} alt="Logo" /></Link>
               </div>
               <div className="part3 col-auto d-flex align-items-center">
-                <div className='cartTab d-flex align-items-center mr-2'>
-                  <span className='price'>$3.5</span>
-                  <div className='position-relative ml-1'>
-                    <Button className='circle'><IoBagOutline /></Button>
-                    <span className='count d-flex align-items-center justify-content-center'>1</span>
-                  </div>
-                </div>
+
                 <Button className='circle'><FaRegUser /></Button>
                 <div className="hamburgerBtn">
                     <Button className='circle' onClick={() => setIsOpenSideBarNav(!isOpenSideBarNav)}><IoIosMenu /></Button>
@@ -54,6 +48,12 @@ const Header = () => {
                 </div>
                 <div className="cityDropdown col-auto">
                     {context.egyptCities.length !== 0 && <CountryDropdown />}
+                </div>
+                <div className='cartTab d-flex align-items-center col-auto'>
+                  <div className='position-relative'>
+                    <Button className='circle'><IoBagOutline /></Button>
+                    <span className='count d-flex align-items-center justify-content-center'>1</span>
+                  </div>
                 </div>
             </div>
 
