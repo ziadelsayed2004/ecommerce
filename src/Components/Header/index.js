@@ -4,6 +4,7 @@ import { useContext, useState } from 'react';
 
 import { MyContext } from '../../App';
 import Navigation from './Navigation';
+import SidebarNavigation from './SidebarNavigation';
 import CountryDropdown from '../CountryDropdown';
 import SearchBox from './SearchBox';
 
@@ -63,11 +64,7 @@ const Header = () => {
                 </div>
             </div>
 
-            {isOpenSideBarNav && (
-              <div className="row mt-2 d-md-none">
-                <Navigation isCollapsed={true} />
-              </div>
-            )}
+            <SidebarNavigation isOpen={isOpenSideBarNav} onClose={() => setIsOpenSideBarNav(false)} />
 
             <div className="row d-none d-md-flex">
               <div className="logoWrapper d-flex align-items-center col-sm-2">
