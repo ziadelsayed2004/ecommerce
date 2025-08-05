@@ -1037,7 +1037,7 @@ nav .navPart2 .active a button {
 .ItemModel .container .productContanierScrollableModel {
   overflow-y: auto;
   overflow-x: hidden;
-  max-height: 70vh;
+  max-height: 70%;
 }
 
 .ItemModel h4 {
