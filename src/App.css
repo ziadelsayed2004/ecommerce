@@ -96,6 +96,15 @@ body {
     align-items: center;
   }
 
+  .topHeader .logoWrapper a{
+    width: 50%;    
+  }
+
+  .topHeader .logoWrapper img{
+    width: 100%;
+  }
+
+
   .topHeader .part3 {
     order: 2;
     display: flex;
@@ -194,11 +203,16 @@ body {
   height: auto;
 }
 
+.logoWrapper a {
+  width: 75%;
+}
+
 .logoWrapper img {
   user-select: none;
   outline: none;
-  border: 0px transparent;  width: 90%;
-  max-width: 170px;
+  border: 0px transparent;  
+  width: 100%;
+  max-width: 175px;
   margin-right: 10%;
 }
 
@@ -1136,6 +1150,10 @@ nav .navPart2 .active a button {
   .ItemModel div div .Rating {
     border: 0;
     padding-right: 0px;
+  }
+
+  .ItemModel .col-md-7 {
+    margin-left: 1rem;
   }
 }
 

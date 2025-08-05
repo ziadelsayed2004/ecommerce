@@ -116,12 +116,12 @@ const ProductModel = () => {
                                 
                                 <p className='mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis totam, quod sequi ducimus, inventore voluptatem sed placeat, reiciendis accusamus quasi quia iusto non explicabo! Iusto neque illum officiis numquam molestiae!</p>
                                 
-                                <div className='d-flex align-items-center'>
+                                <div className='d-flex align-items-center Quantity'>
                                     <QuantityBox className='mt-2' />
                                     <Button className='addToCartBtn mt-2'>Add To Cart</Button>
                                 </div>
 
-                                <div className='d-flex align-items-center mt-3 actions'>
+                                <div className='d-flex align-items-center mt-3 pt-3 pb-3 actions'>
                                     <Button variant='outline' className='addToWishBtn mr-2 mt-2'>Add To Wishlist<GrFavorite className='ml-1' /></Button>
                                     <Button variant='outline' className='compareProducts mt-2'>Compare<IoIosGitCompare className='ml-1' /></Button>                                
                                 </div>
