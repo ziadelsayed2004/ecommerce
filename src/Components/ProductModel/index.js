@@ -48,6 +48,17 @@ const ProductModel = () => {
     };
 
     const context = useContext(MyContext);
+    React.useEffect(() => {
+    if (context.isOpenProductModel) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = '';
+    }
+
+    return () => {
+        document.body.style.overflow = '';
+    };
+    }, [context.isOpenProductModel]);
 
     return(    
         <>

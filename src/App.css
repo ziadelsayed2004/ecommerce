@@ -25,7 +25,7 @@
   background: linear-gradient(180deg, rgba(64, 64, 176, 0.8), rgba(37, 37, 122, 0.8));
 }
 
-.css-1cennmq-MuiBackdrop-root-MuiDialog-backdrop {
+.MuiDialog-root {
   backdrop-filter: blur(8px);
   overflow: hidden;
 }
@@ -41,6 +41,10 @@ body ::-webkit-scrollbar {
 
 body {
   font-family: Dosis, sans-serif !important;
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
 
 .bg-sky {

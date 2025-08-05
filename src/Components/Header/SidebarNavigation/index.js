@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 import { FiHome } from "react-icons/fi";
@@ -9,8 +10,19 @@ import { RiBloggerLine } from "react-icons/ri";
 import { FaRegPaperPlane } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 
-
 const SidebarNavigation = ({ isOpen, onClose }) => {
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+    return () => {
+      document.body.classList.remove('no-scroll');
+    };
+  }, [isOpen]);
+
   return (
     <div className={`sidebar-nav ${isOpen ? 'open' : ''}`} onClick={onClose}>
       <div className='sidebar-navContainer' onClick={(e) => e.stopPropagation()}>
