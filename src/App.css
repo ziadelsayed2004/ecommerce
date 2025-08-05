@@ -27,7 +27,6 @@
 
 .MuiDialog-root {
   backdrop-filter: blur(8px);
-  overflow: hidden;
 }
 
 body ::-webkit-scrollbar-thumb {
