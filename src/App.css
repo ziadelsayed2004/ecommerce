@@ -1357,33 +1357,44 @@ nav .navPart2 .active a button {
 }
 
 .productListingPage .productList .sidebar .filterBox h6 {
+  padding-left: 0.5dvw;
   font-weight: 600;
   letter-spacing: -0.25px;
   font-size: clamp(7.5px, 2.5dvw, 15px);
+}
+
+.productListingPage .productList .sidebar .filterBox .scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 25dvh;
+  padding: 0px 15px;
+}
+
+.productListingPage .productList .sidebar .filterBox .scroll ul {
+  width: 100%;
 }
 
 .productListingPage .productList .sidebar .filterBox .scroll ul li {
   list-style: none;
   -webkit-user-select: none;
   user-select: none;
-  width: 100%;
   height: 25px;
   margin-bottom: 0px;
 }
 
 .productListingPage .productList .sidebar .filterBox .scroll ul li .MuiButtonBase-root {
   padding: 2px auto;
+  margin-right: 2.5px;
 }
 
 .productListingPage .productList .sidebar .filterBox .scroll ul li span {
   font-weight: 400;
-  letter-spacing: -0.25px;
+  letter-spacing: -0.35px;
   font-size: clamp(6px, 2dvw, 12px);
 }
 
 .productListingPage .productList .sidebar .filterBox .scroll ul li span .MuiSvgIcon-root {
   font-size: clamp(7px, 2.5dvw, 14px);
-  margin-right: 0;
   color: var(--main-color);
 }
 
