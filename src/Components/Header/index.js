@@ -36,25 +36,28 @@ const Header = () => {
               </div>
               <div className="part3 col-auto d-flex align-items-center">
 
-                <Button className='circle'><FaRegUser /></Button>
-                <div className="hamburgerBtn">
-                    <Button className='circle' onClick={() => setIsOpenSideBarNav(!isOpenSideBarNav)}><IoIosMenu /></Button>
-                </div>
-              </div>
-            </div>
-
-            <div className="row d-flex d-md-none bottomHeader align-items-center">
-                <div className="col-auto">
-                    <NavCategories />
-                </div>
-                <div className="cityDropdown col-auto">
-                    {context.egyptCities.length !== 0 && <CountryDropdown />}
-                </div>
-                <div className='cartTab d-flex align-items-center col-auto'>
+                <div className='cartTab d-flex align-items-center'>
                   <div className='position-relative'>
                     <Button className='circle'><IoBagOutline /></Button>
                     <span className='count d-flex align-items-center justify-content-center'>1</span>
                   </div>
+                </div>
+
+                <Button className='circle'><FaRegUser /></Button>
+
+                <div className="hamburgerBtn">
+                    <Button className='circle' onClick={() => setIsOpenSideBarNav(!isOpenSideBarNav)}><IoIosMenu /></Button>
+                </div>
+                
+              </div>
+            </div>
+
+            <div className="row d-flex d-md-none bottomHeader align-items-center">
+                <div className="col-7">
+                    <NavCategories />
+                </div>
+                <div className="cityDropdown col-5">
+                    {context.egyptCities.length !== 0 && <CountryDropdown />}
                 </div>
             </div>
 

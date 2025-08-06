@@ -103,13 +103,12 @@ body.no-scroll {
   }
 
   .topHeader .logoWrapper a{
-    width: 50%;    
+    width: 75%;    
   }
 
   .topHeader .logoWrapper img{
     width: 100%;
   }
-
 
   .topHeader .part3 {
     order: 2;
@@ -121,7 +120,6 @@ body.no-scroll {
   .bottomHeader {
     display: flex;
     justify-content: space-between;
-    gap: 0 !important;
     align-items: center;
     flex-wrap: nowrap;
     padding: 10px 0px;
@@ -130,17 +128,20 @@ body.no-scroll {
   .bottomHeader .categoryBtn,
   .bottomHeader .cityDropdown {
     display: flex;
-    flex: 1;
     justify-content: center;
+    align-items: center;
+    height: 6vh;
   }
 
   .allCatTab {
-    height: 50px;
+    width: 100%;
+    height: 6vh;
+    min-height: max-content;
     border-radius: 10px !important;
   }
 
   .allCatTab *{
-    font-size: 10px;
+    font-size: clamp(8px, 3dvw, 16px) !important;
     justify-content: center;
   }
 
@@ -149,11 +150,11 @@ body.no-scroll {
   }
 
   .allCatTab .icon1 svg {
-    font-size: 16px !important;
+    font-size: clamp(16px, 6dvw, 32px) !important;
   }
 
   .allCatTab .icon2 svg {
-    font-size: 8px !important;
+    font-size: clamp(8px, 3dvw, 16px) !important;
   }
 
   .catWrapper .sideBarNav {
@@ -162,20 +163,24 @@ body.no-scroll {
   }
 
   .countryDrop {
-    max-width: fit-content;
+    height: 6vh !important;
     padding: 8px !important;
   }
 
+  .countryDrop button {
+    height: 6vh !important;
+  }
+
   .countryDrop .label {
-    font-size: 8px !important;
+    font-size: clamp(6.5px, 2.25dvw, 13px) !important;
   }
 
   .countryDrop .name {
-    font-size: 10px !important;
+    font-size: clamp(7.25px, 2.75dvw, 14.5px) !important;
   }
 
   .countryDrop span.ml-auto svg {
-    font-size: 10px;
+    font-size: clamp(7.25px, 2.75dvw, 14.5px) !important;    
     margin-left: 0.5rem;
   }
 
