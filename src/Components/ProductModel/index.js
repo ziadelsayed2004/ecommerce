@@ -19,10 +19,12 @@ const Transition = React.forwardRef(function Transition(props, ref){
 });
 
 const ProductModel = () => {
+    const [slideIndex, SetSlideIndex] = React.useState(0);
     const zoomSlider = React.useRef();
     const zoomSliderBig = React.useRef();
 
     const goto = (index) => {
+        SetSlideIndex(index);
         zoomSlider.current.slickGoTo(index);
         zoomSliderBig.current.slickGoTo(index);
     }
@@ -45,6 +47,10 @@ const ProductModel = () => {
         slidesToScroll: 1,
         fade: false,
         arrows: false,
+        afterChange: (current) => {
+            SetSlideIndex(current);
+            zoomSlider.current?.slickGoTo(current); 
+        },
     };
 
     const context = useContext(MyContext);
@@ -93,16 +99,16 @@ const ProductModel = () => {
 
                                 <Slider {...IndexSettings} className='zoomSlider' ref={zoomSlider}>
                                     <div className='item'>
-                                        <img src={Logo} className='w-100' alt='item' onClick={() => goto(0)} />
+                                        <img src={Logo} className={`w-100 ${slideIndex===0 && 'item_active'}`} alt='item' onClick={() => goto(0)} />
                                     </div>
                                     <div className='item'>
-                                        <img src={Logo} className='w-100' alt='item' onClick={() => goto(1)} />
+                                        <img src={Logo} className={`w-100 ${slideIndex===1 && 'item_active'}`} alt='item' onClick={() => goto(1)} />
                                     </div>
                                     <div className='item'>
-                                        <img src={Logo} className='w-100' alt='item' onClick={() => goto(2)} />
+                                        <img src={Logo} className={`w-100 ${slideIndex===2 && 'item_active'}`} alt='item' onClick={() => goto(2)} />
                                     </div>
                                     <div className='item'>
-                                        <img src={Logo} className='w-100' alt='item' onClick={() => goto(3)} />
+                                        <img src={Logo} className={`w-100 ${slideIndex===3 && 'item_active'}`} alt='item' onClick={() => goto(3)} />
                                     </div>
                                 </Slider>
                             </div>
