@@ -114,7 +114,7 @@ const ProductModel = () => {
                                 
                                 <span className="text-success InStockSpan d-block mt-2">In Stock</span>
                                 
-                                <p className='mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis totam, quod sequi ducimus, inventore voluptatem sed placeat, reiciendis accusamus quasi quia iusto non explicabo! Iusto neque illum officiis numquam molestiae!</p>
+                                <p className='mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 
                                 <div className='d-flex align-items-center Quantity'>
                                     <QuantityBox className='mt-2' />
