@@ -1366,7 +1366,7 @@ nav .navPart2 .active a button {
 .productListingPage .productList .sidebar .filterBox .scroll {
   overflow-y: auto;
   overflow-x: hidden;
-  height: 25dvh;
+  height: 20dvh;
   padding: 0px 15px;
 }
 
