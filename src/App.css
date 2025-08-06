@@ -19,14 +19,17 @@
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(180deg, rgba(44, 44, 138,0.5), rgba(26, 26, 92, 0.5));
   border-radius: 0px 6px 6px 0px;
-  transition: background 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, rgba(64, 64, 176, 0.8), rgba(37, 37, 122, 0.8));
 }
 
 .MuiDialog-root {
-  backdrop-filter: blur(8px);
+  width: 100dvw;
+  height: 100dvh;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease-in-out;
 }
 
 body ::-webkit-scrollbar-thumb {
@@ -154,7 +157,7 @@ body.no-scroll {
   }
 
   .catWrapper .sideBarNav {
-    width: 90vw !important;
+    width: 90dvw !important;
     z-index: 1000 !important;
   }
 
@@ -278,7 +281,7 @@ body.no-scroll {
 .locationModel .countryList {
   margin-bottom: 0px;
   max-height: 400px;
-  width: 70vw;
+  width: 70dvw;
   max-width: 400px;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -421,11 +424,11 @@ nav .navPart1, nav .navPart2 {
 
 .sidebar-nav {
   position: fixed;
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   top: 0;
   right: 0;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(5px);
   z-index: 999;
   padding: 20px;
   opacity: 0;
@@ -450,11 +453,11 @@ nav .navPart1, nav .navPart2 {
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
   width: 75%;
-  height: 75vh;
+  height: 75dvh;
   border-radius: 16px;
   padding: 30px;
-  top: 12.5vh;
-  left: 12.5vw;
+  top: 12.5dvh;
+  left: 12.5dvw;
   opacity: 0.75;
   transition: all 0.3s ease-in-out;
 }
@@ -585,7 +588,7 @@ nav .navPart1, nav .navPart2 {
   flex-direction: column;
   overflow-y: auto;
   height: fit-content;
-  max-height: 50vh;
+  max-height: 50dvh;
   padding: 0px !important;
   margin: 0px !important;
   overflow-y: auto;
@@ -698,10 +701,10 @@ nav .navPart2 .active a button {
 }
 
 .homeBannerSection .slick-prev {
-  left: -5vw !important;
+  left: -5dvw !important;
 }
 .homeBannerSection .slick-next {
-  right: -5vw !important;
+  right: -5dvw !important;
 }
 
 .homeCat .container {
@@ -812,7 +815,7 @@ nav .navPart2 .active a button {
   background-color: var(--main-color);
   color: #fff;
   border-radius: 16px;
-  font-size: clamp(8px, 4vw, 16px);
+  font-size: clamp(8px, 4dvw, 16px);
   font-weight: 500;
   padding: 3px 15px;
   transition: all ease-in-out 0.3s;
@@ -830,7 +833,7 @@ nav .navPart2 .active a button {
   background-color: var(--main-color);
   color: #fff;
   border-radius: 16px;
-  font-size: clamp(8px, 4vw, 16px);
+  font-size: clamp(8px, 4dvw, 16px);
   font-weight: 500;
   padding: 3px 15px;
   transition: all ease-in-out 0.3s;
@@ -937,7 +940,7 @@ nav .navPart2 .active a button {
   opacity: 0;
   top: 2.5%;
   right: 0%;
-  gap: 0.5vh;
+  gap: 0.5dvh;
   flex-direction: column;
   transition: all ease-in-out 0.3s;
 }
@@ -1037,7 +1040,7 @@ nav .navPart2 .active a button {
 .ItemModel .container .productContanierScrollableModel {
   overflow-y: auto;
   overflow-x: hidden;
-  max-height: 70vh;
+  max-height: 70dvh;
 }
 
 .ItemModel h4 {
@@ -1186,7 +1189,7 @@ nav .navPart2 .active a button {
   background-color: var(--main-color);
   color: #fff;
   border-radius: 16px;
-  font-size: clamp(8px, 4vw, 16px);
+  font-size: clamp(8px, 4dvw, 16px);
   font-weight: 500;
   padding: 3px 15px;
   transition: all ease-in-out 0.3s;
@@ -1203,7 +1206,7 @@ nav .navPart2 .active a button {
   color: var(--main-color);
   border-radius: 16px;
   border: 1px solid rgba(40, 40, 130, 1);
-  font-size: clamp(6px, 3vw, 12px);
+  font-size: clamp(6px, 3dvw, 12px);
   font-weight: 500;
   padding: 3px 15px;
   transition: all ease-in-out 0.3s;
@@ -1393,7 +1396,7 @@ footer .container .topInfo .topInfoItem * {
 }
 
 footer .container .topInfo .topInfoItem svg {
-  font-size: clamp(12px, 5vw, 24px);
+  font-size: clamp(12px, 5dvw, 24px);
   font-weight: 600;
   color: var(--main-color);
   transition: all ease-in-out 0.3s;
@@ -1405,7 +1408,7 @@ footer .container .topInfo .topInfoItem:hover svg {
 }
 
 footer .container .topInfo .topInfoItem span {
-  font-size: clamp(10px, 4vw, 20px);
+  font-size: clamp(10px, 4dvw, 20px);
   font-weight: 600;
   color: var(--main-color);
   transition: all ease-in-out 0.3s;
@@ -1486,7 +1489,7 @@ footer .container .copyright ul li a * {
 }
 
 footer .container .copyright ul li a svg {
-  font-size: clamp(14px, 7vw, 28px);
+  font-size: clamp(14px, 7dvw, 28px);
   color: var(--main-color);
   transition: all ease-in-out 0.3s;
 }
