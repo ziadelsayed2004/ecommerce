@@ -272,6 +272,7 @@ body.no-scroll {
   padding: 2.5px;
   border-radius: 50% !important;
   color: rgba(234, 44, 15, 1);
+  background-color: rgba(234, 44, 15, 0.05);
   transition: all ease-in-out 0.3s;
 }
 
@@ -433,7 +434,7 @@ nav .navPart1, nav .navPart2 {
   height: 100dvh;
   top: 0;
   right: 0;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(7px);
   z-index: 999;
   padding: 20px;
   opacity: 0;
@@ -1031,6 +1032,7 @@ nav .navPart2 .active a button {
   padding: 2.5px;
   border-radius: 50% !important;
   color: rgba(234, 44, 15, 1);
+  background-color: rgba(234, 44, 15, 0.05);
   transition: all ease-in-out 0.3s;
 }
 
