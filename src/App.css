@@ -1350,6 +1350,12 @@ nav .navPart2 .active a button {
   gap: 30px;
 } 
 
+.productListingPage .productList .sidebarWrapper {
+    width: 30%;
+    flex: 0 0 30%;
+    padding: 30px 0px;
+}
+
 .productListingPage .productList .sidebar {
   width: 30%;
   flex: 0 0 30%;
@@ -1370,7 +1376,7 @@ nav .navPart2 .active a button {
 }
 
 .productListingPage .productList .sidebar .filterBox ::-webkit-scrollbar {
-  width: 4.5px;
+  width: 4.5px !important;
 }
 
 .productListingPage .productList .sidebar .filterBox ul {
@@ -1443,6 +1449,120 @@ nav .navPart2 .active a button {
   width: 70%;
   flex: 0 0 70%;
   padding: 30px 10px;
+}
+
+@media (max-width: 768px) {
+    .productListingPage .productList .sidebarWrapper {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 1000;
+      background-color: rgba(255, 255, 255, 0.5);
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+      width: 75%;
+      height: 75dvh;
+      border-radius: 16px;
+      padding: 30px;
+      top: 12.5dvh;
+      left: 12.5dvw;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .productListingPage .productList .sidebarWrapper.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .productListingPage .productList .toggleSidebarBtn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--main-color);
+      color: #fff;
+      border-radius: 10px;
+      padding: 0 14px;
+      height: 42px;
+      min-height: unset;
+      font-weight: 500;
+      cursor: pointer;
+      text-transform: none;
+      transition: all ease-in-out 0.3s;
+    }
+
+    .productListingPage .productList .toggleSidebarBtn:hover {
+      background: var(--main-color-hover);
+    }
+
+    .productListingPage .productList .toggleSidebarBtn .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .productListingPage .productList .toggleSidebarBtn .text {
+      display: flex;
+      align-items: center;
+    }
+
+    .productListingPage .productList .toggleSidebarBtn * {
+      font-size: clamp(10px, 3dvw, 16px) !important;
+    }
+
+    .productListingPage .productList .toggleSidebarBtn svg {
+      font-size: clamp(16px, 5dvw, 24px) !important;
+    }
+
+
+    .productListingPage .productList .overlay {
+      position: fixed;
+      width: 100dvw;
+      height: 100dvh;
+      top: 0;
+      right: 0;
+      -webkit-backdrop-filter: blur(7px);
+      backdrop-filter: blur(7px);
+      z-index: 999;
+      padding: 20px;
+      animation: fadeIn 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .productListingPage .productList .close_ {
+      position: relative;
+      min-height: 40px !important;
+    }
+
+    .productListingPage .productList .sidebar {
+      width: 100% !important;
+      height: 75% !important;
+      overflow: auto;
+      flex: 1 1 100%;
+      padding: 20px 10px !important;
+    }
+
+    .productListingPage .productList ::-webkit-scrollbar {
+      width: 6px !important;
+    }
+    
+    .productListingPage .productList .sidebar .scroll {
+      height: 8dvh !important;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .rightContent {
+      width: 100% !important;
+      flex: 1 1 100% !important;
+    }
 }
 
 footer {
