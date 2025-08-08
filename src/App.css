@@ -1455,6 +1455,10 @@ nav .navPart2 .active a button {
 }
 
 @media (max-width: 767px) {
+    body.noscroll {
+      overflow: hidden;
+    }
+
     .productListingPage .productList .sidebarWrapper {
       position: absolute;
       display: flex;
