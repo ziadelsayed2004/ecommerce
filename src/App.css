@@ -1367,14 +1367,17 @@ nav .navPart2 .active a button {
   overflow-y: auto;
   overflow-x: hidden;
   height: 20dvh;
-  padding: 0px 15px;
 }
 
-.productListingPage .productList .sidebar .filterBox .scroll ul {
+.productListingPage .productList .sidebar .filterBox ::-webkit-scrollbar {
+  width: 4.5px;
+}
+
+.productListingPage .productList .sidebar .filterBox ul {
   width: 100%;
 }
 
-.productListingPage .productList .sidebar .filterBox .scroll ul li {
+.productListingPage .productList .sidebar .filterBox ul li {
   list-style: none;
   -webkit-user-select: none;
   user-select: none;
@@ -1382,20 +1385,58 @@ nav .navPart2 .active a button {
   margin-bottom: 0px;
 }
 
-.productListingPage .productList .sidebar .filterBox .scroll ul li .MuiButtonBase-root {
+.productListingPage .productList .sidebar .filterBox ul li .MuiButtonBase-root {
   padding: 2px auto;
   margin-right: 2.5px;
 }
 
-.productListingPage .productList .sidebar .filterBox .scroll ul li span {
+.productListingPage .productList .sidebar .filterBox ul li span {
   font-weight: 400;
   letter-spacing: -0.35px;
   font-size: clamp(6px, 2dvw, 12px);
 }
 
-.productListingPage .productList .sidebar .filterBox .scroll ul li span .MuiSvgIcon-root {
+.productListingPage .productList .sidebar .filterBox ul li span .MuiSvgIcon-root {
   font-size: clamp(7px, 2.5dvw, 14px);
   color: var(--main-color);
+}
+
+.productListingPage .productList .sidebar .filterBox div .range-slider {
+  height: 4.5px;
+}
+
+.productListingPage .productList .sidebar .filterBox div .range-slider .range-slider__range {
+  background-color: var(--main-color);
+  opacity: 0.5;
+  transition: opacity ease-in-out 0.3s;
+}
+
+.productListingPage .productList .sidebar .filterBox div .range-slider .range-slider__range:hover {
+  opacity: 0.75;
+}
+
+.productListingPage .productList .sidebar .filterBox div .range-slider .range-slider__thumb {
+  width: 9px;
+  height: 9px;
+  border-radius: 18px;
+  background-color: var(--main-color);
+  transition: background ease-in-out 0.3s;
+}
+
+.productListingPage .productList .sidebar .filterBox div .range-slider .range-slider__thumb:hover {
+  background-color: var(--main-color-hover);
+}
+
+.productListingPage .productList .sidebar .filterBox div .priceRange span {
+  font-size: clamp(6px, 2dvw, 12px);
+  color: rgba(0, 0, 0, 0.5);
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.productListingPage .productList .sidebar .filterBox div .priceRange span strong {
+  font-size: clamp(5px, 1.8dvw, 10px);
+  color: var(--main-color) !important;
 }
 
 .productListingPage .productList .rightContent {

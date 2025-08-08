@@ -8,7 +8,7 @@ const HomeBanner = () => {
         arrows:true,
         infinite: true,
         autoplay: true,
-        speed: 1000,
+        speed: 1500,
         slidesToShow: 1,
         slidesToScroll: 1,
         swipe: true,
