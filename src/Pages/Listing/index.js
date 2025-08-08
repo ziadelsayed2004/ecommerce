@@ -9,6 +9,14 @@ import { IoIosMenu } from "react-icons/io";
 
 const Listing = () =>{
     const [sidebarOpen, setSidebarOpen] = React.useState(false);
+    React.useEffect(() => {
+        if (sidebarOpen) {
+            document.body.classList.add("no-scroll");
+        } else {
+            document.body.classList.remove("no-scroll");
+        }
+    }, [sidebarOpen]);
+
     return(
         <>
             <section className="productListingPage">
@@ -22,10 +30,14 @@ const Listing = () =>{
                         {sidebarOpen && (<div className="overlay" onClick={() => setSidebarOpen(false)}></div> )}
 
                         <div className="rightContent">
-                            <Button className="toggleSidebarBtn d-md-none" onClick={() => setSidebarOpen(true)}>
-                                <span className='icon'><IoIosMenu/></span>
-                                <span className='text'>Filter</span>
-                            </Button>
+                            <div className="d-flex align-items-center justify-content-between">
+                                <h5>Check Our Products</h5>
+                                <Button className="toggleSidebarBtn d-md-none" onClick={() => setSidebarOpen(true)}>
+                                    <span className='icon'><IoIosMenu/></span>
+                                    <span className='text'>Filter</span>
+                                </Button>
+                            </div>
+                            
 
                         </div>
                     </div>

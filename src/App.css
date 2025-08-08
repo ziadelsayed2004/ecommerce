@@ -1351,12 +1351,6 @@ nav .navPart2 .active a button {
 } 
 
 .productListingPage .productList .sidebarWrapper {
-    width: 30%;
-    flex: 0 0 30%;
-    padding: 30px 0px;
-}
-
-.productListingPage .productList .sidebar {
   width: 30%;
   flex: 0 0 30%;
   padding: 30px 0px;
@@ -1451,7 +1445,16 @@ nav .navPart2 .active a button {
   padding: 30px 10px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 767.1px) {
+  .productListingPage .productList .close_ { 
+    display: none;
+  }
+  .productListingPage .productList .toggleSidebarBtn {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
     .productListingPage .productList .sidebarWrapper {
       position: absolute;
       display: flex;
@@ -1518,7 +1521,6 @@ nav .navPart2 .active a button {
       font-size: clamp(16px, 5dvw, 24px) !important;
     }
 
-
     .productListingPage .productList .overlay {
       position: fixed;
       width: 100dvw;
@@ -1529,8 +1531,18 @@ nav .navPart2 .active a button {
       backdrop-filter: blur(7px);
       z-index: 999;
       padding: 20px;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: all 0.3s ease-in-out;
       animation: fadeIn 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
+    }
+
+    .productListingPage .productList .sidebarWrapper.open ~ .overlay {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
     }
 
     .productListingPage .productList .close_ {
@@ -1551,7 +1563,7 @@ nav .navPart2 .active a button {
     }
     
     .productListingPage .productList .sidebar .scroll {
-      height: 8dvh !important;
+      height: 12.5dvh !important;
     }
 
     @keyframes fadeIn {
