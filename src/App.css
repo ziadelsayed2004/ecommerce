@@ -1445,6 +1445,39 @@ nav .navPart2 .active a button {
   padding: 30px 10px;
 }
 
+.productListingPage .productList .rightContent .ContentContainer {
+  flex-direction: column;
+}
+
+.productListingPage .productList .rightContent .showBy {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productListingPage .productList .rightContent .showBy .showByBtns {
+  gap: 10px;
+}
+
+.productListingPage .productList .rightContent .showBy .showByBtns button {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  max-height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  font-size: clamp(20px, 2.25dvw, 30px);
+  color: var(--main-color);
+  background-color: rgba(240, 250, 255, 0.25);
+  transition: all ease-in-out 0.3s;
+}
+
+.productListingPage .productList .rightContent .showBy button:hover {
+  font-weight: bolder;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--main-color-hover);
+  background-color: rgba(240, 250, 255, 1);
+}
+
 @media (min-width: 767.1px) {
   .productListingPage .productList .close_ { 
     display: none;
@@ -1454,9 +1487,15 @@ nav .navPart2 .active a button {
     display: none;
   }
 
-  .rightContent .d-flex .ListProducts {
+  .rightContent .d-flex .ListTitlePh {
     display: none;
     visibility: hidden;  
+  }
+
+  .rightContent .d-flex .ListTitle {
+    display: block;
+    visibility: visible;
+    width: 60%;
   }
 }
 
@@ -1586,9 +1625,14 @@ nav .navPart2 .active a button {
     flex: 1 1 100% !important;
   }
 
-  .rightContent .d-flex .ListProducts {
+  .rightContent .d-flex .ListTitlePh {
     display: block;
     visibility: visible;
+  }
+
+  .rightContent .d-flex .ListTitle {
+    display: none;
+    visibility: hidden;
   }
 
 }
