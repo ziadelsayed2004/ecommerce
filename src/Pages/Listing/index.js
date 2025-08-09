@@ -39,7 +39,7 @@ const Listing = () =>{
                                         <span className='text'>Filter</span>
                                     </Button>
                                 </div>    
-                                <div className="showBy d-flex w-100 p-2">
+                                <div className="showBy d-flex w-100 p-2 mt-3">
                                     <div className="showByBtns d-flex">
                                         <Button className='icon'><IoIosMenu/></Button>
                                         <Button className='icon'><HiViewGrid/></Button>
