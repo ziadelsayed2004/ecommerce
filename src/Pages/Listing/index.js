@@ -31,7 +31,7 @@ const Listing = () =>{
 
                         <div className="rightContent">
                             <div className="d-flex align-items-center justify-content-between">
-                                <h5>Check Our Products</h5>
+                                <h5 className="ListProducts">Check Our Products</h5>
                                 <Button className="toggleSidebarBtn d-md-none" onClick={() => setSidebarOpen(true)}>
                                     <span className='icon'><IoIosMenu/></span>
                                     <span className='text'>Filter</span>
