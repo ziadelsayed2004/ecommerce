@@ -1452,6 +1452,8 @@ nav .navPart2 .active a button {
 .productListingPage .productList .rightContent .showBy {
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(40, 40, 130, 0.025);
+  border-radius: 10px;
 }
 
 .productListingPage .productList .rightContent .showBy .showByBtns {
@@ -1459,21 +1461,21 @@ nav .navPart2 .active a button {
 }
 
 .productListingPage .productList .rightContent .showBy .showByBtns button {
-  width: 40px;
-  height: 40px;
-  min-width: 40px;
-  max-height: 40px;
+  width: 35px;
+  height: 35px;
+  min-width: 35px;
+  max-height: 35px;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  font-size: clamp(20px, 2.25dvw, 30px);
+  border: 1px solid rgba(0, 0, 0, 0.0625);
+  font-size: clamp(18px, 2dvw, 27px);
   color: var(--main-color);
-  background-color: rgba(240, 250, 255, 0.25);
+  background-color: rgba(240, 250, 255, 0.125);
   transition: all ease-in-out 0.3s;
 }
 
 .productListingPage .productList .rightContent .showBy button:hover {
   font-weight: bolder;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.125);
   color: var(--main-color-hover);
   background-color: rgba(240, 250, 255, 1);
 }
@@ -1487,15 +1489,9 @@ nav .navPart2 .active a button {
     display: none;
   }
 
-  .rightContent .d-flex .ListTitlePh {
+  .rightContent .d-flex .ListTitle {
     display: none;
     visibility: hidden;  
-  }
-
-  .rightContent .d-flex .ListTitle {
-    display: block;
-    visibility: visible;
-    width: 60%;
   }
 }
 
@@ -1625,16 +1621,10 @@ nav .navPart2 .active a button {
     flex: 1 1 100% !important;
   }
 
-  .rightContent .d-flex .ListTitlePh {
+  .rightContent .d-flex .ListTitle {
     display: block;
     visibility: visible;
   }
-
-  .rightContent .d-flex .ListTitle {
-    display: none;
-    visibility: hidden;
-  }
-
 }
 
 footer {

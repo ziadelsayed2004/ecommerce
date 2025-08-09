@@ -30,24 +30,23 @@ const Listing = () =>{
                         </div>
                         {sidebarOpen && (<div className="overlay" onClick={() => setSidebarOpen(false)}></div> )}
 
-                        <div className="rightContent">
+                        <div className="rightContent pl-0 pr-0">
                             <div className="ContentContainer d-flex align-items-center justify-content-between">
                                 <div className="d-flex align-items-center justify-content-between">
-                                    <h5 className="ListTitlePh">Check Our Products</h5>
+                                    <h5 className="ListTitle">Check Our Products</h5>
                                     <Button className="toggleSidebarBtn d-md-none" onClick={() => setSidebarOpen(true)}>
                                         <span className='icon'><IoIosMenu/></span>
                                         <span className='text'>Filter</span>
                                     </Button>
                                 </div>    
-                                <div className="showBy d-flex w-100 pt-3">
-                                    <h5 className="ListTitle">Check Our Products</h5>
+                                <div className="showBy d-flex w-100 p-2">
                                     <div className="showByBtns d-flex">
                                         <Button className='icon'><IoIosMenu/></Button>
                                         <Button className='icon'><HiViewGrid/></Button>
                                         <Button className='icon'><CgMenuGridO/></Button>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
