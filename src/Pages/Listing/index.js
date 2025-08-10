@@ -78,6 +78,10 @@ const Listing = () =>{
                                 <ProductItem />
                                 <ProductItem />
                                 <ProductItem />
+                                <ProductItem />
+                                <ProductItem />
+                                <ProductItem />
+                                <ProductItem />
                             </div>
                         </div>
                     </div>
