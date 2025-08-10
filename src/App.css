@@ -578,7 +578,9 @@ nav .navPart1, nav .navPart2 {
   height: unset;
   opacity: 0;
   visibility: hidden;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255,0.125);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
   margin-top: 10px;
   padding: 10px;
@@ -607,7 +609,7 @@ nav .navPart1, nav .navPart2 {
 }
 
 .catWrapper .sideBarNav .catListSided li {
-  width: 95%;
+  width: 100%;
 }
 
 .catWrapper .sideBarNav .catListSided li a {
@@ -1470,15 +1472,68 @@ nav .navPart2 .active a button {
   font-size: clamp(18px, 2dvw, 27px);
   color: var(--main-color);
   background-color: rgba(240, 250, 255, 0);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0);
   transition: all ease-in-out 0.3s;
 }
 
-.productListingPage .productList .rightContent .showBy button:hover {
+.productListingPage .productList .rightContent .showBy .showByBtns button:hover {
   font-weight: bolder;
   border: 1px solid rgba(0, 0, 0, 0.125);
   color: var(--main-color-hover);
   background-color: rgba(240, 250, 255, 0.75);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.125);
+}
+
+.productListingPage .productList .rightContent .showBy .showByFiltring button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 35px;
+  min-width: auto;
+  max-height: 35px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.0625);
+  font-size: clamp(12px, 1dvw, 18px);
+  color: var(--main-color);
+  background-color: rgba(240, 250, 255, 0);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0);
+  transition: all ease-in-out 0.3s;
+}
+
+.productListingPage .productList .rightContent .showBy .showByFiltring button:hover {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  color: var(--main-color-hover);
+  background-color: rgba(240, 250, 255, 0.75);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.125);
+}
+
+.css-1tktgsa-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+  border-radius: 10px !important;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: rgba(255, 255, 255, 0.125) !important;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.125) !important;
+  width: 100px !important;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.css-1tktgsa-MuiPaper-root-MuiPopover-paper-MuiMenu-paper ul {
+  width: 100%;
+  padding: 10px !important;
+}
+
+.css-1tktgsa-MuiPaper-root-MuiPopover-paper-MuiMenu-paper ul li {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.9);
+  transition: all ease-in-out 0.3s;
+}
+
+.css-1tktgsa-MuiPaper-root-MuiPopover-paper-MuiMenu-paper ul li:hover {
+  background-color: #f0faff;
+  color: var(--main-color);
 }
 
 @media (min-width: 767.1px) {
@@ -1594,6 +1649,8 @@ nav .navPart2 .active a button {
   .productListingPage .productList .close_ {
     position: relative;
     min-height: 40px !important;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 
   .productListingPage .productList .sidebar {

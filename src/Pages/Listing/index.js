@@ -1,12 +1,14 @@
 import React from "react";
 import Button from "@mui/material/Button";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
 import Sidebar from "../../Components/Sidebar";
 
 import { IoClose } from "react-icons/io5";
 import { IoIosMenu } from "react-icons/io";
 import { HiViewGrid } from "react-icons/hi";
 import { CgMenuGridO } from "react-icons/cg";
-
+import { FaAngleDown } from "react-icons/fa6"
 
 const Listing = () =>{
     const [sidebarOpen, setSidebarOpen] = React.useState(false);
@@ -17,6 +19,15 @@ const Listing = () =>{
             document.body.classList.remove("no-scroll");
         }
     }, [sidebarOpen]);
+    
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const openDropDown = Boolean(anchorEl);
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
 
     return(
         <>
@@ -44,6 +55,17 @@ const Listing = () =>{
                                         <Button className='icon'><IoIosMenu/></Button>
                                         <Button className='icon'><HiViewGrid/></Button>
                                         <Button className='icon'><CgMenuGridO/></Button>
+                                    </div>
+                                    <div className="ml-auto showByFiltring">
+                                        {/* <Button></Button> */}
+                                        <Button onClick={handleClick}>Show<span className="ml-1">10</span> <FaAngleDown className="ml-2" /></Button>
+                                        <Menu className="mt-1 showPerPageDropDown" id="basic-menu" anchorEl={anchorEl} open={openDropDown} onClose={handleClose} slotProps={{list: {'aria-labelledby': 'basic-button',},}} >
+                                            <MenuItem onClick={handleClose}>20</MenuItem>
+                                            <MenuItem onClick={handleClose}>30</MenuItem>
+                                            <MenuItem onClick={handleClose}>40</MenuItem>
+                                            <MenuItem onClick={handleClose}>50</MenuItem>
+                                        </Menu>
+
                                     </div>
                                 </div>
 
