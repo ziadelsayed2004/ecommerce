@@ -3,6 +3,7 @@ import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Sidebar from "../../Components/Sidebar";
+import ProductItem from "../../Components/ProductItem";
 
 import { IoClose } from "react-icons/io5";
 import { IoIosMenu } from "react-icons/io";
@@ -56,19 +57,27 @@ const Listing = () =>{
                                         <Button className='icon'><HiViewGrid/></Button>
                                         <Button className='icon'><CgMenuGridO/></Button>
                                     </div>
-                                    <div className="ml-auto showByFiltring">
-                                        {/* <Button></Button> */}
+                                    <div className="ml-auto d-flex showByFiltring">
+                                        {/* <Button className="mr-2"></Button> */}
                                         <Button onClick={handleClick}>Show<span className="ml-1">10</span> <FaAngleDown className="ml-2" /></Button>
                                         <Menu className="mt-1 showPerPageDropDown" id="basic-menu" anchorEl={anchorEl} open={openDropDown} onClose={handleClose} slotProps={{list: {'aria-labelledby': 'basic-button',},}} >
+                                            <MenuItem onClick={handleClose}>10</MenuItem>
                                             <MenuItem onClick={handleClose}>20</MenuItem>
                                             <MenuItem onClick={handleClose}>30</MenuItem>
                                             <MenuItem onClick={handleClose}>40</MenuItem>
                                             <MenuItem onClick={handleClose}>50</MenuItem>
                                         </Menu>
-
                                     </div>
                                 </div>
 
+                            </div>
+                            <div className="listProduct d-flex">
+                                <ProductItem />
+                                <ProductItem />
+                                <ProductItem />
+                                <ProductItem />
+                                <ProductItem />
+                                <ProductItem />
                             </div>
                         </div>
                     </div>

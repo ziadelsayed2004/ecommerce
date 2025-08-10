@@ -633,7 +633,7 @@ nav .navPart1, nav .navPart2 {
 
 .catWrapper .sideBarNav .catListSided li button:hover,
 .catWrapper .sideBarNav .catListSided .active button {
-  background-color: #f0faff;
+  background-color: rgba(240, 250, 255, 0.75);
   color: var(--main-color);
 }
 
@@ -862,26 +862,26 @@ nav .navPart2 .active a button {
   width: 100% !important;
 }
 
-.homeProducts .ProductRow {
+.ProductRow {
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 25px;
   padding: 25px;
 }
 
-.homeProducts .ProductRow .BestProducts .info h3 {
+.ProductRow .BestProducts .info h3 {
   color: var(--main-color);
   font-size: 25px;
   margin-bottom: 0px;
 }
 
-.homeProducts .ProductRow .BestProducts .info p {
+.ProductRow .BestProducts .info p {
   color: #5d5d5d;
   font-size: 12px;
   margin-bottom: 0px;
 }
 
-.homeProducts .ProductRow .BestProducts .ViewAllBtn {
+.ProductRow .BestProducts .ViewAllBtn {
   padding: 5px 10px !important;
   background-color: #fff;
   color: rgba(0, 0, 0, 0.75);
@@ -890,31 +890,31 @@ nav .navPart2 .active a button {
   transition: all ease-in-out 0.3s;
 }
 
-.homeProducts .ProductRow .BestProducts .ViewAllBtn:hover {
+.ProductRow .BestProducts .ViewAllBtn:hover {
   background-color: #f0faff;
   color: var(--main-color);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px;
   border: 1px solid rgba(0, 0, 0, 0);
 }
 
-.homeProducts .ProductRow .BestProducts .ViewAllBtn svg {
+.ProductRow .BestProducts .ViewAllBtn svg {
   margin-left: 5px;
   font-size: 12px;
 }
 
-.homeProducts .ProductRow .slick-prev {
+.ProductRow .slick-prev {
   left: -5px !important;
 }
 
-.homeProducts .ProductRow .slick-next {
+.ProductRow .slick-next {
   right: -5px !important;
 }
 
-.homeProducts .ProductRow .slick-slide {
+.ProductRow .slick-slide {
   padding: 15px;
 }
 
-.homeProducts .ProductRow .productItem {
+.productItem {
   width: 100%;
   height: auto;
   padding: 15px;
@@ -924,16 +924,16 @@ nav .navPart2 .active a button {
   transition: all ease-in-out 0.3s;
 }
 
-.homeProducts .ProductRow .productItem:hover {
+.productItem:hover {
   border: 1px solid rgba(0, 0, 0, 0);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
 }
 
-.homeProducts .ProductRow .productItem .imgWrapper {
+.productItem .imgWrapper {
   position: relative;
 }
 
-.homeProducts .ProductRow .productItem .imgWrapper .badge-primary {
+.productItem .imgWrapper .badge-primary {
   position: absolute;
   top: -4%;
   left: -4%;
@@ -948,7 +948,7 @@ nav .navPart2 .active a button {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px;
 }
 
-.homeProducts .ProductRow .productItem .imgWrapper .actions {
+.productItem .imgWrapper .actions {
   position: absolute;
   visibility: hidden;
   opacity: 0;
@@ -959,13 +959,13 @@ nav .navPart2 .active a button {
   transition: all ease-in-out 0.3s;
 }
 
-.homeProducts .ProductRow .productItem:hover .imgWrapper .actions {
+.productItem:hover .imgWrapper .actions {
   visibility: visible;
   opacity: 1;
   right: 2.5%;
 }
 
-.homeProducts .ProductRow .productItem .imgWrapper .actions button {
+.productItem .imgWrapper .actions button {
   min-width: 32.5px !important;
   height: 32.5px !important;
   width: 32.5px !important;
@@ -975,47 +975,47 @@ nav .navPart2 .active a button {
   transition: all ease-in-out 0.3s;
 }
 
-.homeProducts .ProductRow .productItem .imgWrapper .actions button:hover {
+.productItem .imgWrapper .actions button:hover {
   color: var(--main-color);
   background-color: #c1e1ff;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
 }
 
-.homeProducts .ProductRow .productItem .imgWrapper .actions button svg {
+.productItem .imgWrapper .actions button svg {
   font-size: 16.25px;
   font-weight: 600;
 }
 
-.homeProducts .ProductRow .productItem img {
+.productItem img {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.075);
   padding: 10px;
   border-radius: 16px;
   transition: all ease-in-out 0.3s;
 }
 
-.homeProducts .ProductRow .productItem:hover .imgWrapper img {
+.productItem:hover .imgWrapper img {
   transform: scale(1.025);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
 }
 
-.homeProducts .ProductRow .productItem h4 {
+.productItem h4 {
   margin: 10px 0px 0px 0px;
   font-size: 18px;
 }
 
-.homeProducts .ProductRow .productItem span {
+.productItem span {
   font-size: 12px;
   margin: 0px;
 }
 
-.homeProducts .ProductRow .productItem .oldPrice {
+.productItem .oldPrice {
   text-decoration: line-through;
   font-size: 16px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.3);
 }
 
-.homeProducts .ProductRow .productItem .netPrice {
+.productItem .netPrice {
   font-size: 18px;
   font-weight: 600;
 }
@@ -1527,13 +1527,25 @@ nav .navPart2 .active a button {
   display: flex;
   justify-content: center;
   border-radius: 10px;
+  margin: 1px;
   color: rgba(0, 0, 0, 0.9);
   transition: all ease-in-out 0.3s;
 }
 
 .css-1tktgsa-MuiPaper-root-MuiPopover-paper-MuiMenu-paper ul li:hover {
-  background-color: #f0faff;
+  background-color: rgba(240, 250, 255, 0.75);
   color: var(--main-color);
+}
+
+.productListingPage .productList .rightContent .listProduct {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2.5%;
+  max-width: 100%;
+}
+
+.productListingPage .productList .rightContent .listProduct .productItem {
+  flex: 0 0 17.5%;
 }
 
 @media (min-width: 767.1px) {
