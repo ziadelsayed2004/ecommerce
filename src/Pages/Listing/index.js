@@ -22,6 +22,7 @@ const Listing = () =>{
     }, [sidebarOpen]);
     
     const [anchorEl, setAnchorEl] = React.useState(null);
+    const [productView, setProductView] = React.useState('one');
     const openDropDown = Boolean(anchorEl);
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
@@ -58,7 +59,6 @@ const Listing = () =>{
                                         <Button className='icon'><CgMenuGridO/></Button>
                                     </div>
                                     <div className="ml-auto d-flex showByFiltring">
-                                        {/* <Button className="mr-2"></Button> */}
                                         <Button onClick={handleClick}>Show<span className="ml-1">10</span> <FaAngleDown className="ml-2" /></Button>
                                         <Menu className="mt-1 showPerPageDropDown" id="basic-menu" anchorEl={anchorEl} open={openDropDown} onClose={handleClose} slotProps={{list: {'aria-labelledby': 'basic-button',},}} >
                                             <MenuItem onClick={handleClose}>10</MenuItem>
@@ -72,16 +72,16 @@ const Listing = () =>{
 
                             </div>
                             <div className="listProduct d-flex">
-                                <ProductItem itemView={``} />
-                                <ProductItem itemView={``} />
-                                <ProductItem itemView={``} />
-                                <ProductItem itemView={``} />
-                                <ProductItem itemView={``} />
-                                <ProductItem itemView={``} />
-                                <ProductItem itemView={``} />
-                                <ProductItem itemView={``} />
-                                <ProductItem itemView={``} />
-                                <ProductItem itemView={``} />
+                                <ProductItem itemView={productView} />
+                                <ProductItem itemView={productView} />
+                                <ProductItem itemView={productView} />
+                                <ProductItem itemView={productView} />
+                                <ProductItem itemView={productView} />
+                                <ProductItem itemView={productView} />
+                                <ProductItem itemView={productView} />
+                                <ProductItem itemView={productView} />
+                                <ProductItem itemView={productView} />
+                                <ProductItem itemView={productView} />
                             </div>
                         </div>
                     </div>
