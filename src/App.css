@@ -1814,11 +1814,6 @@ nav .navPart2 .active a button {
 }
 
 @media (max-width: 576px) {
-  .productListingPage .productList .rightContent .showByBtns .viewThree,
-  .productListingPage .productList .rightContent .showByBtns .viewFour {
-    display: none;
-  }
-
   .productListingPage .productList .rightContent .listProduct {
     flex-wrap: wrap;
     justify-content: space-between;

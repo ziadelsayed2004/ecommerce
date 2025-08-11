@@ -24,8 +24,29 @@ const Listing = () =>{
         }
     }, [sidebarOpen]);
     
+    const [productView, setProductView] = React.useState(
+    window.innerWidth > 576 ? "four" : "two"
+    );
+    const [isSmallScreen, setIsSmallScreen] = React.useState(window.innerWidth <= 778);
+
+    React.useEffect(() => {
+    const handleResize = () => {
+        if (window.innerWidth > 778) {
+        setProductView("four");
+        setIsSmallScreen(false);
+        } else {
+        setProductView("two");
+        setIsSmallScreen(true);
+        }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     const [anchorEl, setAnchorEl] = React.useState(null);
-    const [productView, setProductView] = React.useState('four');
     const openDropDown = Boolean(anchorEl);
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
@@ -57,10 +78,15 @@ const Listing = () =>{
                                 </div>    
                                 <div className="showBy d-flex w-100 p-2">
                                     <div className="showByBtns d-flex">
-                                        <Button onClick={()=> setProductView('one')} className={productView==='one' && 'act icon viewOne'}><IoIosMenu/></Button>
-                                        <Button onClick={()=> setProductView('two')} className={productView==='two' && 'act icon viewTwo'}><BsGrid/></Button>
-                                        <Button onClick={()=> setProductView('three')} className={productView==='three' && 'act icon viewThree'}><TbGrid3X3/></Button>
-                                        <Button onClick={()=> setProductView('four')} className={productView==='four' && 'act icon viewFour'}><TbGrid4X4/></Button>
+                                        <Button onClick={() => setProductView('one')} className={productView === 'one' && 'act icon viewOne'}><IoIosMenu/></Button>
+                                        <Button onClick={() => setProductView('two')} className={productView === 'two' && 'act icon viewTwo'}><BsGrid/></Button>
+
+                                        {!isSmallScreen && (
+                                            <>
+                                            <Button onClick={() => setProductView('three')} className={productView === 'three' && 'act icon viewThree'}><TbGrid3X3/></Button>
+                                            <Button onClick={() => setProductView('four')} className={productView === 'four' && 'act icon viewFour'}><TbGrid4X4/></Button>
+                                            </>
+                                        )}
                                     </div>
                                     <div className="ml-auto d-flex showByFiltring">
                                         <Button onClick={handleClick}>Show<span className="ml-1">10</span> <FaAngleDown className="ml-2" /></Button>
