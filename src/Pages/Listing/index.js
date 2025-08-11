@@ -71,7 +71,6 @@ const Listing = () =>{
                                         </Menu>
                                     </div>
                                 </div>
-
                             </div>
                             <div className="listProduct d-flex">
                                 <ProductItem itemView={productView} />
@@ -87,6 +86,7 @@ const Listing = () =>{
                                 <ProductItem itemView={productView} />
                                 <ProductItem itemView={productView} />
                             </div>
+                            
                         </div>
                     </div>
                 </div>

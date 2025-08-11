@@ -20,10 +20,10 @@ const Navigation = ()=>{
                         <div className='col-sm-9 navPart2 d-flex align-items-center'>
                             <ul className='list list-inline ml-auto'>
                                 <li className='list-inline-item active'><Link to='/'><Button><FiHome />&nbsp; Home</Button></Link></li>
-                                <li className='list-inline-item'><Link to='/'><Button><HiOutlineBuildingStorefront />&nbsp; Shop</Button></Link></li>
+                                <li className='list-inline-item'><Link to='/Shop'><Button><HiOutlineBuildingStorefront />&nbsp; Shop</Button></Link></li>
                                 <li className='list-inline-item'><Link to='/'><Button><IoBagOutline />&nbsp; Your Cart</Button></Link></li>
                                 <li className='list-inline-item'><Link to='/'><Button><FaRegUser />&nbsp; Account</Button></Link></li>
-                                <li className='list-inline-item'><Link to='/'><Button><TiInfoLargeOutline />&nbsp; About</Button></Link></li>
+                                <li className='list-inline-item'><Link to='/About'><Button><TiInfoLargeOutline />&nbsp; About</Button></Link></li>
                                 <li className='list-inline-item'><Link to='/'><Button><FaRegPaperPlane />&nbsp; Contact</Button></Link></li>
                             </ul>
                         </div>

@@ -1596,6 +1596,7 @@ nav .navPart2 .active a button {
 
 .productListingPage .productList .rightContent .listProduct .productItem.three {
   flex: 0 0 32%;
+  max-width: 31%;
   margin: 15px 0px;
 }
 
@@ -1606,6 +1607,7 @@ nav .navPart2 .active a button {
 
 .productListingPage .productList .rightContent .listProduct .productItem.four {
   flex: 0 0 24.25%;
+  max-width: 23.25%;
   margin: 15px 0px;
 }
 
@@ -1613,6 +1615,8 @@ nav .navPart2 .active a button {
 .productListingPage .productList .rightContent .listProduct .productItem.four .contentWrapper {
   margin: 10px;
 }
+
+
 
 @media (min-width: 767.1px) {
   .productListingPage .productList .close_ { 
@@ -1826,7 +1830,7 @@ nav .navPart2 .active a button {
   .productListingPage .productList .rightContent .listProduct .productItem.four {
     flex: 0 0 48.5%;
     margin: 15px 0px;
-    max-width: 40%;
+    max-width: 47.5%;
   }
 }
 

@@ -28,10 +28,10 @@ const SidebarNavigation = ({ isOpen, onClose }) => {
         <Button className='close_ circle' onClick={onClose}><IoClose /></Button>
         <ul className='list list-inline ml-auto'>
           <li className='list-inline-item mr-0 active'><Link to='/'><Button><FiHome />&nbsp; Home</Button></Link></li>
-          <li className='list-inline-item mr-0'><Link to='/'><Button><HiOutlineBuildingStorefront />&nbsp; Shop</Button></Link></li>
+          <li className='list-inline-item mr-0'><Link to='/Shop'><Button><HiOutlineBuildingStorefront />&nbsp; Shop</Button></Link></li>
           <li className='list-inline-item mr-0'><Link to='/'><Button><IoBagOutline />&nbsp; Your Cart</Button></Link></li>
           <li className='list-inline-item mr-0'><Link to='/'><Button><FaRegUser />&nbsp; Account</Button></Link></li>
-          <li className='list-inline-item mr-0'><Link to='/'><Button><TiInfoLargeOutline />&nbsp; About</Button></Link></li>
+          <li className='list-inline-item mr-0'><Link to='/About'><Button><TiInfoLargeOutline />&nbsp; About</Button></Link></li>
           <li className='list-inline-item mr-0'><Link to='/'><Button><FaRegPaperPlane />&nbsp; Contact</Button></Link></li>
         </ul>
       </div>
