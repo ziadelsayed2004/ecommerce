@@ -1545,21 +1545,30 @@ nav .navPart2 .active a button {
 
 .productListingPage .productList .rightContent .listProduct .productItem.one {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-evenly;
+  position: relative;
   flex: 0 0 98%;
   gap: 2%;
   max-width: 60%;
-  margin: 15px 20%; 
+  margin: 15px 20%;
 }
 
-.productListingPage .productList .rightContent .listProduct .productItem.one .imgWrapper{
-  max-width: 45%;
-  min-width: 45%;
+.productListingPage .productList .rightContent .listProduct .productItem.one .imgWrapper {
+  max-width: 100%;
+  min-width: 100%;
 }
-.productListingPage .productList .rightContent .listProduct .productItem.one .contentWrapper{
+
+.productListingPage .productList .rightContent .listProduct .productItem.one .imgWrapper img {
+  max-width: 40%;
+  min-width: 40%;
+}
+
+.productListingPage .productList .rightContent .listProduct .productItem.one .contentWrapper {
   max-width: 35%;
   min-width: 35%;
+  position: absolute;
+  left: 45%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1775,7 +1784,7 @@ nav .navPart2 .active a button {
 
   .productListingPage .productList .rightContent .listProduct .productItem.one {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-evenly;
     flex: 0 0 98%;
     gap: 2%;
