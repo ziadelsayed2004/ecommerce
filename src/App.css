@@ -1387,7 +1387,7 @@ nav .navPart2 .active a button {
 }
 
 .productListingPage .productList .sidebar .filterBox ul li .MuiButtonBase-root {
-  padding: 2px auto;
+  padding: 5px;
   margin-right: 2.5px;
 }
 
@@ -1591,7 +1591,7 @@ nav .navPart2 .active a button {
     z-index: 1000;
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-    width: 75%;
+    width: 75dvw;
     height: 75dvh;
     border-radius: 16px;
     padding: 10px;
@@ -1607,6 +1607,26 @@ nav .navPart2 .active a button {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+  }
+
+  .productListingPage .productList .sidebar .filterBox h6 {
+    font-size: clamp(15px, 3dvw, 30px);
+  }
+
+  .productListingPage .productList .sidebar .filterBox ul li span {
+    font-size: clamp(12px, 2.5dvw, 24px);
+
+  }
+
+  .productListingPage .productList .sidebar .filterBox ul li span .MuiSvgIcon-root {
+    font-size: clamp(12px, 2.5dvw, 24px);
+  }
+
+  .productListingPage .productList .sidebar .filterBox div .priceRange span {
+    font-size: clamp(10px, 2dvw, 20px);
+  }
+  .productListingPage .productList .sidebar .filterBox div .priceRange span strong {
+    font-size: clamp(10px, 2dvw, 20px);
   }
 
   .productListingPage .productList .toggleSidebarBtn {
