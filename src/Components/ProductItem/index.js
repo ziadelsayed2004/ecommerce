@@ -23,12 +23,14 @@ const ProductItem = (props) => {
                         <Button><GrFavorite /></Button>
                     </div>
                 </div>
-                <h4>Product Name</h4>
-                <span className="text-success d-block">In Stock</span>
-                <Rating name="read-only" value={4.5} precision={0.5} readOnly />
-                <div className="d-flex align-items-center">
-                    <span className="oldPrice">$20.00</span>
-                    <span className="netPrice text-danger ml-2">$12.50</span>
+                <div className='contentWrapper'>
+                    <h4>Product Name</h4>
+                    <span className="text-success d-block">In Stock</span>
+                    <Rating name="read-only" value={4.5} precision={0.5} readOnly />
+                    <div className="d-flex align-items-center">
+                        <span className="oldPrice">$20.00</span>
+                        <span className="netPrice text-danger ml-2">$12.50</span>
+                    </div>
                 </div>
             </div>
         </>

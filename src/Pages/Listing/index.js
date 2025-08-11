@@ -7,8 +7,9 @@ import ProductItem from "../../Components/ProductItem";
 
 import { IoClose } from "react-icons/io5";
 import { IoIosMenu } from "react-icons/io";
-import { HiViewGrid } from "react-icons/hi";
-import { CgMenuGridO } from "react-icons/cg";
+import { BsGrid } from "react-icons/bs";
+import { TbGrid3X3 } from "react-icons/tb";
+import { TbGrid4X4 } from "react-icons/tb";
 import { FaAngleDown } from "react-icons/fa6"
 
 const Listing = () =>{
@@ -22,7 +23,7 @@ const Listing = () =>{
     }, [sidebarOpen]);
     
     const [anchorEl, setAnchorEl] = React.useState(null);
-    const [productView, setProductView] = React.useState('one');
+    const [productView, setProductView] = React.useState('four');
     const openDropDown = Boolean(anchorEl);
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
@@ -54,9 +55,10 @@ const Listing = () =>{
                                 </div>    
                                 <div className="showBy d-flex w-100 p-2">
                                     <div className="showByBtns d-flex">
-                                        <Button className='icon'><IoIosMenu/></Button>
-                                        <Button className='icon'><HiViewGrid/></Button>
-                                        <Button className='icon'><CgMenuGridO/></Button>
+                                        <Button onClick={()=> setProductView('one')} className='icon'><IoIosMenu/></Button>
+                                        <Button onClick={()=> setProductView('two')} className='icon'><BsGrid/></Button>
+                                        <Button onClick={()=> setProductView('three')} className='icon'><TbGrid3X3/></Button>
+                                        <Button onClick={()=> setProductView('four')} className='icon'><TbGrid4X4/></Button>
                                     </div>
                                     <div className="ml-auto d-flex showByFiltring">
                                         <Button onClick={handleClick}>Show<span className="ml-1">10</span> <FaAngleDown className="ml-2" /></Button>
@@ -72,6 +74,8 @@ const Listing = () =>{
 
                             </div>
                             <div className="listProduct d-flex">
+                                <ProductItem itemView={productView} />
+                                <ProductItem itemView={productView} />
                                 <ProductItem itemView={productView} />
                                 <ProductItem itemView={productView} />
                                 <ProductItem itemView={productView} />

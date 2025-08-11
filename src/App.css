@@ -1539,27 +1539,76 @@ nav .navPart2 .active a button {
 .productListingPage .productList .rightContent .listProduct {
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 0.5%;
+  gap: 0%;
   max-width: 100%;
 }
 
-.productListingPage .productList .rightContent .listProduct .productItem {
-  flex: 0 0 19.5%;
+.productListingPage .productList .rightContent .listProduct .productItem.one {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  flex: 0 0 98%;
+  gap: 2%;
+  max-width: 60%;
+  margin: 15px 20%; 
+}
+
+.productListingPage .productList .rightContent .listProduct .productItem.one .imgWrapper{
+  max-width: 45%;
+  min-width: 45%;
+}
+.productListingPage .productList .rightContent .listProduct .productItem.one .contentWrapper{
+  max-width: 35%;
+  min-width: 35%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.productListingPage .productList .rightContent .listProduct .productItem.two {
+  flex: 0 0 48.5%;
+  margin: 15px 0px;
+  max-width: 40%;
+}
+
+.productListingPage .productList .rightContent .listProduct .productItem.two .imgWrapper,
+.productListingPage .productList .rightContent .listProduct .productItem.two .contentWrapper {
+  margin: 10px;
+}
+
+.productListingPage .productList .rightContent .listProduct:has(.productItem.two) {
+  justify-content: space-evenly !important;
+}
+
+.productListingPage .productList .rightContent .listProduct .productItem.three {
+  flex: 0 0 32%;
   margin: 15px 0px;
 }
 
-@media (max-width: 1024px) {
-  .productListingPage .productList .rightContent .listProduct {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 0.5%;
-    max-width: 100%;
-  }
+.productListingPage .productList .rightContent .listProduct .productItem.three .imgWrapper,
+.productListingPage .productList .rightContent .listProduct .productItem.three .contentWrapper {
+  margin: 10px;
+}
 
-  .productListingPage .productList .rightContent .listProduct .productItem {
-    flex: 0 0 32.5%;
-    margin: 15px 0px;
-  }
+.productListingPage .productList .rightContent .listProduct:has(.productItem.three) {
+  justify-content: space-evenly !important;
+}
+
+.productListingPage .productList .rightContent .listProduct .productItem.four {
+  flex: 0 0 24.25%;
+  margin: 15px 0px;
+}
+
+.productListingPage .productList .rightContent .listProduct:has(.productItem.four) {
+  justify-content: space-evenly !important;
+}
+
+.productListingPage .productList .rightContent .listProduct .productItem.four .imgWrapper,
+.productListingPage .productList .rightContent .listProduct .productItem.four .contentWrapper {
+  margin: 10px;
 }
 
 @media (min-width: 767.1px) {
@@ -1729,6 +1778,17 @@ nav .navPart2 .active a button {
     display: block;
     visibility: visible;
   }
+
+  .productListingPage .productList .rightContent .listProduct .productItem.one {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    flex: 0 0 98%;
+    gap: 2%;
+    max-width: 80%;
+    margin: 15px 10%; 
+  }
+
 }
 
 @media (max-width: 576px) {
