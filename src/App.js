@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Listing from './Pages/Listing';
+import ProductDetails from './Pages/ProductDetails';
 import Header from './Components/Header';
 import Footer from "./Components/Footer";
 import ProductModel from './Components/ProductModel';
@@ -40,7 +41,8 @@ function App() {
           <Route path='/' exact={true} element={<Home />} />
           <Route path='/About' exact={true} element={<About />} />
           <Route path='/Shop' exact={true} element={<Listing />} />
-          <Route path='/cat/:id' exact={true} element={<Listing />} />
+          <Route path='/Category/:id' exact={true} element={<Listing />} />
+          <Route path='/Product/:id' exact={true} element={<ProductDetails />} />
         </Routes>
         <Footer />
         <ProductModel closeProductModel={() => setIsOpenProductModel(false)} isOpenProductModel={isOpenProductModel}/>

@@ -2,56 +2,23 @@ import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import Slide from '@mui/material/Slide';
 import Rating from '@mui/material/Rating';
-import Slider from 'react-slick';
 import React, { useContext } from 'react';
-import InnerImageZoom from 'react-inner-image-zoom';
-import 'react-inner-image-zoom/lib/styles.min.css';
-import QuantityBox from '../QuantityBox';
 
-import Logo from "../../assets/images/logo.png";
+import 'react-inner-image-zoom/lib/styles.min.css';
+import QuantityBox from './QuantityBox';
+
 import { IoClose } from "react-icons/io5";
 import { GrFavorite } from "react-icons/gr";
 import { IoIosGitCompare } from "react-icons/io";
 import { MyContext } from '../../App';
+import ProductZoom from './ProductZoom';
 
 const Transition = React.forwardRef(function Transition(props, ref){
     return <Slide direction="up" ref={ref} {...props} />;
 });
 
 const ProductModel = () => {
-    const [slideIndex, SetSlideIndex] = React.useState(0);
-    const zoomSlider = React.useRef();
-    const zoomSliderBig = React.useRef();
 
-    const goto = (index) => {
-        SetSlideIndex(index);
-        zoomSlider.current.slickGoTo(index);
-        zoomSliderBig.current.slickGoTo(index);
-    }
-
-    var IndexSettings = {
-        dots: false,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        fade: false,
-        arrows: true,
-    };
-
-    var settings = {
-        dots: false,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        fade: false,
-        arrows: false,
-        afterChange: (current) => {
-            SetSlideIndex(current);
-            zoomSlider.current?.slickGoTo(current); 
-        },
-    };
 
     const context = useContext(MyContext);
     
@@ -79,38 +46,7 @@ const ProductModel = () => {
                     <div className='productContanierScrollableModel'>
                         <div className='row mt-2 ProductDetailsModel'>
                             <div className='col-md-5'>
-                                <div className='productZoom'>
-                                    <span className="badge badge-primary ml-2 mt-2">30%</span>
-                                    <Slider {...settings} className='zoomSliderBig' ref={zoomSliderBig}>
-                                        <div className='item'>
-                                            <InnerImageZoom zoomType='hover' zoomScale={0.25} src={Logo} />
-                                        </div>
-                                        <div className='item'>
-                                            <InnerImageZoom zoomType='hover' zoomScale={0.25} src={Logo} />
-                                        </div>
-                                        <div className='item'>
-                                            <InnerImageZoom zoomType='hover' zoomScale={0.25} src={Logo} />
-                                        </div>
-                                        <div className='item'>
-                                            <InnerImageZoom zoomType='hover' zoomScale={0.25} src={Logo} />
-                                        </div>
-                                    </Slider>
-                                </div>
-
-                                <Slider {...IndexSettings} className='zoomSlider' ref={zoomSlider}>
-                                    <div className='item'>
-                                        <img src={Logo} className={`w-100 ${slideIndex===0 && 'item_active'}`} alt='item' onClick={() => goto(0)} />
-                                    </div>
-                                    <div className='item'>
-                                        <img src={Logo} className={`w-100 ${slideIndex===1 && 'item_active'}`} alt='item' onClick={() => goto(1)} />
-                                    </div>
-                                    <div className='item'>
-                                        <img src={Logo} className={`w-100 ${slideIndex===2 && 'item_active'}`} alt='item' onClick={() => goto(2)} />
-                                    </div>
-                                    <div className='item'>
-                                        <img src={Logo} className={`w-100 ${slideIndex===3 && 'item_active'}`} alt='item' onClick={() => goto(3)} />
-                                    </div>
-                                </Slider>
+                                <ProductZoom />
                             </div>
                             <div className='col-md-7'>
                                 <div className='d-flex align-items-center'>

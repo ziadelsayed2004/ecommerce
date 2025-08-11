@@ -59,6 +59,14 @@ body.no-scroll {
   color: #eee !important;
 }
 
+.text-dark-gray {
+  color: #555 !important;
+}
+
+.text-main-color {
+  color: rgb(40, 40, 130);
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1071,7 +1079,7 @@ nav .navPart2 .active a button {
   border-right: 1px solid rgba(0, 0, 0, 0.25);
 }
 
-.ItemModel .productZoom {
+.productZoom {
   width: 80%;
   height: auto;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1622,8 +1630,6 @@ nav .navPart2 .active a button {
   margin: 10px;
 }
 
-
-
 @media (min-width: 767.1px) {
   .productListingPage .productList .close_ { 
     display: none;
@@ -1832,6 +1838,56 @@ nav .navPart2 .active a button {
     flex: 0 0 48.5%;
     margin: 15px 0px;
     max-width: 47.5%;
+  }
+}
+
+.productDetails .container h4 {
+  font-size: clamp(16px, 3vw, 32px);
+  font-weight: 600;
+}
+
+.productDetails .container ul li:not(:last-child) {
+ border-right: 1px solid rgba(0, 0, 0, 0.25);
+ padding-right: 5px;
+}
+
+.productDetails .container ul li span {
+  font-size: clamp(8px, 1.5vw, 16px);
+}
+
+.productDetails .container ul li span.bold-span {
+  font-weight: 500;
+}
+
+.productDetails .container .ItemModel {
+  flex-wrap: wrap;
+  max-width: 100%;  
+  background-color: rgba(238, 238, 238, 0.25);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.productDetails .container .ItemModel .ProductDetailsZoom {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+
+.productDetails .container .ItemModel .ProductDetailsModel {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+
+@media(max-width: 767px) {
+  .productDetails .container .ItemModel .ProductDetailsZoom {
+    flex: 0 0 90%;
+    max-width: 90%;
+    margin-left: 5%;
+  }
+
+  .productDetails .container .ItemModel .ProductDetailsModel {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 
