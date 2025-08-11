@@ -142,7 +142,6 @@ const Listing = () => {
                     <MenuItem onClick={() => handleSelectItems(12)}>12</MenuItem>
                     <MenuItem onClick={() => handleSelectItems(24)}>24</MenuItem>
                     <MenuItem onClick={() => handleSelectItems(48)}>48</MenuItem>
-                    <MenuItem onClick={() => handleSelectItems(96)}>96</MenuItem>
                   </Menu>
                 </div>
               </div>
@@ -159,9 +158,8 @@ const Listing = () => {
                 count={totalPages}
                 page={currentPage}
                 onChange={(e, page) => setCurrentPage(page)}
-                variant="outlined"
                 shape="rounded"
-                size="large"
+                size="small"
               />
             </div>
           </div>
