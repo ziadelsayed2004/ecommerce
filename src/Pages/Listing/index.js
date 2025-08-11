@@ -72,16 +72,16 @@ const Listing = () =>{
 
                             </div>
                             <div className="listProduct d-flex">
-                                <ProductItem />
-                                <ProductItem />
-                                <ProductItem />
-                                <ProductItem />
-                                <ProductItem />
-                                <ProductItem />
-                                <ProductItem />
-                                <ProductItem />
-                                <ProductItem />
-                                <ProductItem />
+                                <ProductItem itemView={``} />
+                                <ProductItem itemView={``} />
+                                <ProductItem itemView={``} />
+                                <ProductItem itemView={``} />
+                                <ProductItem itemView={``} />
+                                <ProductItem itemView={``} />
+                                <ProductItem itemView={``} />
+                                <ProductItem itemView={``} />
+                                <ProductItem itemView={``} />
+                                <ProductItem itemView={``} />
                             </div>
                         </div>
                     </div>

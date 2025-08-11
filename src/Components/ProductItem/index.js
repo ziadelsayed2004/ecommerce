@@ -6,7 +6,7 @@ import { SlSizeFullscreen } from "react-icons/sl";
 import { GrFavorite } from "react-icons/gr";
 import { MyContext } from '../../App';
 
-const ProductItem = () => {
+const ProductItem = (props) => {
     const context = useContext(MyContext);
     const viewProductDetailes = (id) => {
         context.setIsOpenProductModel(true);
@@ -14,7 +14,7 @@ const ProductItem = () => {
     
     return(
         <>
-            <div className="item productItem cursor-pointer">
+            <div className={`item productItem cursor-pointer ${props.itemView}`}>
                 <div className="imgWrapper">
                     <img className="w-100" src={Logo} alt="ProductImg"></img>
                     <span className="badge badge-primary">30%</span>
