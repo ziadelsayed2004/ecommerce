@@ -1,7 +1,9 @@
 import React from "react";
 import Button from "@mui/material/Button";
+import Pagenation from "@mui/material/Pagination";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+
 import Sidebar from "../../Components/Sidebar";
 import ProductItem from "../../Components/ProductItem";
 
@@ -55,10 +57,10 @@ const Listing = () =>{
                                 </div>    
                                 <div className="showBy d-flex w-100 p-2">
                                     <div className="showByBtns d-flex">
-                                        <Button onClick={()=> setProductView('one')} className='icon viewOne'><IoIosMenu/></Button>
-                                        <Button onClick={()=> setProductView('two')} className='icon viewTwo'><BsGrid/></Button>
-                                        <Button onClick={()=> setProductView('three')} className='icon viewThree'><TbGrid3X3/></Button>
-                                        <Button onClick={()=> setProductView('four')} className='icon viewFour'><TbGrid4X4/></Button>
+                                        <Button onClick={()=> setProductView('one')} className={productView==='one' && 'act icon viewOne'}><IoIosMenu/></Button>
+                                        <Button onClick={()=> setProductView('two')} className={productView==='two' && 'act icon viewTwo'}><BsGrid/></Button>
+                                        <Button onClick={()=> setProductView('three')} className={productView==='three' && 'act icon viewThree'}><TbGrid3X3/></Button>
+                                        <Button onClick={()=> setProductView('four')} className={productView==='four' && 'act icon viewFour'}><TbGrid4X4/></Button>
                                     </div>
                                     <div className="ml-auto d-flex showByFiltring">
                                         <Button onClick={handleClick}>Show<span className="ml-1">10</span> <FaAngleDown className="ml-2" /></Button>
@@ -87,6 +89,9 @@ const Listing = () =>{
                                 <ProductItem itemView={productView} />
                             </div>
                             
+                            <div className="d-flex align-items-center justify-content-center mt-5">
+                                <Pagenation count={10} variant="outlined" shape="rounded" />
+                            </div>
                         </div>
                     </div>
                 </div>
