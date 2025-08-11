@@ -113,6 +113,14 @@ const Listing = () =>{
                                 <ProductItem itemView={productView} />
                                 <ProductItem itemView={productView} />
                                 <ProductItem itemView={productView} />
+                                <ProductItem itemView={productView} />
+                                <ProductItem itemView={productView} />
+                                <ProductItem itemView={productView} />
+                                <ProductItem itemView={productView} />
+                                <ProductItem itemView={productView} />
+                                <ProductItem itemView={productView} />
+                                <ProductItem itemView={productView} />
+                                <ProductItem itemView={productView} />
                             </div>
                             
                             <div className="d-flex align-items-center justify-content-center mt-5">
