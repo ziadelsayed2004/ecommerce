@@ -1710,17 +1710,6 @@ nav .navPart2 .active a button {
     display: block;
     visibility: visible;
   }
-    .productListingPage .productList .rightContent .listProduct {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 0.75%;
-    max-width: 100%;
-  }
-  
-  .productListingPage .productList .rightContent .listProduct .productItem {
-    flex: 0 0 32.75%;
-    margin: 15px 0px;
-  }
 }
 
 @media (max-width: 576px) {
