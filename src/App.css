@@ -1568,6 +1568,12 @@ nav .navPart2 .active a button {
   justify-content: center;
 }
 
+.productListingPage .productList .rightContent .listProduct:has(.productItem.two),
+.productListingPage .productList .rightContent .listProduct:has(.productItem.three),
+.productListingPage .productList .rightContent .listProduct:has(.productItem.four) {
+  justify-content: space-evenly !important;
+}
+
 .productListingPage .productList .rightContent .listProduct .productItem.two {
   flex: 0 0 48.5%;
   margin: 15px 0px;
@@ -1577,10 +1583,6 @@ nav .navPart2 .active a button {
 .productListingPage .productList .rightContent .listProduct .productItem.two .imgWrapper,
 .productListingPage .productList .rightContent .listProduct .productItem.two .contentWrapper {
   margin: 10px;
-}
-
-.productListingPage .productList .rightContent .listProduct:has(.productItem.two) {
-  justify-content: space-evenly !important;
 }
 
 .productListingPage .productList .rightContent .listProduct .productItem.three {
@@ -1593,17 +1595,9 @@ nav .navPart2 .active a button {
   margin: 10px;
 }
 
-.productListingPage .productList .rightContent .listProduct:has(.productItem.three) {
-  justify-content: space-evenly !important;
-}
-
 .productListingPage .productList .rightContent .listProduct .productItem.four {
   flex: 0 0 24.25%;
   margin: 15px 0px;
-}
-
-.productListingPage .productList .rightContent .listProduct:has(.productItem.four) {
-  justify-content: space-evenly !important;
 }
 
 .productListingPage .productList .rightContent .listProduct .productItem.four .imgWrapper,
@@ -1789,9 +1783,23 @@ nav .navPart2 .active a button {
     margin: 15px 10%; 
   }
 
+  .productListingPage .productList .rightContent .listProduct .productItem.two .imgWrapper,
+  .productListingPage .productList .rightContent .listProduct .productItem.two .contentWrapper,
+  .productListingPage .productList .rightContent .listProduct .productItem.three .imgWrapper,
+  .productListingPage .productList .rightContent .listProduct .productItem.three .contentWrapper,
+  .productListingPage .productList .rightContent .listProduct .productItem.four .imgWrapper,
+  .productListingPage .productList .rightContent .listProduct .productItem.four .contentWrapper {
+    margin: 0px !important;
+  }
+
 }
 
 @media (max-width: 576px) {
+  .productListingPage .productList .rightContent .showByBtns .viewThree,
+  .productListingPage .productList .rightContent .showByBtns .viewFour {
+    display: none;
+  }
+
   .productListingPage .productList .rightContent .listProduct {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1802,6 +1810,14 @@ nav .navPart2 .active a button {
   .productListingPage .productList .rightContent .listProduct .productItem {
     flex: 0 0 49%;
     margin: 15px 0px;
+  }
+
+  .productListingPage .productList .rightContent .listProduct .productItem.two,
+  .productListingPage .productList .rightContent .listProduct .productItem.three,
+  .productListingPage .productList .rightContent .listProduct .productItem.four {
+    flex: 0 0 48.5%;
+    margin: 15px 0px;
+    max-width: 40%;
   }
 }
 

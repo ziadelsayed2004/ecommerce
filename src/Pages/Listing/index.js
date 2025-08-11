@@ -55,10 +55,10 @@ const Listing = () =>{
                                 </div>    
                                 <div className="showBy d-flex w-100 p-2">
                                     <div className="showByBtns d-flex">
-                                        <Button onClick={()=> setProductView('one')} className='icon'><IoIosMenu/></Button>
-                                        <Button onClick={()=> setProductView('two')} className='icon'><BsGrid/></Button>
-                                        <Button onClick={()=> setProductView('three')} className='icon'><TbGrid3X3/></Button>
-                                        <Button onClick={()=> setProductView('four')} className='icon'><TbGrid4X4/></Button>
+                                        <Button onClick={()=> setProductView('one')} className='icon viewOne'><IoIosMenu/></Button>
+                                        <Button onClick={()=> setProductView('two')} className='icon viewTwo'><BsGrid/></Button>
+                                        <Button onClick={()=> setProductView('three')} className='icon viewThree'><TbGrid3X3/></Button>
+                                        <Button onClick={()=> setProductView('four')} className='icon viewFour'><TbGrid4X4/></Button>
                                     </div>
                                     <div className="ml-auto d-flex showByFiltring">
                                         <Button onClick={handleClick}>Show<span className="ml-1">10</span> <FaAngleDown className="ml-2" /></Button>
