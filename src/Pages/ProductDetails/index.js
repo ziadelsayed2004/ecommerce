@@ -46,7 +46,7 @@ const ProductDetails = () => {
                                 <Button className='addToCartBtn mt-2'>Add To Cart</Button>
                             </div>
 
-                            <div className='d-flex align-items-center mt-3 pt-3 pb-3 actions'>
+                            <div className='d-flex align-items-center mt-3 pl-2 pt-3 pb-3 actions'>
                                 <Button variant='outline' className='addToWishBtn mr-2 mt-2'>Add To Wishlist<GrFavorite className='ml-1' /></Button>
                                 <Button variant='outline' className='compareProducts mt-2'>Compare<IoIosGitCompare className='ml-1' /></Button>                                
                             </div>

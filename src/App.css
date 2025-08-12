@@ -1878,8 +1878,8 @@ nav .navPart2 .active a button {
   max-width: 60%;
 }
 
-.productDetails .container .Quantity .quantityDrop {
-  max-width: 40%;
+.productDetails .container .Quantity .addToCartBtn {
+  margin-left: 0.5rem;
 }
 
 .productDetails .container .Quantity .quantityDrop input {
@@ -1892,10 +1892,6 @@ nav .navPart2 .active a button {
   height: 32.5px;
   min-width: 32.5px;
   font-size: clamp(12px, 2dvw, 20px);
-}
-
-.productDetails .container .Quantity .addToCartBtn {
-  max-width: 40%;
 }
 
 @media(max-width: 767px) {
