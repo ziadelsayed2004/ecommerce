@@ -1879,7 +1879,7 @@ nav .navPart2 .active a button {
 }
 
 .productDetails .container .Quantity .quantityDrop {
-  max-width: 50%;
+  max-width: 40%;
 }
 
 .productDetails .container .Quantity .quantityDrop input {
@@ -1895,7 +1895,7 @@ nav .navPart2 .active a button {
 }
 
 .productDetails .container .Quantity .addToCartBtn {
-  max-width: 50%;
+  max-width: 40%;
 }
 
 @media(max-width: 767px) {
