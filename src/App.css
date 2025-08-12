@@ -1878,11 +1878,37 @@ nav .navPart2 .active a button {
   max-width: 60%;
 }
 
+.productDetails .container .Quantity .quantityDrop {
+  max-width: 50%;
+}
+
+.productDetails .container .Quantity .quantityDrop input {
+  width: 40% !important;
+  max-width: 80px;
+}
+
+.productDetails .container .Quantity .quantityDrop button {
+  width: 32.5px;
+  height: 32.5px;
+  min-width: 32.5px;
+  font-size: clamp(12px, 2dvw, 20px);
+}
+
+.productDetails .container .Quantity .addToCartBtn {
+  max-width: 50%;
+}
+
 @media(max-width: 767px) {
   .productDetails .container .ItemModel .ProductDetailsZoom {
     flex: 0 0 95%;
     max-width: 95%;
     margin-left: 2.5%;
+  }
+
+  .productDetails .container .ItemModel .ProductDetailsZoom .zoomSlider  {
+    display: flex;
+    width: 100%;
+    justify-content: center;
   }
 
   .productDetails .container .ItemModel .ProductDetailsModel {
