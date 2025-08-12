@@ -1842,7 +1842,7 @@ nav .navPart2 .active a button {
 }
 
 .productDetails .container h4 {
-  font-size: clamp(16px, 3vw, 32px);
+  font-size: clamp(24px, 3vw, 32px);
   font-weight: 600;
 }
 
@@ -1852,7 +1852,7 @@ nav .navPart2 .active a button {
 }
 
 .productDetails .container ul li span {
-  font-size: clamp(8px, 2.5vw, 16px);
+  font-size: clamp(12px, 2.5vw, 16px);
 }
 
 .productDetails .container ul li span.bold-span {
