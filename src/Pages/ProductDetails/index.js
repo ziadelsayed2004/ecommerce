@@ -51,24 +51,18 @@ const ProductDetails = () => {
                                         <span className="text-main-gray bold-span">Category Name</span>
                                     </li>    
                                 </ul>
-                            </div>
-                            
+                            </div>                 
                             <hr />
-
                             <div className='d-flex align-items-center pt-3'>
                                 <span className="oldPrice">$20.00</span>
                                 <span className="netPrice text-danger ml-2">$12.50</span>
-                            </div>
-                                
-                            <span className="text-success InStockSpan d-block mt-2">In Stock</span>
-                                
+                            </div>                         
+                            <span className="text-success InStockSpan d-block mt-2">In Stock</span>                  
                             <p className='mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            
                             <div className='d-flex align-items-center Quantity'>
                                 <QuantityBox className='mt-2' />
                                 <Button className='addToCartBtn mt-2'>Add To Cart <FaCartPlus className='ml-1' /></Button>
                             </div>
-
                             <div className='d-flex align-items-center mt-3 pl-2 pt-3 pb-3 actions'>
                                 <Button variant='outline' className='addToWishBtn mr-2 mt-2'>Add To Wishlist<GrFavorite className='ml-1' /></Button>
                                 <Button variant='outline' className='compareProducts mt-2'>Compare<IoIosGitCompare className='ml-1' /></Button>                                
