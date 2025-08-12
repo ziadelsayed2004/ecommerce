@@ -41,8 +41,8 @@ function App() {
           <Route path='/' exact={true} element={<Home />} />
           <Route path='/About' exact={true} element={<About />} />
           <Route path='/Shop' exact={true} element={<Listing />} />
-          <Route path='/Category/:id' exact={true} element={<Listing />} />
-          <Route path='/Product/:id' exact={true} element={<ProductDetails />} />
+          <Route path='/category/:id' exact={true} element={<Listing />} />
+          <Route path='/product/:id' exact={true} element={<ProductDetails />} />
         </Routes>
         <Footer />
         <ProductModel closeProductModel={() => setIsOpenProductModel(false)} isOpenProductModel={isOpenProductModel}/>

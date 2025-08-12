@@ -1851,6 +1851,11 @@ nav .navPart2 .active a button {
  padding-right: 5px;
 }
 
+.productDetails .container ul li .Rating {
+ border: 0px;
+ padding-right: 0px;
+}
+
 .productDetails .container ul li span {
   font-size: clamp(8px, 2.5vw, 16px);
 }
@@ -1895,6 +1900,10 @@ nav .navPart2 .active a button {
 }
 
 @media(max-width: 767px) {
+  .productDetails .container .ItemModel {
+    padding: 20px;
+  }
+
   .productDetails .container .ItemModel .ProductDetailsZoom {
     flex: 0 0 95%;
     max-width: 95%;
