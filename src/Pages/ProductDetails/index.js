@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React from 'react';
 import Button from '@mui/material/Button';
 import Rating from '@mui/material/Rating';
 
@@ -9,6 +11,11 @@ import { GrFavorite } from "react-icons/gr";
 import { IoIosGitCompare } from "react-icons/io";
 
 const ProductDetails = () => {
+    const [activeSize, setActiveSize] = React.useState(null);
+    const isActive = (index) => {
+        setActiveSize(index)
+    }
+    
     return(
         <>
             <section className="productDetails section">
@@ -59,6 +66,20 @@ const ProductDetails = () => {
                             </div>                         
                             <span className="text-success InStockSpan d-block mt-2">In Stock</span>                  
                             <p className='mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div className='productSize d-flex align-items-center'>
+                                <span>Size / Weight :</span>
+                                <ul className='list list-inline mb-0 pl-2'>
+                                    <li className='list-inline-item'>
+                                        <a className={`tag ${activeSize === 0 ? 'active' : ''}`} onClick={() => isActive(0)}>100g</a>
+                                    </li>
+                                    <li className='list-inline-item'>
+                                        <a className={`tag ${activeSize === 1 ? 'active' : ''}`}onClick={() => isActive(1)}>200g</a>
+                                    </li>
+                                    <li className='list-inline-item'>
+                                        <a className={`tag ${activeSize === 2 ? 'active' : ''}`}onClick={() => isActive(2)}>300g</a>
+                                    </li>
+                                </ul>
+                            </div>
                             <div className='d-flex align-items-center Quantity'>
                                 <QuantityBox className='mt-2' />
                                 <Button className='addToCartBtn mt-2'>Add To Cart <FaCartPlus className='ml-1' /></Button>

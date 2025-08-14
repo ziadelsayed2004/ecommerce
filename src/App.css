@@ -1899,6 +1899,42 @@ nav .navPart2 .active a button {
   font-size: clamp(12px, 2dvw, 20px);
 }
 
+.productSize {
+  width: 100%;
+  height: auto;
+  padding: 25px 0px;
+}
+
+.productSize ul {
+  display: flex;
+}
+
+.productSize ul li {
+  margin: 0 5px;
+  border: 0 !important;
+}
+
+.productSize ul a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5px 7.5px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--main-color);
+  font-size: clamp(8px, 1.5vw, 16px);
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+}
+
+.productSize ul a.active,
+.productSize ul a:hover {
+  background-color: rgba(0, 128, 0, 0.125);
+  color: #28a745;
+}
+
+
 @media(max-width: 767px) {
   .productDetails .container .ItemModel {
     padding: 20px;
