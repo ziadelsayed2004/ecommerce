@@ -1928,8 +1928,7 @@ nav .navPart2 .active a button {
   transition: all ease-in-out 0.3s;
 }
 
-.productSize ul a.active,
-.productSize ul a:hover {
+.productSize ul a.active {
   background-color: rgba(0, 128, 0, 0.125);
   color: #28a745;
 }
