@@ -1965,6 +1965,24 @@ nav .navPart2 .active a button {
   gap: 2.5%;
 }
 
+@media (max-width: 768px){
+  .detailsPageTabs .customTabs .tabContent .reviewsCard {
+    flex-direction: column-reverse !important;
+    gap: 2.5dvh !important;
+  }
+  .detailsPageTabs .customTabs .tabContent .reviewsCard form {
+    position: static !important;
+    width: 100% !important;
+  }
+  .detailsPageTabs .customTabs .tabContent .reviewsCard div {
+    width: 100% !important;
+  }
+
+    .detailsPageTabs .customTabs .tabContent .reviewsCard div div.d-flex.w-100 {
+      flex-direction: column;
+    }
+}
+
 .detailsPageTabs .customTabs .tabContent .reviewsCard div div .image {
   display: flex;
   flex-direction: column;

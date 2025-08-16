@@ -179,7 +179,7 @@ const ProductDetails = () => {
                                                             <Rating name='half-rating-read' value={4.5} precision={0.5} readOnly />
                                                         </div>
                                                     </div>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                                 </div>
                                             </div>   
                                             <div className='card p-4 mb-2 flex-row w-100'>
@@ -196,7 +196,7 @@ const ProductDetails = () => {
                                                             <Rating name='half-rating-read' value={4.5} precision={0.5} readOnly />
                                                         </div>
                                                     </div>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                                 </div>
                                             </div>   
                                             <div className='card p-4 mb-2 flex-row w-100'>
@@ -213,7 +213,7 @@ const ProductDetails = () => {
                                                             <Rating name='half-rating-read' value={4.5} precision={0.5} readOnly />
                                                         </div>
                                                     </div>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                                 </div>
                                             </div>   
                                             <div className='card p-4 mb-2 flex-row w-100'>
@@ -230,11 +230,11 @@ const ProductDetails = () => {
                                                             <Rating name='half-rating-read' value={4.5} precision={0.5} readOnly />
                                                         </div>
                                                     </div>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                                 </div>
                                             </div>   
                                         </div>
-                                        
+
                                         <form className='reviewForm pl-4 pr-4 w-25'>
                                             <div className='form-group'>
                                                 <textarea className='form-control' placeholder='Write a Review' name='review'></textarea>
