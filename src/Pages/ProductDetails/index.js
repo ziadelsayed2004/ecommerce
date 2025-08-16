@@ -6,6 +6,7 @@ import Rating from '@mui/material/Rating';
 import ProductZoom from '../../Components/ProductModel/ProductZoom';
 import QuantityBox from '../../Components/ProductModel/QuantityBox';
 
+import Logo from '../../assets/images/logo.png'
 import { FaCartPlus } from "react-icons/fa6";
 import { GrFavorite } from "react-icons/gr";
 import { IoIosGitCompare } from "react-icons/io";
@@ -15,7 +16,8 @@ const ProductDetails = () => {
     const isActive = (index) => {
         setActiveSize(index)
     }
-    
+    const [activeTabs, setActiveTabs] = React.useState(0);
+
     return(
         <>
             <section className="productDetails section">
@@ -90,6 +92,176 @@ const ProductDetails = () => {
                             </div>
                         </div>
                     </div>
+
+                    <br />
+
+                    <div className='card mt-5 detailsPageTabs'>
+                        <div className='customTabs'>
+                            <ul className='list list-inline p-3'>
+                                <li className='list-inline-item'>
+                                    <Button className={`${activeTabs === 0 && 'active'}`} onClick={()=> setActiveTabs(0)} >Description</Button>
+                                </li>
+                                <li className='list-inline-item'>
+                                    <Button className={`${activeTabs === 1 && 'active'}`} onClick={()=> setActiveTabs(1)} >information</Button>
+                                </li>
+                                <li className='list-inline-item'>
+                                    <Button className={`${activeTabs === 2 && 'active'}`} onClick={()=> setActiveTabs(2)} >Reviews</Button>
+                                </li>
+                            </ul>
+
+                            <br />
+
+                            {
+                                activeTabs === 0 &&
+                                <div className='tabContent p-3'>
+                                    <p>Product Long Description : <br />Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div> 
+                            }
+                            
+                            {
+                                activeTabs === 1 &&
+                                <div className='tabContent p-3'>
+                                    <div className='table-responsive'>
+                                        <table className='table table-bordered'>
+                                            <tbody>
+                                                <tr className='tr-item'>
+                                                    <th>Head 1</th>
+                                                    <td>
+                                                        <p>Content 1</p>
+                                                    </td>
+                                                </tr>
+                                                <tr className='tr-item'>
+                                                    <th>Head 2</th>
+                                                    <td>
+                                                        <p>Content 2</p>
+                                                    </td>
+                                                </tr>
+                                                <tr className='tr-item'>
+                                                    <th>Head 3</th>
+                                                    <td>
+                                                        <p>Content 3</p>
+                                                    </td>
+                                                </tr>
+                                                <tr className='tr-item'>
+                                                    <th>Head 4</th>
+                                                    <td>
+                                                        <p>Content 4</p>
+                                                    </td>
+                                                </tr>
+                                                <tr className='tr-item'>
+                                                    <th>Head 5</th>
+                                                    <td>
+                                                        <p>Content 5</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div> 
+                            }
+
+                            {
+                                activeTabs === 2 &&
+                                <div className='tabContent p-3'>
+                                    <div className='card p-4 reviewsCard flex-row'>
+                                        <div className='flex-col w-75'>
+                                            <div className='card p-4 mb-2 flex-row w-100'>
+                                                <div className='image w-25'>
+                                                    <div className='rounded-circle'>
+                                                        <img src={Logo} alt='Review-Img'></img>
+                                                        <span className='text-g d-block text-center font-weight-bold'>User Name</span>
+                                                    </div>
+                                                </div>
+                                                <div className='info pl-5'>
+                                                    <div className='d-flex align-items-center w-100'>
+                                                        <h5 className='ratingDate'>01/01/2025</h5>
+                                                        <div className='ml-auto'>
+                                                            <Rating name='half-rating-read' value={4.5} precision={0.5} readOnly />
+                                                        </div>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                </div>
+                                            </div>   
+                                            <div className='card p-4 mb-2 flex-row w-100'>
+                                                <div className='image w-25'>
+                                                    <div className='rounded-circle'>
+                                                        <img src={Logo} alt='Review-Img'></img>
+                                                        <span className='text-g d-block text-center font-weight-bold'>User Name</span>
+                                                    </div>
+                                                </div>
+                                                <div className='info pl-5'>
+                                                    <div className='d-flex align-items-center w-100'>
+                                                        <h5 className='ratingDate'>01/01/2025</h5>
+                                                        <div className='ml-auto'>
+                                                            <Rating name='half-rating-read' value={4.5} precision={0.5} readOnly />
+                                                        </div>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                </div>
+                                            </div>   
+                                            <div className='card p-4 mb-2 flex-row w-100'>
+                                                <div className='image w-25'>
+                                                    <div className='rounded-circle'>
+                                                        <img src={Logo} alt='Review-Img'></img>
+                                                        <span className='text-g d-block text-center font-weight-bold'>User Name</span>
+                                                    </div>
+                                                </div>
+                                                <div className='info pl-5'>
+                                                    <div className='d-flex align-items-center w-100'>
+                                                        <h5 className='ratingDate'>01/01/2025</h5>
+                                                        <div className='ml-auto'>
+                                                            <Rating name='half-rating-read' value={4.5} precision={0.5} readOnly />
+                                                        </div>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                </div>
+                                            </div>   
+                                            <div className='card p-4 mb-2 flex-row w-100'>
+                                                <div className='image w-25'>
+                                                    <div className='rounded-circle'>
+                                                        <img src={Logo} alt='Review-Img'></img>
+                                                        <span className='text-g d-block text-center font-weight-bold'>User Name</span>
+                                                    </div>
+                                                </div>
+                                                <div className='info pl-5'>
+                                                    <div className='d-flex align-items-center w-100'>
+                                                        <h5 className='ratingDate'>01/01/2025</h5>
+                                                        <div className='ml-auto'>
+                                                            <Rating name='half-rating-read' value={4.5} precision={0.5} readOnly />
+                                                        </div>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                        
+                                        <form className='reviewForm pl-4 pr-4 w-25'>
+                                            <div className='form-group'>
+                                                <textarea className='form-control' placeholder='Write a Review' name='review'></textarea>
+                                            </div>
+                                            <div className='row'>
+                                                <div className='col-md-12'>
+                                                    <div className='form-group'>
+                                                        <input type='text' className='form-control' placeholder='Name' name='userName' />
+                                                    </div>
+                                                </div>
+                                                <div className='col-md-12'>
+                                                    <div className='form-group'>
+                                                        <Rating name='rating' value={4.5} precision={0.5} />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br />
+                                            <div className='form-group'>
+                                                <Button type='submit' className='btn-g btn-lg'>Submit Review</Button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div> 
+                            }
+                        </div>
+                    </div>
+
                 </div>
             </section>
         </>

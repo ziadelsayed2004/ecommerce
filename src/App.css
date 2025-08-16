@@ -1923,7 +1923,7 @@ nav .navPart2 .active a button {
   border-radius: 10px;
   cursor: pointer;
   color: var(--main-color);
-  font-size: clamp(8px, 1.5vw, 16px);
+  font-size: clamp(14px, 1.75vw, 16px);
   text-decoration: none;
   transition: all ease-in-out 0.3s;
 }
@@ -1933,6 +1933,104 @@ nav .navPart2 .active a button {
   color: #f0faff;
   border: 1px solid rgba(0, 0, 0, 0.25);
 }
+
+.detailsPageTabs.card, .detailsPageTabs .card {
+  border-radius: 10px !important;
+}
+
+.detailsPageTabs .customTabs ul li {
+  border: 0 !important;
+}
+
+.detailsPageTabs .customTabs ul li button {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--main-color);
+  font-size: clamp(8px, 1.5vw, 16px);
+  top: 0px;
+  transition: all ease-in-out 0.3s;
+}
+
+.detailsPageTabs .customTabs ul li button.active,
+.detailsPageTabs .customTabs ul li button:hover {
+  background-color: var(--main-color);
+  color: #f0faff;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  top: -5px;
+}
+
+.detailsPageTabs .customTabs .tabContent .reviewsCard {
+  gap: 2.5%;
+}
+
+.detailsPageTabs .customTabs .tabContent .reviewsCard div div .image {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  max-width: 150px;
+  height: fit-content;
+  aspect-ratio: 1 / 1;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.125);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.detailsPageTabs .customTabs .tabContent .reviewsCard div div .image img {
+  width: 80%;
+  margin: 0 10%;
+}
+
+.detailsPageTabs .customTabs .tabContent .reviewsCard div div .image span {
+  font-size: clamp(8px, 1.75dvw, 16px);
+  color: var(--main-color);
+}
+
+.detailsPageTabs .customTabs .tabContent .reviewsCard div div .info {
+  width: 75%;
+}
+
+.detailsPageTabs .customTabs .tabContent .reviewsCard form {
+  width: 25%;
+  height: fit-content;
+  position: sticky;
+  top: 1.5rem;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0px 10px rgba(0,0,0,0.1);
+}
+
+.detailsPageTabs .customTabs .tabContent .reviewsCard form .form-control,
+.detailsPageTabs .customTabs .tabContent .reviewsCard form textarea {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  transition: border 0.3s;
+}
+
+.detailsPageTabs .customTabs .tabContent .reviewsCard form .form-control:focus,
+.detailsPageTabs .customTabs .tabContent .reviewsCard form textarea:focus {
+  border-color: var(--main-color);
+  outline: none;
+}
+
+.detailsPageTabs .customTabs .tabContent .reviewsCard form .btn-g {
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: background 0.3s;
+}
+
+.detailsPageTabs .customTabs .tabContent .reviewsCard form .btn-g:hover {
+  background: var(--main-color-hover);
+}
+
 
 @media(max-width: 767px) {
   .productDetails .container .ItemModel {
