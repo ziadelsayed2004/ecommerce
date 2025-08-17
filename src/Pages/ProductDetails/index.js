@@ -113,14 +113,14 @@ const ProductDetails = () => {
 
                             {
                                 activeTabs === 0 &&
-                                <div className='tabContent p-3'>
+                                <div className='tabContent p-1'>
                                     <p><strong>Product Long Description :</strong><br />Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div> 
                             }
                             
                             {
                                 activeTabs === 1 &&
-                                <div className='tabContent p-3'>
+                                <div className='tabContent p-1'>
                                     <div className='table-responsive'>
                                         <table className='table table-bordered'>
                                             <tbody>
@@ -162,18 +162,18 @@ const ProductDetails = () => {
 
                             {
                                 activeTabs === 2 &&
-                                <div className='tabContent p-3'>
-                                    <div className='card p-4 reviewsCard flex-row'>
+                                <div className='tabContent p-1'>
+                                    <div className='card p-0 reviewsCard flex-row'>
                                         <div className='flex-col w-75'>
-                                            <div className='card flex-col p-4 mb-2 w-100'>
+                                            <div className='card flex-col p-4 mb-4 w-100'>
                                                 <div className='d-flex flex-row w-100'>
-                                                    <div className='image w-40'>
+                                                    <div className='image'>
                                                         <div className='rounded-circle'>
                                                             <img src={Logo} alt='Review-Img'></img>
                                                             <span className='text-g d-block text-center font-weight-bold'>User Name</span>
                                                         </div>
                                                     </div>
-                                                    <div className='info pl-4 w-60'>
+                                                    <div className='info pl-4'>
                                                         <div className='d-flex align-items-center w-100'>
                                                             <h5 className='ratingDate'>01/01/2025</h5>
                                                             <div className='ml-auto'>
@@ -184,15 +184,15 @@ const ProductDetails = () => {
                                                 </div>
                                                 <p className='w-100 pt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                             </div>
-                                            <div className='card flex-col p-4 mb-2 w-100'>
+                                            <div className='card flex-col p-4 mb-4 w-100'>
                                                 <div className='d-flex flex-row w-100'>
-                                                    <div className='image w-40'>
+                                                    <div className='image'>
                                                         <div className='rounded-circle'>
                                                             <img src={Logo} alt='Review-Img'></img>
                                                             <span className='text-g d-block text-center font-weight-bold'>User Name</span>
                                                         </div>
                                                     </div>
-                                                    <div className='info pl-4 w-60'>
+                                                    <div className='info pl-4'>
                                                         <div className='d-flex align-items-center w-100'>
                                                             <h5 className='ratingDate'>01/01/2025</h5>
                                                             <div className='ml-auto'>
@@ -203,15 +203,15 @@ const ProductDetails = () => {
                                                 </div>
                                                 <p className='w-100 pt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                             </div>
-                                            <div className='card flex-col p-4 mb-2 w-100'>
+                                            <div className='card flex-col p-4 mb-4 w-100'>
                                                 <div className='d-flex flex-row w-100'>
-                                                    <div className='image w-40'>
+                                                    <div className='image'>
                                                         <div className='rounded-circle'>
                                                             <img src={Logo} alt='Review-Img'></img>
                                                             <span className='text-g d-block text-center font-weight-bold'>User Name</span>
                                                         </div>
                                                     </div>
-                                                    <div className='info pl-4 w-60'>
+                                                    <div className='info pl-4'>
                                                         <div className='d-flex align-items-center w-100'>
                                                             <h5 className='ratingDate'>01/01/2025</h5>
                                                             <div className='ml-auto'>
@@ -222,15 +222,15 @@ const ProductDetails = () => {
                                                 </div>
                                                 <p className='w-100 pt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                             </div>
-                                            <div className='card flex-col p-4 mb-2 w-100'>
+                                            <div className='card flex-col p-4 mb-4 w-100'>
                                                 <div className='d-flex flex-row w-100'>
-                                                    <div className='image w-40'>
+                                                    <div className='image'>
                                                         <div className='rounded-circle'>
                                                             <img src={Logo} alt='Review-Img'></img>
                                                             <span className='text-g d-block text-center font-weight-bold'>User Name</span>
                                                         </div>
                                                     </div>
-                                                    <div className='info pl-4 w-60'>
+                                                    <div className='info pl-4'>
                                                         <div className='d-flex align-items-center w-100'>
                                                             <h5 className='ratingDate'>01/01/2025</h5>
                                                             <div className='ml-auto'>
