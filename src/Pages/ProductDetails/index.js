@@ -270,6 +270,9 @@ const ProductDetails = () => {
                         </div>
                     </div>
 
+                    <br />
+
+                    
                 </div>
             </section>
         </>
