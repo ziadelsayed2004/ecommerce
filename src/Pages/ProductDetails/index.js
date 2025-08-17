@@ -10,6 +10,7 @@ import Logo from '../../assets/images/logo.png'
 import { FaCartPlus } from "react-icons/fa6";
 import { GrFavorite } from "react-icons/gr";
 import { IoIosGitCompare } from "react-icons/io";
+import RelatedProduct from './RelatedProduct';
 
 const ProductDetails = () => {
     const [activeSize, setActiveSize] = React.useState(null);
@@ -272,7 +273,7 @@ const ProductDetails = () => {
 
                     <br />
 
-                    
+                    <RelatedProduct />
                 </div>
             </section>
         </>

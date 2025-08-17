@@ -1857,11 +1857,12 @@ nav .navPart2 .active a button {
 }
 
 .productDetails .container ul li span {
-  font-size: clamp(8px, 2.5vw, 16px);
+  font-size: clamp(8px, 2.75vw, 16px);
+  font-weight: 400;
 }
 
 .productDetails .container ul li span.bold-span {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .productDetails .container .ItemModel {
@@ -2109,7 +2110,7 @@ nav .navPart2 .active a button {
 
 @media(max-width: 767px) {
   .productDetails .container .ItemModel {
-    padding: 20px;
+    padding: 10px;
   }
 
   .productDetails .container .ItemModel .ProductDetailsZoom {
