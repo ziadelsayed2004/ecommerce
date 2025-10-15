@@ -7,9 +7,17 @@
       "default",
       {
         "ignore": [
-          "zoom"
+          "zoom",
+          "display: contents",
+          "scroll-behavior",
+          "scroll-behavior: smooth"
         ]
       }
     ]
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not ios_saf <= 11.2"
+  ]
 }
