@@ -23,7 +23,7 @@ const ProductDetails = () => {
         <>
             <section className="productDetails section">
                 <div className="container pt-4">
-                    <div className='d-flex ItemModel mb-5'>
+                    <div className='d-flex ItemModel'>
                         <div className='ProductDetailsZoom'>
                             <div className='d-block d-md-none mb-3'>
                                 <h4 className='mb-2 mt-2 hd text-capitalize'>Product Name</h4>
@@ -273,7 +273,8 @@ const ProductDetails = () => {
 
                     <br />
 
-                    <RelatedProduct />
+                    <RelatedProduct title='Related Products' description='Check Related Products For This Item !' />
+                    <RelatedProduct title='Recently Viewed' description='Check Recently Viewed Products For This Item !' />
                 </div>
             </section>
         </>
