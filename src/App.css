@@ -279,7 +279,7 @@ body.no-scroll {
 }
 
 .css-10d30g3-MuiPaper-root-MuiDialog-paper {
-  background: rgba(255, 255, 255, 0.125) !important;
+  background: rgba(255, 255, 255, 0.0625) !important;
   -webkit-backdrop-filter: blur(7px) !important;
   backdrop-filter: blur(7px) !important;
   border-radius: 15px;
